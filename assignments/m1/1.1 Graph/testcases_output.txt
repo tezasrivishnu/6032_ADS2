@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 13 vertices, 13 edges
 Andaman and Nicobar: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
@@ -16,7 +16,7 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-13 vertices, 13 edges 
+13 vertices, 13 edges
 Andaman and Nicobar: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
 Andhra Pradesh: Andaman and Nicobar 
 Arunachal Pradesh: Andaman and Nicobar 
@@ -50,7 +50,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-13 vertices, 13 edges 
+13 vertices, 13 edges
 Andaman and Nicobar: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
 Andhra Pradesh: Andaman and Nicobar 
 Arunachal Pradesh: Andaman and Nicobar 
@@ -164,7 +164,7 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 1 edges 
+1 vertices, 1 edges
 Hyderabad: Hyderabad Hyderabad
 ----------------------------------------
 
@@ -174,7 +174,7 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 1 edges 
+1 vertices, 1 edges
 Hyderabad: Hyderabad Hyderabad
 ----------------------------------------
 
