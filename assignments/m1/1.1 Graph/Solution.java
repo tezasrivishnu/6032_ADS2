@@ -22,7 +22,7 @@ class Graph {
 		for (int i = 0; i < node; i++) {
 			adjacent[i] = new Bag();
 		}
-		for (int j = 0; j < node; j++) {
+		for (int j = 0; j < edge; j++) {
 			String[] items = scan.nextLine().split(" ");
 			addEdge(Integer.parseInt(items[0]),
 			        Integer.parseInt(items[1]));
