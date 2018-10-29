@@ -44,14 +44,19 @@ class Graph {
 	}
 	public String toPrint() {
 		String str = "";
+		int k = 0;
 		str += node + " vertices, " + edge + " edges " + "\n";
-		for (int k = 0; k < node; k++) {
+		for (k = 0; k < node - 1; k++) {
 			str += tokens[k] + ": ";
 			for (int in : adjacent[k]) {
 				str += tokens[in] + " ";
 			}
 			str += "\n";
 		}
+		str += tokens[k] + ": ";
+			for (int in : adjacent[k]) {
+				str += tokens[in] + " ";
+			}
         return str;
 	}
 }

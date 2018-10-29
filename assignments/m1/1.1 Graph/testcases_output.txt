@@ -109,7 +109,7 @@ West Bengal: Uttar Pradesh Bihar
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 36
 	at Graph.<init>(Solution.java:23)
-	at Solution.main(Solution.java:62)
+	at Solution.main(Solution.java:67)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -155,7 +155,7 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 36
 	at Graph.<init>(Solution.java:23)
-	at Solution.main(Solution.java:62)
+	at Solution.main(Solution.java:67)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -184,7 +184,9 @@ Expected Output:
 No edges
 
 Your Output: 
-0 vertices, 0 edges
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Graph.toPrint(Solution.java:57)
+	at Solution.main(Solution.java:68)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -193,6 +195,8 @@ Expected Output:
 No edges
 
 Your Output: 
-0 vertices, 0 edges
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at Graph.toPrint(Solution.java:57)
+	at Solution.main(Solution.java:68)
 ----------------------------------------
 
