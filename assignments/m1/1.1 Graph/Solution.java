@@ -107,7 +107,7 @@ class MatrixGraph {
 		if (one == two) {
 			return;
 		}
-		if (!hasEdge(one, two)) {
+		if (hasEdge(one, two)) {
 			ecount++;
 		}
 		adjacent[one][two] = 1;
