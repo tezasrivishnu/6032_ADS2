@@ -91,11 +91,15 @@ class MatrixGraph {
 		}
 	}
 	public void addEdge(int one, int two) {
-		if (one != two) {
+		if (one != two && hasEdge(one, two)) {
 			ecount++;
 			adjacent[one][two] = 1;
 			adjacent[two][one] = 1;
 		}
+	}
+	public boolean hasEdge(int one, int two) {
+		return adjacent[one][two] != 1
+			&& adjacent[two][one] != 1;
 	}
 	public int getEdges() {
 		return ecount;
@@ -112,7 +116,7 @@ class MatrixGraph {
 			int k = 0;
 			//str += node + " vertices, " + ecount + " edges" + "\n";
 			for (k = 0; k < adjacent.length; k++) {
-				for (int in = 0; in< adjacent[0].length; in++) {
+				for (int in = 0; in < adjacent[0].length; in++) {
 					str += adjacent[k][in] + " ";
 				}
 				str += "\n";
@@ -128,8 +132,11 @@ class MatrixGraph {
 		return str;
 	}
 }
-class Solution {
-	public static void main(String[] args) {
+final class Solution {
+	private Solution() {
+
+	}
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String lismat = scan.nextLine();
 		switch (lismat) {
@@ -140,6 +147,8 @@ class Solution {
 		case "Matrix":
 			MatrixGraph mat = new MatrixGraph(scan);
 			System.out.println(mat.toPrint());
+			break;
+		default:
 			break;
 		}
 	}
