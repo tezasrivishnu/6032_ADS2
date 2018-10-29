@@ -8,13 +8,13 @@ import java.util.Scanner;
 // }
 
 class ListGraph {
-	int node;
-	int edge;
-	int ncount;
-	int ecount;
-	String[] tokens;
-	Bag<Integer>[] adjacent;
-	ListGraph(Scanner scan) {
+	private int node;
+	private int edge;
+	private int ncount;
+	private int ecount;
+	private String[] tokens;
+	private Bag<Integer>[] adjacent;
+	ListGraph(final Scanner scan) {
 		node = Integer.parseInt(scan.nextLine());
 		edge = Integer.parseInt(scan.nextLine());
 		tokens = scan.nextLine().split(",");
@@ -28,7 +28,7 @@ class ListGraph {
 			        Integer.parseInt(items[1]));
 		}
 	}
-	public void addEdge(int one, int two) {
+	public void addEdge(final int one, final int two) {
 		if (one != two && hasEdge(one, two)) {
 			ecount++;
 			adjacent[one].add(two);
@@ -41,14 +41,16 @@ class ListGraph {
 	public int getNode() {
 		return ncount;
 	}
-	public Iterable<Integer> adjacent(int one) {
+	public Iterable<Integer> adjacent(final int one) {
 		return adjacent[one];
 	}
 	public String toPrint() {
-		String str = node + " vertices, " + ecount + " edges" + "\n";
+		String str = node + " vertices, "
+		+ ecount + " edges" + "\n";
 		if (ecount > 0) {
 			int k = 0;
-			//str += node + " vertices, " + ecount + " edges" + "\n";
+			//str += node + " vertices, "
+			//+ ecount + " edges" + "\n";
 			for (k = 0; k < node - 1; k++) {
 				str += tokens[k] + ": ";
 				for (int in : adjacent[k]) {
@@ -66,7 +68,7 @@ class ListGraph {
 		}
 		return str;
 	}
-	public boolean hasEdge(int one, int two) {
+	public boolean hasEdge(final int one, final int two) {
 		for (int in : adjacent(one)) {
 			if(in == two) {
 				return false;
@@ -76,13 +78,13 @@ class ListGraph {
 	}
 }
 class MatrixGraph {
-	int node;
-	int edge;
-	int ncount;
-	int ecount;
-	String[] tokens;
-	int[][] adjacent;
-	MatrixGraph(Scanner scan) {
+	private int node;
+	private int edge;
+	private int ncount;
+	private int ecount;
+	private String[] tokens;
+	private int[][] adjacent;
+	MatrixGraph(final Scanner scan) {
 		node = Integer.parseInt(scan.nextLine());
 		edge = Integer.parseInt(scan.nextLine());
 		tokens = scan.nextLine().split(",");
@@ -98,14 +100,14 @@ class MatrixGraph {
 			        Integer.parseInt(items[1]));
 		}
 	}
-	public void addEdge(int one, int two) {
+	public void addEdge(final int one, final int two) {
 		if (one != two && hasEdge(one, two)) {
 			ecount++;
 			adjacent[one][two] = 1;
 			adjacent[two][one] = 1;
 		}
 	}
-	public boolean hasEdge(int one, int two) {
+	public boolean hasEdge(final int one, final int two) {
 		return adjacent[one][two] != 1
 			&& adjacent[two][one] != 1;
 	}
@@ -115,16 +117,19 @@ class MatrixGraph {
 	public int getNode() {
 		return ncount;
 	}
-	public int[] adjacent(int one) {
+	public int[] adjacent(final int one) {
 		return adjacent[one];
 	}
 	public String toPrint() {
-		String str = node + " vertices, " + ecount + " edges" + "\n";
+		String str = node + " vertices, "
+		+ ecount + " edges" + "\n";
 		if (ecount > 0) {
 			int k = 0;
-			//str += node + " vertices, " + ecount + " edges" + "\n";
+			//str += node + " vertices, "
+			//+ ecount + " edges" + "\n";
 			for (k = 0; k < adjacent.length; k++) {
-				for (int in = 0; in < adjacent[0].length; in++) {
+				for (int in = 0; in
+					< adjacent[0].length; in++) {
 					str += adjacent[k][in] + " ";
 				}
 				str += "\n";
