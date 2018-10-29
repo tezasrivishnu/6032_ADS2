@@ -32,7 +32,7 @@ class ListGraph {
 		if (one == two) {
 			return;
 		}
-		if (!hasEdge(one, two)) {
+		if (hasEdge(one, two)) {
 			ecount++;
 		}
 		adjacent[one].add(two);
