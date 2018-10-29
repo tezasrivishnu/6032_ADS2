@@ -29,11 +29,14 @@ class ListGraph {
 		}
 	}
 	public void addEdge(final int one, final int two) {
-		if (one != two && hasEdge(one, two)) {
-			ecount++;
-			adjacent[one].add(two);
-			adjacent[two].add(one);
+		if (one != two) {
+			return;
 		}
+		if (!hasEdge(one, two)) {
+			ecount++;
+		}
+		adjacent[one].add(two);
+		adjacent[two].add(one);
 	}
 	public int getEdges() {
 		return ecount;
@@ -46,7 +49,7 @@ class ListGraph {
 	}
 	public String toPrint() {
 		String str = node + " vertices, "
-		+ ecount + " edges" + "\n";
+		             + ecount + " edges" + "\n";
 		if (ecount > 0) {
 			int k = 0;
 			//str += node + " vertices, "
@@ -70,7 +73,7 @@ class ListGraph {
 	}
 	public boolean hasEdge(final int one, final int two) {
 		for (int in : adjacent(one)) {
-			if(in == two) {
+			if (in == two) {
 				return false;
 			}
 		}
@@ -101,15 +104,18 @@ class MatrixGraph {
 		}
 	}
 	public void addEdge(final int one, final int two) {
-		if (one != two && hasEdge(one, two)) {
-			ecount++;
-			adjacent[one][two] = 1;
-			adjacent[two][one] = 1;
+		if (one != two) {
+			return;
 		}
+		if (!hasEdge(one, two)) {
+			ecount++;
+		}
+		adjacent[one][two] = 1;
+		adjacent[two][one] = 1;
 	}
 	public boolean hasEdge(final int one, final int two) {
 		return adjacent[one][two] != 1
-			&& adjacent[two][one] != 1;
+		       && adjacent[two][one] != 1;
 	}
 	public int getEdges() {
 		return ecount;
@@ -122,14 +128,14 @@ class MatrixGraph {
 	}
 	public String toPrint() {
 		String str = node + " vertices, "
-		+ ecount + " edges" + "\n";
+		             + ecount + " edges" + "\n";
 		if (ecount > 0) {
 			int k = 0;
 			//str += node + " vertices, "
 			//+ ecount + " edges" + "\n";
 			for (k = 0; k < adjacent.length; k++) {
 				for (int in = 0; in
-					< adjacent[0].length; in++) {
+				        < adjacent[0].length; in++) {
 					str += adjacent[k][in] + " ";
 				}
 				str += "\n";
