@@ -15,8 +15,8 @@ class Graph {
 	String[] tokens;
 	Bag<Integer>[] adjacent;
 	Graph(Scanner scan) {
-		node = scan.nextInt();
-		edge = scan.nextInt();
+		node = Integer.parseInt(scan.nextLine());
+		edge = Integer.parseInt(scan.nextLine());
 		tokens = scan.nextLine().split(",");
 		adjacent = new Bag[node];
 		for (int i = 0; i < edge; i++) {
@@ -46,9 +46,9 @@ class Graph {
 		String str = "";
 		str += node + " vertices, " + edge + " edges " + "\n";
 		for (int k = 0; k < node; k++) {
-			str += k + ": ";
+			str += tokens[k] + ": ";
 			for (int in : adjacent[k]) {
-				str += in + " ";
+				str += tokens[in] + " ";
 			}
 			str += "\n";
 		}
