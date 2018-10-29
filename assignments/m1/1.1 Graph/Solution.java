@@ -29,7 +29,7 @@ class ListGraph {
 		}
 	}
 	public void addEdge(int one, int two) {
-		if (one != two) {
+		if (one != two && hasEdge(one, two)) {
 			ecount++;
 			adjacent[one].add(two);
 			adjacent[two].add(one);
@@ -65,6 +65,14 @@ class ListGraph {
 			return str;
 		}
 		return str;
+	}
+	public boolean hasEdge(int one, int two) {
+		for (int in : adjacent(one)) {
+			if(in == two) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
 class MatrixGraph {
@@ -107,9 +115,9 @@ class MatrixGraph {
 	public int getNode() {
 		return ncount;
 	}
-	// public int[] adjacent(int one) {
-	// 	return adjacent[one];
-	// }
+	public int[] adjacent(int one) {
+		return adjacent[one];
+	}
 	public String toPrint() {
 		String str = node + " vertices, " + ecount + " edges" + "\n";
 		if (ecount > 0) {
