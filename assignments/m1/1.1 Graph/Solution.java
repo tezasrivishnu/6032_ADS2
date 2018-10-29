@@ -19,7 +19,7 @@ class Graph {
 		edge = Integer.parseInt(scan.nextLine());
 		tokens = scan.nextLine().split(",");
 		adjacent = new Bag[node];
-		for (int i = 0; i < edge; i++) {
+		for (int i = 0; i < node; i++) {
 			adjacent[i] = new Bag();
 		}
 		for (int j = 0; j < node; j++) {
