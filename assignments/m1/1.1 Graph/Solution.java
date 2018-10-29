@@ -29,9 +29,11 @@ class Graph {
 		}
 	}
 	public void addEdge(int one, int two) {
-		ecount++;
-		adjacent[one].add(two);
-		adjacent[two].add(one);
+		if (one != two) {
+			ecount++;
+			adjacent[one].add(two);
+			adjacent[two].add(one);
+		}
 	}
 	public int getEdges() {
 		return ecount;
@@ -43,23 +45,29 @@ class Graph {
 		return adjacent[one];
 	}
 	public String toPrint() {
-		String str = "";
-		int k = 0;
-		str += node + " vertices, " + edge + " edges" + "\n";
-		for (k = 0; k < node - 1; k++) {
+		String str = node + " vertices, " + ecount + " edges" + "\n";
+		if (ecount > 0) {
+			int k = 0;
+			//str += node + " vertices, " + ecount + " edges" + "\n";
+			for (k = 0; k < node - 1; k++) {
+				str += tokens[k] + ": ";
+				for (int in : adjacent[k]) {
+					str += tokens[in] + " ";
+				}
+				str += "\n";
+			}
 			str += tokens[k] + ": ";
 			for (int in : adjacent[k]) {
 				str += tokens[in] + " ";
 			}
-			str += "\n";
+		} else {
+			str += "No edges";
+			return str;
 		}
-		str += tokens[k] + ": ";
-			for (int in : adjacent[k]) {
-				str += tokens[in] + " ";
-			}
-        return str;
+		return str;
 	}
 }
+
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

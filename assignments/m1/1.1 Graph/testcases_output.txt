@@ -226,45 +226,43 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
-1 vertices, 1 edges
-Hyderabad: Hyderabad Hyderabad
+1 vertices, 0 edges
+No edges
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
-1 vertices, 1 edges
-Hyderabad: Hyderabad Hyderabad
+1 vertices, 0 edges
+No edges
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at Graph.toPrint(Solution.java:57)
-	at Solution.main(Solution.java:68)
+0 vertices, 0 edges
+No edges
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at Graph.toPrint(Solution.java:57)
-	at Solution.main(Solution.java:68)
+0 vertices, 0 edges
+No edges
 ----------------------------------------
 
