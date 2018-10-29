@@ -73,7 +73,7 @@ class ListGraph {
 	}
 	public boolean hasEdge(final int one, final int two) {
 		for (int in : adjacent(one)) {
-			if (in != two) {
+			if (in == two) {
 				return false;
 			}
 		}
