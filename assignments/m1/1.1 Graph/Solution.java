@@ -29,7 +29,7 @@ class ListGraph {
 		}
 	}
 	public void addEdge(final int one, final int two) {
-		if (one != two) {
+		if (one == two) {
 			return;
 		}
 		if (!hasEdge(one, two)) {
@@ -104,7 +104,7 @@ class MatrixGraph {
 		}
 	}
 	public void addEdge(final int one, final int two) {
-		if (one != two) {
+		if (one == two) {
 			return;
 		}
 		if (!hasEdge(one, two)) {
