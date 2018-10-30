@@ -31,28 +31,5 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:14:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:62:12: Unused @param tag for 'One'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:63:12: Unused @param tag for 'Two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:65:39: Expected @param tag for 'one'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:65:54: Expected @param tag for 'two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:102:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:131:11: Unused @param tag for 'One'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:132:11: Unused @param tag for 'Two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:136:42: Expected @param tag for 'one'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:136:57: Expected @param tag for 'two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:146: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:195:12: Unused @param tag for 'One'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:196:12: Unused @param tag for 'Two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:200:39: Expected @param tag for 'one'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:200:54: Expected @param tag for 'two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:214:11: Unused @param tag for 'One'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:215:11: Unused @param tag for 'Two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:219:42: Expected @param tag for 'one'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:219:57: Expected @param tag for 'two'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:245: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:270: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:271:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m1\1.1 Graph\Solution.java:274:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 1 errors.
