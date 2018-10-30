@@ -1,16 +1,48 @@
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
-    boolean[] boo;
-    Graph gra;
-    int asize;
-    int size;
-    int up;
-    int down;
-    int count;
+    /**
+    *the array.
+    */
+    private boolean[] boo;
+    /**
+     *object declaration for graph class.
+     */
+    private Graph gra;
+    /**
+     *array size.
+     */
+    private int asize;
+    /**
+     *size.
+     */
+    private int size;
+    /**
+     *first row.
+     */
+    private int up;
+    /**
+     * last row.
+     */
+    private int down;
+    /**
+     * initializing count.
+     */
+    private int count;
+    /**
+     * Constructs the object.
+     */
     Percolation() {
 
     }
-    Percolation(int one) {
+    /**
+     * Constructs the object.
+     *
+     * @param      one   One
+     */
+    Percolation(final int one) {
         this.asize = one;
         this.size = one * one;
         this.up = size;
@@ -19,11 +51,18 @@ class Percolation {
         gra = new Graph(size + 2);
         boo = new boolean[size];
         for (int i = 0; i < asize; i++) {
-            gra.addEdge(up,i);
+            gra.addEdge(up, i);
             gra.addEdge(down, size - i - 1);
         }
     }
-    public void open(int one, int two) {
+    /**
+     * opening a link between two elements.
+     * complexity O(n^2) as the complexity of the connection
+     * methos is n^2.
+     * @param      one   One
+     * @param      two   Two
+     */
+    public void open(final int one, final int two) {
         //System.out.println(one + " " + two);
         int in = oneDimen(one, two);
         //System.out.println(in);
@@ -55,26 +94,74 @@ class Percolation {
         connections(in, in + 1);
         connections(in, in - 1);
     }
-    public void connections(int one, int two) {
+    /**
+     * adding the edge to nodes.
+     * complexity O(N^2) as the complexity of
+     * addedge method is n^2.
+     * @param      one   One
+     * @param      two   Two
+     */
+    public void connections(final int one, final int two) {
         if (boo[two] && !gra.hasEdge(one, two)) {
             gra.addEdge(one, two);
         }
     }
-    public int oneDimen(int one, int two) {
+    /**
+     * converting 2d to 1d array.
+     * complexity O(1).
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     returns the index od 1d array.
+     */
+    public int oneDimen(final int one, final int two) {
         return (asize * (one - 1)) + (two - 1);
     }
-    public boolean isOpen(int one, int two) {
+    /**
+     * Determines if open.
+     * complexity O(1)
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     True if open, False otherwise.
+     */
+    public boolean isOpen(final int one, final int two) {
         return boo[oneDimen(one, two)];
     }
+    /**
+     * Opens sites.
+     * complexity O(1)
+     * @return     count
+     */
     public int openSites() {
         return count;
     }
+    /**
+     * finding if the graph percolates or not.
+     * complexity O(n^2) as the complexity of
+     * connectionss method is n^2
+     * @return     true or false.
+     */
     public boolean percolates() {
         CC connect = new CC(gra);
         return connect.connected(up, down);
     }
 }
-class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+     * main program for the program.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
@@ -82,7 +169,7 @@ class Solution {
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
             per.open(Integer.parseInt(tokens[0]),
-                      Integer.parseInt(tokens[1]));
+                     Integer.parseInt(tokens[1]));
         }
         System.out.println(per.percolates()
                            && per.openSites() != 0);
