@@ -1,0 +1,196 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+false
+
+Your Output: 
+false
+----------------------------------------
+
+########## Testcase 1: Passed ##########
+Expected Output: 
+false
+
+Your Output: 
+false
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 2
+	at Graph.validateVertex(Graph.java:48)
+	at Graph.addEdge(Graph.java:59)
+	at Percolation.open(Solution.java:33)
+	at Solution.main(Solution.java:81)
+----------------------------------------
+
+########## Testcase 3: Passed ##########
+Expected Output: 
+false
+
+Your Output: 
+false
+----------------------------------------
+
+########## Testcase 4: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 5: Passed ##########
+Expected Output: 
+false
+
+Your Output: 
+false
+----------------------------------------
+
+########## Testcase 6: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 7: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 8: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 9: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 10: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 11: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 12: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 13: Passed ##########
+Expected Output: 
+false
+
+Your Output: 
+false
+----------------------------------------
+
+########## Testcase 14: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 15: Passed ##########
+Expected Output: 
+false
+
+Your Output: 
+false
+----------------------------------------
+
+########## Testcase 16: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 17: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 18: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 19: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 20: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 21: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 22: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
+########## Testcase 23: Passed ##########
+Expected Output: 
+true
+
+Your Output: 
+true
+----------------------------------------
+
