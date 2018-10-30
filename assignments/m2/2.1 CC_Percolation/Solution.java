@@ -24,14 +24,17 @@ class Percolation {
         }
     }
     public void open(int one, int two) {
+        //System.out.println(one + " " + two);
         int in = oneDimen(one, two);
+        //System.out.println(in);
         boo[in] = true;
         count++;
         int top = in - asize;
         int bottom = in + asize;
+        //System.out.println(top + " " + bottom);
         if (asize == 1) {
-            gra.addEdge(top, in);
-            gra.addEdge(bottom, in);
+            gra.addEdge(up, in);
+            gra.addEdge(down, in);
         }
         if (bottom < size) {
             connections(in, bottom);

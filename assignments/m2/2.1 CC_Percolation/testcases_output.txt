@@ -14,15 +14,12 @@ Your Output:
 false
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Graph.addEdge(Graph.java:62)
-	at Percolation.open(Solution.java:33)
-	at Solution.main(Solution.java:81)
+true
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
