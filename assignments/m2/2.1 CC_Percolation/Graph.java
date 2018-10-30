@@ -69,15 +69,15 @@ public class Graph {
     /**
      * Adds the undirected edge v-w to this graph.
      *
-     * @param  v one vertex in the edge
+     * @param  vi one vertex in the edge
      * @param  w the other vertex in the edge
      * @throws IllegalArgumentException
      * unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(final int v, final int w) {
+    public void addEdge(final int vi, final int w) {
         e++;
-        adj[v].add(w);
-        adj[w].add(v);
+        adj[vi].add(w);
+        adj[w].add(vi);
     }
 
     /**
