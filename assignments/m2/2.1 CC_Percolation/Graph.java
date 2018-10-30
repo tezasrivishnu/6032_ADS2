@@ -46,7 +46,7 @@ public class Graph {
      *
      * @return the number of vertices in this graph
      */
-    public int Ver() {
+    public int ver() {
         return v;
     }
 
@@ -55,7 +55,7 @@ public class Graph {
      *
      * @return the number of edges in this graph
      */
-    public int Edg() {
+    public int edg() {
         return e;
     }
 
@@ -83,14 +83,14 @@ public class Graph {
     /**
      * Determines if it has edge.
      *
-     * @param      v     { parameter_description }
+     * @param      vi     { parameter_description }
      * @param      w     { parameter_description }
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v, final int w) {
+    public boolean hasEdge(final int vi, final int w) {
         for (int each : adj[w]) {
-            if (each == v) {
+            if (each == vi) {
                 return true;
             }
         }
@@ -100,7 +100,7 @@ public class Graph {
     /**
      * Returns the vertices adjacent to vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  vi the vertex
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
