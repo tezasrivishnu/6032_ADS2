@@ -24,11 +24,11 @@ public class Graph {
      * Initializes an empty graph with {@code V} vertices and 0 edges.
      * param V the number of vertices
      *
-     * @param  v number of vertices
+     * @param  vi number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Graph(final int vi) {
-        if (vi < 0){
+        if (vi < 0) {
             throw new
             IllegalArgumentException(
                 "Number of vertices must be nonnegative");
@@ -46,7 +46,7 @@ public class Graph {
      *
      * @return the number of vertices in this graph
      */
-    public int V() {
+    public int Ver() {
         return v;
     }
 
@@ -55,7 +55,7 @@ public class Graph {
      *
      * @return the number of edges in this graph
      */
-    public int E() {
+    public int Edg() {
         return e;
     }
 
@@ -104,19 +104,19 @@ public class Graph {
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(final int v) {
-        return adj[v];
+    public Iterable<Integer> adj(final int vi) {
+        return adj[vi];
     }
 
     /**
      * Returns the degree of vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  vi the vertex
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(final int v) {
-        return adj[v].size();
+    public int degree(final int vi) {
+        return adj[vi].size();
     }
 
 
@@ -130,9 +130,9 @@ public class Graph {
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(v + " vertices, " + e + " edges " + NEWLINE);
-        for (int v = 0; v < v; v++) {
-            s.append(v + ": ");
-            for (int w : adj[v]) {
+        for (int i = 0; i < v; i++) {
+            s.append(i + ": ");
+            for (int w : adj[i]) {
                 s.append(w + " ");
             }
             s.append(NEWLINE);
