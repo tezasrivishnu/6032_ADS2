@@ -19,9 +19,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 2
-	at Graph.validateVertex(Graph.java:48)
-	at Graph.addEdge(Graph.java:59)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Graph.addEdge(Graph.java:62)
 	at Percolation.open(Solution.java:33)
 	at Solution.main(Solution.java:81)
 ----------------------------------------

@@ -43,10 +43,10 @@ public class Graph {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
-    }
+    // private void  v) {
+    //     if (v < 0 || v >= V)
+    //         throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+    // }
 
     /**
      * Adds the undirected edge v-w to this graph.
@@ -56,8 +56,8 @@ public class Graph {
      * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
     public void addEdge(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
+        
+        
         E++;
         adj[v].add(w);
         adj[w].add(v);
@@ -88,7 +88,7 @@ public class Graph {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public Iterable<Integer> adj(int v) {
-        validateVertex(v);
+        
         return adj[v];
     }
 
@@ -100,7 +100,7 @@ public class Graph {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int degree(int v) {
-        validateVertex(v);
+        
         return adj[v].size();
     }
 
