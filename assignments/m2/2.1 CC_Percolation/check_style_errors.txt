@@ -3,17 +3,8 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:27:8: Unused @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:30:28: Expected @param tag for 'vi'. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:31:20: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:49:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:58:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:77:35: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:91:38: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:107:44: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:118:33: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:133:18: 'v' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

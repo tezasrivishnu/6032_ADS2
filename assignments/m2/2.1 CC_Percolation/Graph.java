@@ -24,7 +24,7 @@ public class Graph {
      * Initializes an empty graph with {@code V} vertices and 0 edges.
      * param V the number of vertices
      *
-     * @param  v number of vertices
+     * @param  vi number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Graph(final int vi) {
@@ -46,7 +46,7 @@ public class Graph {
      *
      * @return the number of vertices in this graph
      */
-    public int V() {
+    public int v() {
         return v;
     }
 
@@ -55,7 +55,7 @@ public class Graph {
      *
      * @return the number of edges in this graph
      */
-    public int E() {
+    public int e() {
         return e;
     }
 
@@ -69,28 +69,28 @@ public class Graph {
     /**
      * Adds the undirected edge v-w to this graph.
      *
-     * @param  v one vertex in the edge
-     * @param  w the other vertex in the edge
+     * @param  vi one vertex in the edge
+     * @param  wi the other vertex in the edge
      * @throws IllegalArgumentException
      * unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(final int v, final int w) {
+    public void addEdge(final int vi, final int wi) {
         e++;
-        adj[v].add(w);
-        adj[w].add(v);
+        adj[v].add(vi);
+        adj[wi].add(wi);
     }
 
     /**
      * Determines if it has edge.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      vi     { parameter_description }
+     * @param      wi     { parameter_description }
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(final int v, final int w) {
-        for (int each : adj[w]) {
-            if (each == v) {
+    public boolean hasEdge(final int vi, final int wi) {
+        for (int each : adj[wi]) {
+            if (each == vi) {
                 return true;
             }
         }
@@ -100,23 +100,23 @@ public class Graph {
     /**
      * Returns the vertices adjacent to vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  vi the vertex
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(final int v) {
-        return adj[v];
+    public Iterable<Integer> adj(final int vi) {
+        return adj[vi];
     }
 
     /**
      * Returns the degree of vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  vi the vertex
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(final int v) {
-        return adj[v].size();
+    public int degree(final int vi) {
+        return adj[vi].size();
     }
 
 
@@ -130,9 +130,9 @@ public class Graph {
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(v + " vertices, " + e + " edges " + NEWLINE);
-        for (int v = 0; v < v; v++) {
-            s.append(v + ": ");
-            for (int w : adj[v]) {
+        for (int i = 0; i < v; i++) {
+            s.append(i + ": ");
+            for (int w : adj[i]) {
                 s.append(w + " ");
             }
             s.append(NEWLINE);
