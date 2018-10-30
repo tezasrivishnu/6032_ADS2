@@ -1,14 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\CC.java:27:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\CC.java:29:27: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\CC.java:45:7: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\CC.java:47:34: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\CC.java:146:29: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]

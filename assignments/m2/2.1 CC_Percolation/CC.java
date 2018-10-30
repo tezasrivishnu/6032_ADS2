@@ -17,14 +17,14 @@ public class CC {
     /**
      * int variable.
      */
-     // size[id] = number of vertices ingiven component
+    // size[id] = number of vertices ingiven component
     private int count; // number of connected components
 
     /**
      * Computes the connected components of the
      * undirected graph {@code G}.
      *
-     * @param G the undirected graph
+     * @param g the undirected graph
      */
     public CC(final Graph g) {
         marked = new boolean[g.V()];
@@ -42,7 +42,7 @@ public class CC {
     /**
     * method depth first search.
     * @param v int
-    * @param G graph object
+    * @param g graph object
     */
     private void dfs(final Graph g, final int v) {
         marked[v] = true;
@@ -143,9 +143,9 @@ public class CC {
      */
     private void validateVertex(final int v) {
         int m = marked.length;
-        if (v < 0 || v >= m){
+        if (v < 0 || v >= m) {
             throw new IllegalArgumentException("vertex "
-                + v + " is not between 0 and " + (m - 1));
+                    + v + " is not between 0 and " + (m - 1));
         }
     }
 }
