@@ -28,7 +28,7 @@ public class Graph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Graph(final int vi) {
-        if (vi < 0){
+        if (vi < 0) {
             throw new
             IllegalArgumentException(
                 "Number of vertices must be nonnegative");
