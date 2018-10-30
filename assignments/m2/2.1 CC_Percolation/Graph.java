@@ -1,10 +1,24 @@
 import java.util.NoSuchElementException;
-
+/**
+ * Class for graph.
+ */
 public class Graph {
-    private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * newline.
+     */
+    private static final String NEWLINE
+    = System.getProperty("line.separator");
+    /**
+     * int value.
+     */
     private final int V;
+    /**
+     * int value.
+     */
     private int E;
+    /**
+     * bag object.
+     */
     private Bag<Integer>[] adj;
 
     /**
@@ -14,8 +28,10 @@ public class Graph {
      * @param  V number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Graph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
+    public Graph(final int V) {
+        if (V < 0) throw new
+            IllegalArgumentException
+        ("Number of vertices must be nonnegative");
         this.V = V;
         this.E = 0;
         adj = (Bag<Integer>[]) new Bag[V];
@@ -53,11 +69,10 @@ public class Graph {
      *
      * @param  v one vertex in the edge
      * @param  w the other vertex in the edge
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException
+     * unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(int v, int w) {
-        
-        
+    public void addEdge(final int v, final int w) {
         E++;
         adj[v].add(w);
         adj[w].add(v);
@@ -71,7 +86,7 @@ public class Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v, final int w) {
         for (int each : adj[w]) {
             if (each == v) {
                 return true;
@@ -99,8 +114,7 @@ public class Graph {
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(int v) {
-        
+    public int degree(final int v) {
         return adj[v].size();
     }
 
@@ -108,7 +122,8 @@ public class Graph {
     /**
      * Returns a string representation of this graph.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+     * @return the number of vertices <em>V</em>,
+     * followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {
