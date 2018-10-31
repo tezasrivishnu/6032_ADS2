@@ -154,7 +154,9 @@ class CyG {
         stack[one] = true;
         link[one] = true;
         for (int two : graph.adjacent(one)) {
-            if (!link[two]) {
+            if (stack != null) {
+                return;
+            }else if (!link[two]) {
                 edgeto[two] = one;
                 dfs(graph, two);
             } else if (stack[two]) {
