@@ -151,13 +151,19 @@ class CyG {
     public Iterable<Integer> stack() {
         return sta;
     }
+    /**
+     * depth first search method.
+     * complexity O()
+     * @param      graph  The graph
+     * @param      one    One
+     */
     public void dfs(final DiG graph, final int one) {
         stack[one] = true;
         link[one] = true;
         for (int two : graph.adjacent(one)) {
             if (sta != null) {
                 return;
-            }else if (!link[two]) {
+            } else if (!link[two]) {
                 edgeto[two] = one;
                 dfs(graph, two);
             } else if (stack[two]) {

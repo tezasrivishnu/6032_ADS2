@@ -137,4 +137,3 @@ public class Stack<Item> implements Iterable<Item> {
         StdOut.println("(" + s.size() + " left on stack)");
     }*/
 }
-
