@@ -32,12 +32,13 @@ import java.util.NoSuchElementException;
  *  <a href="/algs4/13stacks">Section 1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by
  *  Robert Sedgewick and Kevin Wayne.
+ *  @param Item which type we are sending
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
      * int variable.
      */
-    private int N;          // size of the stack
+    private int n;          // size of the stack
     /**
      * node class object.
      */
@@ -50,11 +51,11 @@ public class Stack<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * item variable
+         * item variable.
          */
         private Item item;
         /**
-         * node object
+         * node object.
          */
         private Node next;
     }
@@ -64,7 +65,7 @@ public class Stack<Item> implements Iterable<Item> {
       */
     public Stack() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
     /**
@@ -80,19 +81,20 @@ public class Stack<Item> implements Iterable<Item> {
       * @return the int type
       */
     public int size() {
-        return N;
+        return n;
     }
 
     /**
       * Add the item to the stack.
       * complexity O(1)
+      * @param item item type
       */
     public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
 
     /**
@@ -108,7 +110,7 @@ public class Stack<Item> implements Iterable<Item> {
         }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        N--;
+        n--;
         return item;                   // return the saved item
     }
 
@@ -145,6 +147,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
       * Return an iterator to the stack that
       * iterates through the items in LIFO order.
+      * @return the iterarting elements.
       */
     public Iterator<Item> iterator()  {
         return new ListIterator();

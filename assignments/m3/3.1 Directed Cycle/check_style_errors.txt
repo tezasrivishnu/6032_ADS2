@@ -4,11 +4,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:36: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:40:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:52: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:56: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:90:33: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:149: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:37: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 2 errors.
