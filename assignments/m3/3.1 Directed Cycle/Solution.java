@@ -50,12 +50,13 @@ class DiG {
      */
     DiG(final Scanner scan) {
         nodes = scan.nextInt();
-        int edges = scan.nextInt();
+        edges = 0;
+        int noedges = scan.nextInt();
         adjacent = (Bag<Integer>[]) new Bag[nodes];
         for (int i = 0; i < nodes; i++) {
             adjacent[i] = new Bag<Integer>();
         }
-        for (int j = 0; j < edges; j++) {
+        for (int j = 0; j < noedges; j++) {
             int one = scan.nextInt();
             int two = scan.nextInt();
             addEdge(one, two);
