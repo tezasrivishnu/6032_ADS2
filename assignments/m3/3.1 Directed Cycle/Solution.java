@@ -49,7 +49,7 @@ class DiG {
      * @param      scan  The scanner class
      */
     DiG(final Scanner scan) {
-        int nodes = scan.nextInt();
+        nodes = scan.nextInt();
         int edges = scan.nextInt();
         adjacent = (Bag<Integer>[]) new Bag[nodes];
         for (int i = 0; i < nodes; i++) {
