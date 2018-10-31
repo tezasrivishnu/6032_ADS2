@@ -49,8 +49,8 @@ class DiG {
      * @param      scan  The scanner class
      */
     DiG(final Scanner scan) {
-        nodes = scan.nextInt();
-        edges = scan.nextInt();
+        int nodes = scan.nextInt();
+        int edges = scan.nextInt();
         adjacent = (Bag<Integer>[]) new Bag[nodes];
         for (int i = 0; i < nodes; i++) {
             adjacent[i] = new Bag<Integer>();
@@ -124,7 +124,7 @@ class CyG {
      *
      * @param      graph  The graph
      */
-    CyG(DiG graph) {
+    CyG(final DiG graph) {
         link = new boolean[graph.nodes()];
         edgeto = new int[graph.nodes()];
         stack = new boolean[graph.nodes()];
