@@ -11,7 +11,6 @@ final class Solution {
     }
     /**
      * main method for the program.
-     * complexity O()
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -80,7 +79,8 @@ class DiG {
     }
     /**
      * Adds an edge between two nodes.
-     * complexity O()
+     * complexity O(1) as the complexity of
+     * add method in bag is 1.
      * @param      one   One
      * @param      two   Two
      */
@@ -91,7 +91,7 @@ class DiG {
     /**
      * returns the array of edges connected to the
      * node.
-     * complexity O()
+     * complexity O(1) as it returns the iterable array.
      * @param      one     vertix of the node.
      *
      * @return     the iterable array.
@@ -145,7 +145,7 @@ class CyG {
     }
     /**
      * returns the stack containing the nodes.
-     * complexity O()
+     * complexity O(1) returns the stack.
      * @return     the iterable array.
      */
     public Iterable<Integer> stack() {
@@ -153,7 +153,8 @@ class CyG {
     }
     /**
      * depth first search method.
-     * complexity O()
+     * complexity O(e) e refers to no of
+     * edges.
      * @param      graph  The graph
      * @param      one    One
      */
