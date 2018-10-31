@@ -51,14 +51,14 @@ class DiG {
 	DiG(final Scanner scan) {
 		nodes = scan.nextInt();
 		edges = scan.nextInt();
-		adjacent = new Bag[nodes];
+		adjacent = (Bag<Integer>[]) new Bag[nodes];
 		for (int i = 0; i < nodes; i++) {
-			adjacent[i] = new Bag();
+			adjacent[i] = new Bag<Integer>();
 		}
 		for (int j = 0; j < edges; j++) {
-			String[] one = scan.nextLine().split(" ");
-			addEdge(Integer.parseInt(one[0]),
-			Integer.parseInt(one[1]));
+			int one = scan.nextInt();
+			int two = scan.nextInt();
+			addEdge(one, two);
 		}
 	}
 	/**

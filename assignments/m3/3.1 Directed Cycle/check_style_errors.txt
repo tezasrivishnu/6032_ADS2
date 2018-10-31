@@ -10,8 +10,8 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:155:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:155:21: Parameter graph should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:155:32: Parameter one should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:159:19: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:162:26: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:159:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:162:26: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 11 errors.
 Starting audit...
