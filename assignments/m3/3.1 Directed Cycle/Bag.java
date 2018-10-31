@@ -81,6 +81,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**
       * Return an iterator that iterates over the.
       *items in the bag.
+      *complexity is O(1)
       * @return iterator.
       */
     public Iterator<Item> iterator()  {
@@ -99,6 +100,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          *the method is whether there is.
          *next element or not.
+         *complexity is O(1)
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext()  {
@@ -112,6 +114,7 @@ public class Bag<Item> implements Iterable<Item> {
          }
          /**
           *the next method returns an item.
+          *complexity is O(1)
           * @return item in bag.
           */
         public Item next() {
