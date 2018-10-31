@@ -3,12 +3,11 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 
@@ -17,12 +16,11 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 
@@ -31,12 +29,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 
@@ -45,12 +42,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 
@@ -59,12 +55,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 
@@ -73,12 +68,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 
@@ -87,12 +81,11 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 
@@ -101,12 +94,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at DiG.<init>(Solution.java:59)
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at DiG.<init>(Solution.java:60)
 	at Solution.main(Solution.java:19)
 ----------------------------------------
 

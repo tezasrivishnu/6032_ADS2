@@ -56,9 +56,9 @@ class DiG {
 			adjacent[i] = new Bag();
 		}
 		for (int j = 0; j < edges; j++) {
-			int one = scan.nextInt();
-			int two = scan.nextInt();
-			addEdge(one, two);
+			String[] one = scan.nextLine().split(" ");
+			addEdge(Integer.parseInt(one[0]),
+			Integer.parseInt(one[1]));
 		}
 	}
 	/**
