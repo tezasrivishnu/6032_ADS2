@@ -1,19 +1,10 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:5: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:80: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:127:13: Parameter graph should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:148:12: Unused @param tag for 'one'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:155:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:155:21: Parameter graph should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:155:32: Parameter one should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:159:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:162:26: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:127:9: Parameter graph should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Solution.java:153:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
