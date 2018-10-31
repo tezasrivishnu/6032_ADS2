@@ -3,7 +3,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m3\3.1 Directed Cycle\Stack.java:37: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
 Audit done.
-Checkstyle ends with 2 errors.

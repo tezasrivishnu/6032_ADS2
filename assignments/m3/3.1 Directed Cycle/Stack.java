@@ -32,7 +32,7 @@ import java.util.NoSuchElementException;
  *  <a href="/algs4/13stacks">Section 1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by
  *  Robert Sedgewick and Kevin Wayne.
- *  @param Item which type we are sending
+ *  @param <Item> which type we are sending
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
