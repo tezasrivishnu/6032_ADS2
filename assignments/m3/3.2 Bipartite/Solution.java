@@ -24,8 +24,11 @@ final class Solution {
         }
     }
 }
+/**
+ * Class for bipartite.
+ */
 class Bipartite {
-	/**
+    /**
      * initialising the boolean variable.
      */
     private boolean flag;
@@ -74,11 +77,11 @@ class Bipartite {
             if (sta != null) {
                 return;
             } else if (!link[two]) {
-            	color[two] = !color[one];
+                color[two] = !color[one];
                 edgeto[two] = one;
                 dfs(graph, two);
             } else if (color[two] == color[one]) {
-            	flag = false;
+                flag = false;
                 sta = new Stack<Integer>();
                 sta.push(two);
                 for (int k = one; k != two; k = edgeto[k]) {
@@ -94,6 +97,6 @@ class Bipartite {
      * @return     True if bipar, False otherwise.
      */
     public boolean isBipar() {
-    	return flag;
+        return flag;
     }
 }
