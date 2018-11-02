@@ -42,7 +42,14 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-Index 15 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 15 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -55,7 +62,14 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-Index 274 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 274 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -65,7 +79,14 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Index 979 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 979 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -77,7 +98,14 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-Index 1 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -94,7 +122,14 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-Index 1 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -108,7 +143,14 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-Index 1 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -125,7 +167,14 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-Index 1 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -179,7 +228,9 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-null
+Exception in thread "main" java.lang.NullPointerException
+	at WordNet.sap(WordNet.java:106)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -187,7 +238,9 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-null
+Exception in thread "main" java.lang.NullPointerException
+	at WordNet.sap(WordNet.java:106)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -211,7 +264,14 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-Index 81004 out-of-bounds for length 0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 81004 out-of-bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Unknown Source)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
+	at java.base/java.util.Objects.checkIndex(Unknown Source)
+	at java.base/java.util.ArrayList.get(Unknown Source)
+	at WordNet.sap(WordNet.java:115)
+	at Solution.main(Solution.java:19)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########

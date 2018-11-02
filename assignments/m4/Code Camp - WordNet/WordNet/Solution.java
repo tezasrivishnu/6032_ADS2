@@ -24,9 +24,8 @@ class Solution {
 			default:
 				break;
 			}
-		} catch (Exception e) {
+		} catch (IllegalArgumentException e) {
 			System.out.println(e.getMessage());
 		}
 	}
-
 }
