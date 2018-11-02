@@ -66,14 +66,14 @@ public class WordNet {
         while (!in.isEmpty()) {
             String[] tokens = in.readString().split(",");
             for (int i = 1; i < tokens.length; i++) {
-                graph.addEdge(Integer.parseInt(tokens[0]),
+                digraph.addEdge(Integer.parseInt(tokens[0]),
                               Integer.parseInt(tokens[i]));
             }
         }
-        DirectedCycle cycle = new DirectedCycle(graph);
+        DirectedCycle cycle = new DirectedCycle(digraph);
         int size = 0;
         for (int i = 0; i < nodes; i++) {
-            if (graph.outdegree(i) == 0) {
+            if (digraph.outdegree(i) == 0) {
                 size++;
             }
         }
