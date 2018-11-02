@@ -108,7 +108,7 @@ public class WordNet {
     }
 
     public String sap(String one, String two) {
-        distance = Integer.MAX_VALUE;
+        distance = 1000000;
         ancestor = -1;
         for (int eachone : linear.get(one)) {
             for (int eachtwo : linear.get(two)) {

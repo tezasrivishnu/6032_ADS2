@@ -447,29 +447,27 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:29:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:29:23: Parameter one should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:29:32: Parameter two should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:37:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:42:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:42:23: Parameter one should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:42:46: Parameter two should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:43:37: Empty statement. [EmptyStatement]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:45: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:46: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:58:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:58:25: Parameter one should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:58:34: Parameter two should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:41:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:41:23: Parameter one should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:41:46: Parameter two should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:42:19: '1000000000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:44: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:45: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:57:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:57:25: Parameter one should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Sap.java:57:34: Parameter two should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:16:74: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17:107: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:18: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17:102: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
@@ -674,5 +672,6 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:110:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:110:23: Parameter one should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:110:35: Parameter two should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:111:20: '1000000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 39 errors.

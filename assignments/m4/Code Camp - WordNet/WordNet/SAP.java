@@ -34,13 +34,12 @@ class Sap {
         length(first, second);
         if (ancestor == -1) {
             return -1;
-        }
-        else {
+        } else {
             return minimum;
         }
     }
     public int length(Iterable<Integer> one, Iterable<Integer> two) {
-        minimum = Integer.MAX_VALUE;;
+        minimum = 1000000000;
         ancestor = -1;
         BreadthFirstDirectedPaths first = new BreadthFirstDirectedPaths(graph, one);
         BreadthFirstDirectedPaths second = new BreadthFirstDirectedPaths(graph, two);

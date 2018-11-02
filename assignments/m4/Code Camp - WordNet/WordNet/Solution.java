@@ -14,8 +14,8 @@ class Solution {
 					String one = StdIn.readString();
 					String two = StdIn.readString();
 					System.out.println("distance = " +
-								word.distance(one, two) + ", ancestor = " +
-								word.sap(one, two));
+					                   word.distance(one, two) + ", ancestor = " +
+					                   word.sap(one, two));
 				}
 			}
 		} catch (Exception e) {
