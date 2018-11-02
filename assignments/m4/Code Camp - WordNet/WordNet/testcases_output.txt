@@ -46,8 +46,8 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "C
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:46)
-	at WordNet.<init>(WordNet.java:35)
+	at WordNet.readSynsets(WordNet.java:47)
+	at WordNet.<init>(WordNet.java:36)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -65,8 +65,8 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "t
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:46)
-	at WordNet.<init>(WordNet.java:35)
+	at WordNet.readSynsets(WordNet.java:47)
+	at WordNet.<init>(WordNet.java:36)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -81,8 +81,8 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "t
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:46)
-	at WordNet.<init>(WordNet.java:35)
+	at WordNet.readSynsets(WordNet.java:47)
+	at WordNet.<init>(WordNet.java:36)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -176,8 +176,8 @@ Multiple roots
 
 Your Output: 
 Exception in thread "main" java.lang.IllegalArgumentException: Multiple roots
-	at WordNet.readhypernyms(WordNet.java:80)
-	at WordNet.<init>(WordNet.java:38)
+	at WordNet.readhypernyms(WordNet.java:81)
+	at WordNet.<init>(WordNet.java:39)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -187,8 +187,8 @@ Multiple roots
 
 Your Output: 
 Exception in thread "main" java.lang.IllegalArgumentException: Multiple roots
-	at WordNet.readhypernyms(WordNet.java:80)
-	at WordNet.<init>(WordNet.java:38)
+	at WordNet.readhypernyms(WordNet.java:81)
+	at WordNet.<init>(WordNet.java:39)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -233,8 +233,8 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "a
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:46)
-	at WordNet.<init>(WordNet.java:35)
+	at WordNet.readSynsets(WordNet.java:47)
+	at WordNet.<init>(WordNet.java:36)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 
@@ -244,8 +244,8 @@ Cycle detected
 
 Your Output: 
 Exception in thread "main" java.lang.IllegalArgumentException: Cycle detected
-	at WordNet.readhypernyms(WordNet.java:82)
-	at WordNet.<init>(WordNet.java:38)
+	at WordNet.readhypernyms(WordNet.java:83)
+	at WordNet.<init>(WordNet.java:39)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 

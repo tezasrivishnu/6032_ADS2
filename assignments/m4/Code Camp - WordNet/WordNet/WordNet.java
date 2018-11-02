@@ -28,6 +28,7 @@ public class WordNet {
     private String hypernyms;
     ArrayList<String> sarray;
     private Digraph graph;
+    private Digraph digraph;
     private LinearProbingHashST<String, ArrayList<Integer>> linear;
     Sap sap;
     WordNet(final String synset, final String hypernym) {
@@ -35,7 +36,7 @@ public class WordNet {
         nodes = readSynsets(synset);
         graph = new Digraph(nodes);
         sap = new Sap(graph);
-        readhypernyms(hypernym);
+        digraph = readhypernyms(hypernym);
         sarray = new ArrayList<String>();
     }
     public int readSynsets(final String file) {
