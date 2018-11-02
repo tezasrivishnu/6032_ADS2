@@ -30,7 +30,7 @@ public class WordNet {
     private Digraph graph;
     private LinearProbingHashST<String, ArrayList<Integer>> linear;
     Sap sap;
-    WordNet(final String synset, final String hypernym) throws Exception {
+    WordNet(final String synset, final String hypernym) {
         linear = new LinearProbingHashST<String, ArrayList<Integer>>();
         sarray = new ArrayList<String>();
         nodes = readSynsets(synset);
@@ -59,7 +59,7 @@ public class WordNet {
         }
         return nodes;
     }
-    public Digraph readhypernyms(final String file, int nodes) throws Exception {
+    public Digraph readhypernyms(final String file, int nodes) {
         Digraph digraph = new Digraph(nodes);
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
@@ -77,10 +77,10 @@ public class WordNet {
             }
         }
         if (size > 1) {
-            throw new Exception("Multiple roots");
+            throw new IllegalArgumentException("Multiple roots");
         }
         if (cycle.hasCycle()) {
-            throw new Exception("Cycle detected");
+            throw new IllegalArgumentException("Cycle detected");
         }
         return digraph;
     }
@@ -93,33 +93,33 @@ public class WordNet {
         return linear.keys();
     }
 
-    public boolean isNoun(final String word) throws Exception{
+    public boolean isNoun(final String word) {
         if (word.equals(null)) {
-            throw new Exception("IllegalArgumentException");
+            throw new IllegalArgumentException("IllegalArgumentException");
         }
         return linear.contains(word);
     }
-    public int distance(String one, String two)throws Exception {
+    public int distance(String one, String two) {
         if (!isNoun (one) || !isNoun(two)) {
-            throw new Exception("IllegalArgumentException");
+            throw new IllegalArgumentException("IllegalArgumentException");
         }
-    sap(one, two);
-    return distance;
-}
+        sap(one, two);
+        return distance;
+    }
 
-public String sap(String one, String two) {
-    int distance = 1000000000;;
-    for (int eachone : linear.get(one)) {
-        for (int eachtwo : linear.get(two)) {
-            int length = sap.length(eachone, eachtwo);
-            if (length < distance) {
-                distance = length;
-                ancestor = sap.ancestor(eachone, eachtwo);
+    public String sap(String one, String two) {
+        int distance = 1000000000;;
+        for (int eachone : linear.get(one)) {
+            for (int eachtwo : linear.get(two)) {
+                int length = sap.length(eachone, eachtwo);
+                if (length < distance) {
+                    distance = length;
+                    ancestor = sap.ancestor(eachone, eachtwo);
+                }
             }
         }
+        return sarray.get(ancestor);
     }
-    return sarray.get(ancestor);
-}
 
 
 }
