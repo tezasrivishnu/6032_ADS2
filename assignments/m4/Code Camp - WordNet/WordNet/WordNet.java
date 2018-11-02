@@ -26,42 +26,36 @@ public class WordNet {
     int distance;
     int ancestor;
     private String hypernyms;
-    ArrayList<Integer> array;
     ArrayList<String> sarray;
     private Digraph graph;
-    private LinearProbingHashST<String, List<Integer>> linear;
+    private LinearProbingHashST<String, ArrayList<Integer>> linear;
     Sap sap;
     WordNet(final String synset, final String hypernym) {
+        linear = new LinearProbingHashST<String, ArrayList<Integer>>();
         nodes = readSynsets(synset);
         graph = new Digraph(nodes);
         sap = new Sap(graph);
         readhypernyms(hypernym);
-        array = new ArrayList<Integer>();
         sarray = new ArrayList<String>();
-        linear = new LinearProbingHashST<String, List<Integer>>();
     }
     public int readSynsets(final String file) {
         In in = new In("./Files/" + file);
-        String[] items;
-        String[] tokens;
         while (!in.isEmpty()) {
             nodes++;
-            tokens = in.readString().split(",");
+            String[] tokens = in.readString().split(",");
             int identity = Integer.parseInt(tokens[0]);
-            if (tokens[1].length() > 1) {
-                for (int i = 0; i < tokens[1].length(); i++) {
-                    items = tokens[1].split(" ");
-                    System.out.println(items[i]);
-                    if (linear.contains(items[i])) {
-                        array.addAll(linear.get(tokens[i]));
-                        array.add(identity);
-                        linear.put(tokens[1], array);
-                    } else {
-                        array.add(identity);
-                        sarray.add(identity, items[i]);
-                        linear.put(items[i], array);
-                    }
+            //sarray.add(identity, tokens[1]);
+            String[] items = tokens[1].split(" ");
+            for (int i = 0; i < items.length; i++) {
+                ArrayList<Integer> array;
+                if (linear.contains(items[i])) {
+                    array = linear.get(items[i]);
+                    array.add(identity);
+                } else {
+                    array = new ArrayList<Integer>();
+                    array.add(identity);
                 }
+                linear.put(items[i], array);
             }
         }
         return nodes;
@@ -75,8 +69,6 @@ public class WordNet {
                               Integer.parseInt(tokens[i]));
             }
         }
-    }
-    public void print() {
         DirectedCycle cycle = new DirectedCycle(graph);
         int size = 0;
         for (int i = 0; i < nodes; i++) {
@@ -88,11 +80,12 @@ public class WordNet {
             throw new IllegalArgumentException("Multiple roots");
         } else if (cycle.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
-        } else {
-            System.out.println(graph);
         }
-
     }
+    public Digraph print() {
+        return graph;
+    }
+
 
     public Iterable<String> nouns() {
         return linear.keys();
