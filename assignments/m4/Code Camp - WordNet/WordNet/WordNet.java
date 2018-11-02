@@ -28,15 +28,14 @@ public class WordNet {
     private String hypernyms;
     ArrayList<String> sarray;
     private Digraph graph;
-    private Digraph digraph;
     private LinearProbingHashST<String, ArrayList<Integer>> linear;
     Sap sap;
     WordNet(final String synset, final String hypernym) {
         linear = new LinearProbingHashST<String, ArrayList<Integer>>();
-        nodes = readSynsets(synset);
-        sap = new Sap(graph);
-        graph = readhypernyms(hypernym, nodes);
         sarray = new ArrayList<String>();
+        nodes = readSynsets(synset);
+        graph = readhypernyms(hypernym, nodes);
+        sap = new Sap(graph);
     }
     public int readSynsets(final String file) {
         In in = new In("./Files/" + file);
@@ -67,7 +66,7 @@ public class WordNet {
             String[] tokens = in.readString().split(",");
             for (int i = 1; i < tokens.length; i++) {
                 digraph.addEdge(Integer.parseInt(tokens[0]),
-                              Integer.parseInt(tokens[i]));
+                                Integer.parseInt(tokens[i]));
             }
         }
         DirectedCycle cycle = new DirectedCycle(digraph);
@@ -79,11 +78,11 @@ public class WordNet {
         }
         if (size > 1) {
             throw new IllegalArgumentException("Multiple roots");
-        } else if (cycle.hasCycle()) {
-            throw new IllegalArgumentException("Cycle detected");
-        } else {
-            return digraph;
         }
+        if (cycle.hasCycle()) {
+            throw new IllegalArgumentException("Cycle detected");
+        }
+        return digraph;
     }
     public Digraph print() {
         return graph;
