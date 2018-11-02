@@ -16,7 +16,7 @@ class Solution {
 			break;
 		case "Queries":
 			try {
-				while (scan.hasNext()) {
+				while (!StdIn.isEmpty()) {
 					String nounA = StdIn.readString();
 					String nounB = StdIn.readString();
 					String ans = word.sap(nounA, nounB);
