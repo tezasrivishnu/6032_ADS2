@@ -6,16 +6,13 @@ class Solution {
 		String hypernyms = StdIn.readString();
 		String input = StdIn.readString();
 		WordNet word = new WordNet(synsets, hypernyms);
-		switch (input) {
-		case "Graph":
-			try {
+		try {
+			switch (input) {
+			case "Graph":
 				System.out.println(word.print());
-			} catch (Exception ex) {
-				System.out.println(ex.getMessage());
-			}
-			break;
-		case "Queries":
-			try {
+
+				break;
+			case "Queries":
 				while (!StdIn.isEmpty()) {
 					String nounA = StdIn.readString();
 					String nounB = StdIn.readString();
@@ -23,12 +20,13 @@ class Solution {
 					int dis = word.distance(nounA, nounB);
 					System.out.println(ans + " " + dis);
 				}
-			} catch (Exception e) {
-				System.out.println(e.getMessage());
+				break;
+			default:
+				break;
 			}
-			break;
-		default:
-			break;
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
 	}
+
 }
