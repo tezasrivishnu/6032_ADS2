@@ -15,7 +15,9 @@ class Solution {
 					String nounB = StdIn.readString();
 					String ans = word.sap(nounA, nounB);
 					int dis = word.distance(nounA, nounB);
-					System.out.println(ans + " " + dis);
+					System.out.println("distance = " +
+								word.distance(nounA, nounB) + ", ancestor = " +
+								word.sap(nounA, nounB));
 				}
 			}
 		} catch (Exception e) {
