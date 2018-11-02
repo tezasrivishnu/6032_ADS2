@@ -41,7 +41,7 @@ public class WordNet {
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
             nodes++;
-            String[] tokens = in.readString().split(",");
+            String[] tokens = in.readLine().split(",");
             int identity = Integer.parseInt(tokens[0]);
             //sarray.add(identity, tokens[1]);
             String[] items = tokens[1].split(" ");

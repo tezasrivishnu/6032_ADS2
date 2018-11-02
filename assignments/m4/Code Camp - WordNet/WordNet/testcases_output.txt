@@ -42,13 +42,7 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "CRP"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:45)
-	at WordNet.<init>(WordNet.java:36)
-	at Solution.main(Solution.java:8)
+Index 15 out-of-bounds for length 0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -61,13 +55,7 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "type"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:45)
-	at WordNet.<init>(WordNet.java:36)
-	at Solution.main(Solution.java:8)
+Index 274 out-of-bounds for length 0
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -77,13 +65,7 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "type"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:45)
-	at WordNet.<init>(WordNet.java:36)
-	at Solution.main(Solution.java:8)
+Index 979 out-of-bounds for length 0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -229,13 +211,7 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "a"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at WordNet.readSynsets(WordNet.java:45)
-	at WordNet.<init>(WordNet.java:36)
-	at Solution.main(Solution.java:8)
+Index 81004 out-of-bounds for length 0
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
