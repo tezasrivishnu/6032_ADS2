@@ -23,13 +23,21 @@
 import java.util.*;
 public class WordNet {
     private int nodes;
+    int distance;
+    int ancestor;
     private String hypernyms;
+    ArrayList<Integer> array;
+    ArrayList<String> sarray;
     private Digraph graph;
     private LinearProbingHashST<String, List<Integer>> linear;
+    Sap sap;
     WordNet(final String synset, final String hypernym) {
         nodes = readSynsets(synset);
         graph = new Digraph(nodes);
+        sap = new Sap(graph);
         readhypernyms(hypernym);
+        array = new ArrayList<Integer>();
+        sarray = new ArrayList<String>();
         linear = new LinearProbingHashST<String, List<Integer>>();
     }
     public int readSynsets(final String file) {
@@ -37,19 +45,20 @@ public class WordNet {
         String[] items;
         String[] tokens;
         while (!in.isEmpty()) {
-            ArrayList<Integer> array = new ArrayList<Integer>();
             nodes++;
             tokens = in.readString().split(",");
             int identity = Integer.parseInt(tokens[0]);
             if (tokens[1].length() > 1) {
                 for (int i = 0; i < tokens[1].length(); i++) {
                     items = tokens[1].split(" ");
+                    System.out.println(items[i]);
                     if (linear.contains(items[i])) {
                         array.addAll(linear.get(tokens[i]));
                         array.add(identity);
                         linear.put(tokens[1], array);
                     } else {
                         array.add(identity);
+                        sarray.add(identity, items[i]);
                         linear.put(items[i], array);
                     }
                 }
@@ -92,4 +101,24 @@ public class WordNet {
     public boolean isNoun(final String word) {
         return linear.contains(word);
     }
+    public int distance(String one, String two) {
+        sap(one, two);
+        return distance;
+    }
+
+    public String sap(String one, String two) {
+        int distance = 1000000000;;
+        for (int eachone : linear.get(one)) {
+            for (int eachtwo : linear.get(two)) {
+                int length = sap.length(eachone, eachtwo);
+                if (length < distance) {
+                    distance = length;
+                    ancestor = sap.ancestor(eachone, eachtwo);
+                }
+            }
+        }
+        return sarray.get(ancestor);
+    }
+
+
 }

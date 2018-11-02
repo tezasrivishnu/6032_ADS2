@@ -18,3 +18,31 @@
     // do unit testing of this class
     public static void main(String[] args)
 }*/
+
+class Sap {
+    private Digraph graph;
+    int minimum;
+    int ancestor;
+    Sap(Digraph g) {
+        graph = new Digraph(g);
+    }
+    public int length(int one, int two) {
+        minimum = 100000000;
+        BreadthFirstDirectedPaths first = new BreadthFirstDirectedPaths(graph, one);
+        BreadthFirstDirectedPaths second = new BreadthFirstDirectedPaths(graph, two);
+        for (int i = 0; i < graph.V(); i++) {
+            if (first.hasPathTo(i) && second.hasPathTo(i)) {
+                int length = first.distTo(i) + second.distTo(i);
+                if (length < minimum) {
+                    minimum = length;
+                    ancestor = i;
+                }
+            }
+        }
+        return minimum;
+    }
+    public int ancestor(int one, int two) {
+        length(one, two);
+        return ancestor;
+    }
+}
