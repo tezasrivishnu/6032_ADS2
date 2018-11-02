@@ -30,7 +30,7 @@ public class WordNet {
     private Digraph graph;
     private LinearProbingHashST<String, ArrayList<Integer>> linear;
     Sap sap;
-    WordNet(final String synset, final String hypernym) throws Exception{
+    WordNet(final String synset, final String hypernym) throws Exception {
         linear = new LinearProbingHashST<String, ArrayList<Integer>>();
         sarray = new ArrayList<String>();
         nodes = readSynsets(synset);
@@ -93,33 +93,33 @@ public class WordNet {
         return linear.keys();
     }
 
-    public boolean isNoun(final String word) {
+    public boolean isNoun(final String word) throws Exception{
         if (word.equals(null)) {
-            throw new IllegalArgumentException("IllegalArgumentException");
+            throw new Exception("IllegalArgumentException");
         }
         return linear.contains(word);
     }
-    public int distance(String one, String two) {
+    public int distance(String one, String two)throws Exception {
         if (!isNoun (one) || !isNoun(two)) {
-            throw new IllegalArgumentException("IllegalArgumentException");
+            throw new Exception("IllegalArgumentException");
         }
-        sap(one, two);
-        return distance;
-    }
+    sap(one, two);
+    return distance;
+}
 
-    public String sap(String one, String two) {
-        int distance = 1000000000;;
-        for (int eachone : linear.get(one)) {
-            for (int eachtwo : linear.get(two)) {
-                int length = sap.length(eachone, eachtwo);
-                if (length < distance) {
-                    distance = length;
-                    ancestor = sap.ancestor(eachone, eachtwo);
-                }
+public String sap(String one, String two) {
+    int distance = 1000000000;;
+    for (int eachone : linear.get(one)) {
+        for (int eachtwo : linear.get(two)) {
+            int length = sap.length(eachone, eachtwo);
+            if (length < distance) {
+                distance = length;
+                ancestor = sap.ancestor(eachone, eachtwo);
             }
         }
-        return sarray.get(ancestor);
     }
+    return sarray.get(ancestor);
+}
 
 
 }
