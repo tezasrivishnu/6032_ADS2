@@ -34,9 +34,8 @@ public class WordNet {
     WordNet(final String synset, final String hypernym) {
         linear = new LinearProbingHashST<String, ArrayList<Integer>>();
         nodes = readSynsets(synset);
-        graph = new Digraph(nodes);
         sap = new Sap(graph);
-        digraph = readhypernyms(hypernym);
+        graph = readhypernyms(hypernym, nodes);
         sarray = new ArrayList<String>();
     }
     public int readSynsets(final String file) {
@@ -61,7 +60,8 @@ public class WordNet {
         }
         return nodes;
     }
-    public Digraph readhypernyms(final String file)  {
+    public Digraph readhypernyms(final String file, int nodes)  {
+        Digraph digraph = new Digraph(nodes);
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
             String[] tokens = in.readString().split(",");
@@ -82,11 +82,11 @@ public class WordNet {
         } else if (cycle.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
         } else {
-            return graph;
+            return digraph;
         }
     }
     public Digraph print() {
-        return digraph;
+        return graph;
     }
 
 
