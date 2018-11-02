@@ -60,7 +60,7 @@ public class WordNet {
         }
         return nodes;
     }
-    public void readhypernyms(final String file)  {
+    public Digraph readhypernyms(final String file)  {
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
             String[] tokens = in.readString().split(",");
@@ -80,10 +80,12 @@ public class WordNet {
             throw new IllegalArgumentException("Multiple roots");
         } else if (cycle.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
+        } else {
+            return graph;
         }
     }
     public Digraph print() {
-        return graph;
+        return digraph;
     }
 
 

@@ -15,11 +15,16 @@ class Solution {
 			}
 			break;
 		case "Queries":
-			while (scan.hasNext()) {
-				String[] tokens = scan.nextLine().split(" ");
-				String ans = word.sap(tokens[1], tokens[2]);
-				int dis = word.distance(tokens[1], tokens[2]);
-				System.out.println(ans + " " + dis);
+			try {
+				while (scan.hasNext()) {
+					String nounA = StdIn.readString();
+					String nounB = StdIn.readString();
+					String ans = word.sap(nounA, nounB);
+					int dis = word.distance(nounA, nounB);
+					System.out.println(ans + " " + dis);
+				}
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
 			}
 			break;
 		default:
