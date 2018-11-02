@@ -18,7 +18,7 @@
     // do unit testing of this class
     public static void main(String[] args)
 }*/
-
+import java.util.*;
 class Sap {
     private Digraph graph;
     int minimum;
@@ -27,7 +27,21 @@ class Sap {
         graph = new Digraph(g);
     }
     public int length(int one, int two) {
-        minimum = 100000000;
+        Set<Integer> first = new HashSet<Integer>();
+        first.add(one);
+        Set<Integer> second = new HashSet<Integer>();
+        second.add(two);
+        length(first, second);
+        if (ancestor == -1) {
+            return -1;
+        }
+        else {
+            return minimum;
+        }
+    }
+    public int length(Iterable<Integer> one, Iterable<Integer> two) {
+        minimum = Integer.MAX_VALUE;;
+        ancestor = -1;
         BreadthFirstDirectedPaths first = new BreadthFirstDirectedPaths(graph, one);
         BreadthFirstDirectedPaths second = new BreadthFirstDirectedPaths(graph, two);
         for (int i = 0; i < graph.V(); i++) {

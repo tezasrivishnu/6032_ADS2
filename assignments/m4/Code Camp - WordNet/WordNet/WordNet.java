@@ -43,7 +43,7 @@ public class WordNet {
             nodes++;
             String[] tokens = in.readLine().split(",");
             int identity = Integer.parseInt(tokens[0]);
-            //sarray.add(identity, tokens[1]);
+            sarray.add(identity, tokens[1]);
             String[] items = tokens[1].split(" ");
             for (int i = 0; i < items.length; i++) {
                 ArrayList<Integer> array;
@@ -108,7 +108,8 @@ public class WordNet {
     }
 
     public String sap(String one, String two) {
-        int distance = 1000000000;;
+        distance = Integer.MAX_VALUE;
+        ancestor = -1;
         for (int eachone : linear.get(one)) {
             for (int eachtwo : linear.get(two)) {
                 int length = sap.length(eachone, eachtwo);

@@ -11,11 +11,11 @@ class Solution {
 				System.out.println(word.print());
 			} else {
 				while (!StdIn.isEmpty()) {
-					String nounA = StdIn.readString();
-					String nounB = StdIn.readString();
+					String one = StdIn.readString();
+					String two = StdIn.readString();
 					System.out.println("distance = " +
-								word.distance(nounA, nounB) + ", ancestor = " +
-								word.sap(nounA, nounB));
+								word.distance(one, two) + ", ancestor = " +
+								word.sap(one, two));
 				}
 			}
 		} catch (Exception e) {
