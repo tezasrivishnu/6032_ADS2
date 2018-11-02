@@ -63,9 +63,11 @@ public class WordNet {
             String[] tokens = in.readString().split(",");
             for (int i = 1; i < tokens.length; i++) {
                 graph.addEdge(Integer.parseInt(tokens[0]),
-                                Integer.parseInt(tokens[i]));
+                              Integer.parseInt(tokens[i]));
             }
         }
+    }
+    public void print() {
         DirectedCycle cycle = new DirectedCycle(graph);
         int size = 0;
         for (int i = 0; i < nodes; i++) {
@@ -75,8 +77,7 @@ public class WordNet {
         }
         if (size > 1) {
             throw new IllegalArgumentException("Multiple roots");
-        }
-        else if (cycle.hasCycle()) {
+        } else if (cycle.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
         } else {
             System.out.println(graph);

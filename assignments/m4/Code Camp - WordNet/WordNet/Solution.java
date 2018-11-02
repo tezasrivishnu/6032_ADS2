@@ -5,12 +5,19 @@ class Solution {
 		String synsets = scan.nextLine();
 		String hypernyms = scan.nextLine();
 		String input = scan.nextLine();
-		try {
-			if (input.equals("Graph")) {
+		switch (input) {
+		case "Graph":
+			try {
 				WordNet word = new WordNet(synsets, hypernyms);
+				word.print();
+			} catch (Exception ex) {
+				System.out.println(ex.getMessage());
 			}
-		} catch (Exception ex) {
-			System.out.println(ex.getMessage());
+			break;
+		case "Queries":
+			break;
+		default:
+			break;
 		}
 	}
 }
