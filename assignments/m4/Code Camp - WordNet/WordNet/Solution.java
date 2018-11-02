@@ -7,12 +7,9 @@ class Solution {
 		String input = StdIn.readString();
 		WordNet word = new WordNet(synsets, hypernyms);
 		try {
-			switch (input) {
-			case "Graph":
+			if (input.equals("Graph")) {
 				System.out.println(word.print());
-
-				break;
-			case "Queries":
+			} else {
 				while (!StdIn.isEmpty()) {
 					String nounA = StdIn.readString();
 					String nounB = StdIn.readString();
@@ -20,11 +17,8 @@ class Solution {
 					int dis = word.distance(nounA, nounB);
 					System.out.println(ans + " " + dis);
 				}
-				break;
-			default:
-				break;
 			}
-		} catch (IllegalArgumentException e) {
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 	}
