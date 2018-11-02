@@ -121,6 +121,4 @@ public class WordNet {
         }
         return sarray.get(ancestor);
     }
-
-
 }
