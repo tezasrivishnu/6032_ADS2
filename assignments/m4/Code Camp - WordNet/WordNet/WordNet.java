@@ -94,9 +94,15 @@ public class WordNet {
     }
 
     public boolean isNoun(final String word) {
+        if (word.equals(null)) {
+            throw new IllegalArgumentException("IllegalArgumentException");
+        }
         return linear.contains(word);
     }
     public int distance(String one, String two) {
+        if (!isNoun (one) || !isNoun(two)) {
+            throw new IllegalArgumentException("IllegalArgumentException");
+        }
         sap(one, two);
         return distance;
     }
