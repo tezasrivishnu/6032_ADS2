@@ -5,8 +5,8 @@ class Solution {
 		String synsets = StdIn.readString();
 		String hypernyms = StdIn.readString();
 		String input = StdIn.readString();
-		WordNet word = new WordNet(synsets, hypernyms);
 		try {
+			WordNet word = new WordNet(synsets, hypernyms);
 			if (input.equals("Graph")) {
 				System.out.println(word.print());
 			} else {
@@ -19,7 +19,7 @@ class Solution {
 				}
 			}
 		} catch (Exception e) {
-			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
 	}
 }

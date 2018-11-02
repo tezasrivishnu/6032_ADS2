@@ -30,7 +30,7 @@ public class WordNet {
     private Digraph graph;
     private LinearProbingHashST<String, ArrayList<Integer>> linear;
     Sap sap;
-    WordNet(final String synset, final String hypernym) {
+    WordNet(final String synset, final String hypernym) throws Exception{
         linear = new LinearProbingHashST<String, ArrayList<Integer>>();
         sarray = new ArrayList<String>();
         nodes = readSynsets(synset);
@@ -59,7 +59,7 @@ public class WordNet {
         }
         return nodes;
     }
-    public Digraph readhypernyms(final String file, int nodes)  {
+    public Digraph readhypernyms(final String file, int nodes) throws Exception {
         Digraph digraph = new Digraph(nodes);
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
@@ -77,10 +77,10 @@ public class WordNet {
             }
         }
         if (size > 1) {
-            throw new IllegalArgumentException("Multiple roots");
+            throw new Exception("Multiple roots");
         }
         if (cycle.hasCycle()) {
-            throw new IllegalArgumentException("Cycle detected");
+            throw new Exception("Cycle detected");
         }
         return digraph;
     }
