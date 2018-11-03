@@ -286,18 +286,17 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:15:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:28:27: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:30:43: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:30:44: '(' is followed by whitespace. [ParenPad]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:46:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:46:30: Parameter values should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:46:39: 'values' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:46:47: Parameter digraph should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:46:55: 'digraph' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:53: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:53:77: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:30:45: '(' is followed by whitespace. [ParenPad]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:38:51: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:30: Parameter values should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:39: 'values' hides a field. [HiddenField]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:47: Parameter digraph should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:55: 'digraph' hides a field. [HiddenField]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:52: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:52:77: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

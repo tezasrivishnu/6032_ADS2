@@ -21,23 +21,22 @@ class PageRank {
 	PageRank(final Digraph graph) {
 		this.digraph = graph;
 		values = new Double[digraph.V()];
+		// for (int i = 0; i < digraph.V(); i++) {
+		// 	values[i] = 1.0 / digraph.V();
+		// }
 		for (int i = 0; i < digraph.V(); i++) {
-			values[i] = 1.0 / digraph.V();
-		}
-		for (int i = 0; i < digraph.V(); i++) {
-			if(digraph.outdegree(i) == 0) {
+			if (digraph.outdegree(i) == 0) {
 				for (int j = 0; j < digraph.V(); i++) {
-					if( j != i) {
+					if ( j != i) {
 						digraph.addEdge(i, j);
 					}
 				}
 			}
 		}
-		Double[] updavalues = new Double[digraph.V()];
+		values = Arrays.copyOf(values, digraph.V());
 		for (int i = 0; i < digraph.V(); i++) {
-			updavalues[i] = 1.0 / digraph.V();
+			values[i] = 1.0 / (double)digraph.V();
 		}
-		values = Arrays.copyOf(updavalues, updavalues.length);
 		for (int i = 0; i < THOUSAND; i++) {
 			Double[] rank = rank(values, digraph);
 			values = rank;

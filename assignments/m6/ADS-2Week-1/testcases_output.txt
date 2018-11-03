@@ -140,7 +140,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not b
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
 	at PageRank.<init>(Solution.java:31)
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:111)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -169,7 +169,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not b
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
 	at PageRank.<init>(Solution.java:31)
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:111)
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
@@ -220,7 +220,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not b
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
 	at PageRank.<init>(Solution.java:31)
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:111)
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -271,7 +271,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not b
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
 	at PageRank.<init>(Solution.java:31)
-	at Solution.main(Solution.java:112)
+	at Solution.main(Solution.java:111)
 ----------------------------------------
 
 ########## Testcase 10: Passed ##########
