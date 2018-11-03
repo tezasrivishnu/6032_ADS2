@@ -20,9 +20,9 @@ class PageRank {
 	 */
 	PageRank(final Digraph graph) {
 		this.digraph = graph;
-		values = new Double[graph.V()];
-		for (int i = 0; i < graph.V(); i++) {
-			values[i] = 1.0 / graph.V();
+		values = new Double[digraph.V()];
+		for (int i = 0; i < digraph.V(); i++) {
+			values[i] = 1.0 / digraph.V();
 		}
 		for (int i = 0; i < digraph.V(); i++) {
 			if(digraph.outdegree(i) == 0) {
