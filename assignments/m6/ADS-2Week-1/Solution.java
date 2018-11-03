@@ -4,6 +4,10 @@ import java.util.Scanner;
  */
 class PageRank {
     /**
+     * value of 1000;
+     */
+    private final static int THOUSAND = 1000;
+    /**
      * digraph class object.
      */
     private Digraph digraph;
@@ -37,13 +41,13 @@ class PageRank {
      */
     public double rank(final int one) {
         double out = 0.0;
-        double prev = 1/digraph.V();
+        double prev = 1 / digraph.V();
         Iterable<Integer> adja = digraph.adj(one);
         for (int each : digraph.adj(one)) {
-            for (int i = 0; i < 1000; i++) {
-                out += prev/digraph.outdegree(each);
+            for (int i = 0; i < THOUSAND; i++) {
+                out += prev / digraph.outdegree(each);
                 prev = out;
-                if(prev == out) {
+                if (prev == out) {
                     break;
                 }
             }
