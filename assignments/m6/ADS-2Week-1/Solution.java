@@ -53,6 +53,7 @@ public class Solution {
 		}
 		PageRank page = new PageRank(graph);
 		System.out.println(graph);
+		System.out.println(page.toString());
 
 		// iterate count of vertices times
 		// to read the adjacency list from std input
