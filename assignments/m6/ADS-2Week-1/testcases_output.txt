@@ -139,8 +139,7 @@ Your Output:
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
-	at PageRank.<init>(Solution.java:30)
-	at Solution.main(Solution.java:111)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -168,8 +167,7 @@ Your Output:
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
-	at PageRank.<init>(Solution.java:30)
-	at Solution.main(Solution.java:111)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
@@ -219,8 +217,7 @@ Your Output:
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
-	at PageRank.<init>(Solution.java:30)
-	at Solution.main(Solution.java:111)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -270,8 +267,7 @@ Your Output:
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.addEdge(Digraph.java:167)
-	at PageRank.<init>(Solution.java:30)
-	at Solution.main(Solution.java:111)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 
 ########## Testcase 10: Passed ##########

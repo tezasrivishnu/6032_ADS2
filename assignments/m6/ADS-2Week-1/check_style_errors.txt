@@ -286,9 +286,6 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:14:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:27:27: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:29:43: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:29:44: '(' is followed by whitespace. [ParenPad]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:30: Parameter values should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:39: 'values' hides a field. [HiddenField]
@@ -296,6 +293,9 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:45:55: 'digraph' hides a field. [HiddenField]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:52: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:52:77: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:112:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:114:43: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:114:44: '(' is followed by whitespace. [ParenPad]
 Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
