@@ -4,9 +4,9 @@ import java.util.Scanner;
  */
 class PageRank {
     /**
-     * value of 1000;
+     * value of 1000.
      */
-    private final static int THOUSAND = 1000;
+    private static final int THOUSAND = 1000;
     /**
      * digraph class object.
      */
