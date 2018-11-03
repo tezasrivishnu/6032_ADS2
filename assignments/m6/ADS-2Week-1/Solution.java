@@ -11,7 +11,7 @@ class PageRank {
      * digraph class object.
      */
     private Digraph digraph;
-    private Double[] values;
+    private Float[] values;
     /**
      * Constructs the object.
      *
@@ -19,23 +19,23 @@ class PageRank {
      */
     PageRank(final Digraph graph) {
         this.digraph = graph;
-        values = new Double[digraph.V()];
+        values = new Float[digraph.V()];
         for (int i = 0; i < digraph.V(); i++) {
-        	values[i] = 1.0/digraph.V();
+        	values[i] = 1/(float)digraph.V();
         }
         for (int i = 0; i < THOUSAND; i++) {
-        	Double[] rank = rank(values, digraph);
+        	Float[] rank = rank(values, digraph);
         	values = rank;
         }
     }
-    public Double[] rank(Double[] values, Digraph digraph) {
-    	Double[] iter = new Double[digraph.V()];
+    public Float[] rank(Float[] values, Digraph digraph) {
+    	Float[] iter = new Float[digraph.V()];
     	for (int i = 0; i < digraph.V(); i++) {
-    		double rank = 0.0;
+    		float rank = 0;
     		for (int j = 0; j < digraph.V(); j++) {
     			for (int adj : digraph.adj(j)) {
     				if (adj == i) {
-    					rank += values[i]/(double)digraph.outdegree(j);
+    					rank += values[i]/(float)digraph.outdegree(j);
     				}
     			}
     			iter[i] = rank;
