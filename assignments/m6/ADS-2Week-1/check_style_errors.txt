@@ -293,7 +293,13 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:15:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:15:28: Parameter one should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:17:32: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:17:33: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:20:45: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:21:44: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:21:45: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:23:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:27: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:33: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:38: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:38:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -302,7 +308,7 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:62: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:72: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
