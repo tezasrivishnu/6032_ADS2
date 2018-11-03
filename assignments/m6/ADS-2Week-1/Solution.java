@@ -53,7 +53,7 @@ class PageRank {
         for (int i = 0; i < digraph.V() - 1; i++) {
             str += i + " - " + values[i] + "\n";
         }
-        str += digraph.V() + " - " + values[digraph.V()];
+        str += digraph.V()-1 + " - " + values[digraph.V()-1];
         return str;
     }
 }

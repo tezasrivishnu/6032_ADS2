@@ -297,8 +297,12 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:38:58: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:38:59: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:38:67: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:56:27: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:56:28: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:56:58: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Solution.java:56:59: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
