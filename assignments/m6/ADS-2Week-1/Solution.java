@@ -35,36 +35,26 @@ class PageRank {
 		}
 		values = new Double[digraph.V()];
 		for (int i = 0; i < digraph.V(); i++) {
-			values[i] = 1.0 / (double)digraph.V();
+			values[i] = 1.0 / digraph.V();
 		}
-		for (int i = 0; i < THOUSAND; i++) {
-			Double[] rank = rank(values, digraph);
-			if (Arrays.toString(rank).equals(Arrays.toString(rank))) {
-				break;
-			} else {
-				values = rank;
-			}
-		}
-	}
-	public Double[] rank(Double[] values, Digraph digraph) {
-		Double[] iter = new Double[digraph.V()];
-		for (int i = 0; i < digraph.V(); i++) {
-			double rank = 0.0;
+		for (int i = 1; i < THOUSAND; i++) {
 			for (int j = 0; j < digraph.V(); j++) {
-				if (digraph.indegree(j) == 0) {
-					iter[i] = 0.0;
-				} else {
-					for (int adj : digraph.adj(j)) {
-						if (adj == i) {
-							rank += values[i] / (double)digraph.outdegree(j);
-						}
-					}
-					iter[i] = rank;
-				}
+				rank(j);
 			}
 		}
-		return iter;
 	}
+	public void rank(int one) {
+		double rank = 0.0;
+		if (digraph.indegree(one) == 0) {
+			values[one] = 0.0;
+			return ;
+		}
+		for (int adj : digraph.adj(one)) {
+			rank += values[adj] / digraph.outdegree(adj);
+		}
+		values[one] = rank;
+	}
+
 	/**
 	 * Returns a string representation of the object.
 	 * complexity O(v) v is the no of vertices.
