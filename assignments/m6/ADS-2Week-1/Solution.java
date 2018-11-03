@@ -15,7 +15,7 @@ class PageRank {
 	public double rank(int one) {
 		double out = 0.0;
 		double prev = 1/digraph.V();
-		Iterable<Integer> adja = digraph.adj(one);
+		Iterable<Integer> adja = digraph.adj(one - 1);
 		for (int each : digraph.adj(one)) {
 			for (int i = 0; i < 1000; i++) {
 				out += prev/digraph.outdegree(each);

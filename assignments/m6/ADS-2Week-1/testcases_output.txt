@@ -18,11 +18,11 @@ Your Output:
 2: 0 
 3: 2 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -46,11 +46,11 @@ Your Output:
 2: 3 0 
 3: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -74,11 +74,11 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -114,11 +114,11 @@ Your Output:
 6: 0 
 7: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 7
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -148,11 +148,11 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -188,11 +188,11 @@ Your Output:
 6: 
 7: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 7
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -216,11 +216,11 @@ Your Output:
 2: 3 
 3: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -250,11 +250,11 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -278,11 +278,11 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -312,11 +312,11 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -334,11 +334,11 @@ Your Output:
 0: 1 
 1: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 1
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
@@ -391,11 +391,11 @@ Your Output:
 10: 0 
 11: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 12 is not between 0 and 11
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 11
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
 	at PageRank.rank(Solution.java:18)
-	at PageRank.toString(Solution.java:12)
+	at PageRank.toString(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
 
