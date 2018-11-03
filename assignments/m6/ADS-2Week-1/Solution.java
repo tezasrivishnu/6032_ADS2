@@ -11,6 +11,7 @@ class PageRank {
      * digraph class object.
      */
     private Digraph digraph;
+    private Double[] values;
     /**
      * Constructs the object.
      *
@@ -18,6 +19,29 @@ class PageRank {
      */
     PageRank(final Digraph graph) {
         this.digraph = graph;
+        values = new Double[digraph.V()];
+        for (int i = 0; i < digraph.V(); i++) {
+        	values[i] = 1.0/digraph.V();
+        }
+        for (int i = 0; i < THOUSAND; i++) {
+        	Double[] rank = rank(values, digraph);
+        	values = rank;
+        }
+    }
+    public Double[] rank(Double[] values, Digraph digraph) {
+    	Double[] iter = new Double[digraph.V()];
+    	for (int i = 0; i < digraph.V(); i++) {
+    		double rank = 0.0;
+    		for (int j = 0; j < digraph.V(); j++) {
+    			for (int adj : digraph.adj(j)) {
+    				if (adj == i) {
+    					rank += values[i]/(double)digraph.outdegree(j);
+    				}
+    			}
+    			iter[i] = rank;
+    		}
+    	}
+    	return iter;
     }
     /**
      * Returns a string representation of the object.
@@ -27,32 +51,10 @@ class PageRank {
     public String toString() {
         String str = "";
         for (int i = 0; i < digraph.V() - 1; i++) {
-            str += i + " - " + rank(i) + "\n";
+            str += i + " - " + values[i] + "\n";
         }
-        str += digraph.V() + " - " + rank(digraph.V());
+        str += digraph.V() + " - " + values[digraph.V()];
         return str;
-    }
-    /**
-     * computing the page rank.
-     * comlexity O(n) as we are itearting n times.
-     * @param      one   One
-     *
-     * @return     double value.
-     */
-    public double rank(final int one) {
-        double out = 0.0;
-        double prev = 1 / digraph.V();
-        Iterable<Integer> adja = digraph.adj(one);
-        for (int each : digraph.adj(one)) {
-            for (int i = 0; i < THOUSAND; i++) {
-                out += prev / digraph.outdegree(each);
-                prev = out;
-                if (prev == out) {
-                    break;
-                }
-            }
-        }
-        return out;
     }
 }
 /**

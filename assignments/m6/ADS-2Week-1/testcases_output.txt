@@ -18,12 +18,9 @@ Your Output:
 2: 0 
 3: 2 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -46,12 +43,9 @@ Your Output:
 2: 3 0 
 3: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -74,12 +68,9 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -114,12 +105,9 @@ Your Output:
 6: 0 
 7: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -148,12 +136,9 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -188,12 +173,9 @@ Your Output:
 6: 
 7: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -216,12 +198,9 @@ Your Output:
 2: 3 
 3: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -250,12 +229,9 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -278,12 +254,9 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -312,12 +285,9 @@ Your Output:
 4: 0 
 5: 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -334,12 +304,9 @@ Your Output:
 0: 1 
 1: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -391,11 +358,8 @@ Your Output:
 10: 0 
 11: 0 
 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 12 is not between 0 and 11
-	at Digraph.validateVertex(Digraph.java:156)
-	at Digraph.adj(Digraph.java:182)
-	at PageRank.rank(Solution.java:45)
-	at PageRank.toString(Solution.java:32)
-	at Solution.main(Solution.java:97)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 12
+	at PageRank.toString(Solution.java:56)
+	at Solution.main(Solution.java:99)
 ----------------------------------------
 
