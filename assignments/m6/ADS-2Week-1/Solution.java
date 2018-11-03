@@ -52,7 +52,7 @@ class PageRank {
 			values[one] = 0.0;
 			return values[one];
 		}
-		for (int adj : digraph.adj(one)) {
+		for (int adj : digraph.reverse().adj(one)) {
 			rank += iter[adj] / digraph.outdegree(adj);
 		}
 		values[one] = rank;
