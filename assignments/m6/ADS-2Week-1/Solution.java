@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for page rank.
  */
@@ -19,24 +20,24 @@ class PageRank {
 	 */
 	PageRank(final Digraph graph) {
 		this.digraph = graph;
-		// values = new Double[digraph.V()];
-		// for (int i = 0; i < digraph.V(); i++) {
-		// 	values[i] = 1.0 / digraph.V();
-		// }
-		// for (int i = 0; i < digraph.V(); i++) {
-		// 	if(digraph.outdegree(i) == 0) {
-		// 		for (int j = 0; j < digraph.V(); i++) {
-		// 			if( j != i) {
-		// 				digraph.addEdge(i, j);
-		// 			}
-		// 		}
-		// 	}
-		// }
-		values = new Double[digraph.V()];
-		for (int i = 0; i < digraph.V(); i++) {
-			values[i] = 1.0 / digraph.V();
+		values = new Double[graph.V()];
+		for (int i = 0; i < graph.V(); i++) {
+			values[i] = 1.0 / graph.V();
 		}
-
+		for (int i = 0; i < digraph.V(); i++) {
+			if(digraph.outdegree(i) == 0) {
+				for (int j = 0; j < digraph.V(); i++) {
+					if( j != i) {
+						digraph.addEdge(i, j);
+					}
+				}
+			}
+		}
+		Double[] updavalues = new Double[digraph.V()];
+		for (int i = 0; i < digraph.V(); i++) {
+			updavalues[i] = 1.0 / digraph.V();
+		}
+		values = Arrays.copyOf(updavalues, updavalues.length);
 		for (int i = 0; i < THOUSAND; i++) {
 			Double[] rank = rank(values, digraph);
 			values = rank;
@@ -106,15 +107,6 @@ public final class Solution {
 			for (int j = 1; j < items.length; j++) {
 				graph.addEdge(Integer.parseInt(items[0]),
 				              Integer.parseInt(items[j]));
-			}
-		}
-		for (int i = 0; i < graph.V(); i++) {
-			if(graph.outdegree(i) == 0) {
-				for (int j = 0; j < graph.V(); i++) {
-					if( j != i) {
-						graph.addEdge(i, j);
-					}
-				}
 			}
 		}
 		PageRank page = new PageRank(graph);
