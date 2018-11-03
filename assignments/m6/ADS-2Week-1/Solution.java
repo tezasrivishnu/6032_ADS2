@@ -13,6 +13,7 @@ class PageRank {
 	 */
 	private Digraph digraph;
 	private Double[] values;
+	private Double[] iter;
 	/**
 	 * Constructs the object.
 	 *
@@ -20,10 +21,14 @@ class PageRank {
 	 */
 	PageRank(final Digraph graph) {
 		this.digraph = graph;
+		iter = new Double[digraph.V()];
 		// values = new Double[digraph.V()];
 		// for (int i = 0; i < digraph.V(); i++) {
 		// 	values[i] = 1.0 / digraph.V();
 		// }
+		for (int i = 0; i < digraph.V(); i++) {
+			iter[i] = 1.0 / digraph.V();
+		}
 		for (int i = 0; i < digraph.V(); i++) {
 			if (digraph.outdegree(i) == 0) {
 				for (int j = 0; j < digraph.V(); j++) {
@@ -34,25 +39,24 @@ class PageRank {
 			}
 		}
 		values = new Double[digraph.V()];
-		for (int i = 0; i < digraph.V(); i++) {
-			values[i] = 1.0 / digraph.V();
-		}
 		for (int i = 1; i < THOUSAND; i++) {
 			for (int j = 0; j < digraph.V(); j++) {
 				rank(j);
 			}
+			iter = Arrays.copyOf(values, values.length);
 		}
 	}
-	public void rank(int one) {
+	public double rank(int one) {
 		double rank = 0.0;
 		if (digraph.indegree(one) == 0) {
 			values[one] = 0.0;
-			return ;
+			return values[one];
 		}
 		for (int adj : digraph.adj(one)) {
-			rank += values[adj] / digraph.outdegree(adj);
+			rank += iter[adj] / digraph.outdegree(adj);
 		}
 		values[one] = rank;
+		return values[one];
 	}
 
 	/**
