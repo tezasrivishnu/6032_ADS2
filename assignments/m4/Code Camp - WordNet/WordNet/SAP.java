@@ -1,32 +1,37 @@
-/*public class SAP {
-
-    // constructor takes a digraph (not necessarily a DAG)
-    public SAP(Digraph G)
-
-    // length of shortest ancestral path between v and w; -1 if no such path
-    public int length(int v, int w)
-
-    // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
-    public int ancestor(int v, int w)
-
-    // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
-    public int length(Iterable<Integer> v, Iterable<Integer> w)
-
-    // a common ancestor that participates in shortest ancestral path; -1 if no such path
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w)
-
-    // do unit testing of this class
-    public static void main(String[] args)
-}*/
 import java.util.*;
+/**
+ * Class for sap.
+ */
 class Sap {
+    /**
+     * initializing the diagraph object.
+     */
     private Digraph graph;
-    int minimum;
-    int ancestor;
-    Sap(Digraph g) {
+    /**
+     * int variable.
+     */
+    private int minimum;
+    /**
+     * int variable.
+     */
+    private int ancestor;
+    /**
+     * Constructs the object.
+     *
+     * @param      g     diagraph object.
+     */
+    Sap(final Digraph g) {
         graph = new Digraph(g);
     }
-    public int length(int one, int two) {
+    /**
+     * finding the short distance between two vertices.
+     * complexity O(v) v is the nuber of vertices.
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     the distance.
+     */
+    public int length(final int one, final int two) {
         Set<Integer> first = new HashSet<Integer>();
         first.add(one);
         Set<Integer> second = new HashSet<Integer>();
@@ -38,14 +43,26 @@ class Sap {
             return minimum;
         }
     }
-    public int length(Iterable<Integer> one, Iterable<Integer> two) {
+    /**
+     * finding the short distance between two vertices.
+     * complexity O(v) v is the nuber of vertices.
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     the distance.
+     */
+    public int length(final Iterable<Integer> one,
+        final Iterable<Integer> two) {
         minimum = 1000000000;
         ancestor = -1;
-        BreadthFirstDirectedPaths first = new BreadthFirstDirectedPaths(graph, one);
-        BreadthFirstDirectedPaths second = new BreadthFirstDirectedPaths(graph, two);
+        BreadthFirstDirectedPaths first = new
+        BreadthFirstDirectedPaths(graph, one);
+        BreadthFirstDirectedPaths second = new
+        BreadthFirstDirectedPaths(graph, two);
         for (int i = 0; i < graph.V(); i++) {
             if (first.hasPathTo(i) && second.hasPathTo(i)) {
-                int length = first.distTo(i) + second.distTo(i);
+                int length = first.distTo(i)
+                + second.distTo(i);
                 if (length < minimum) {
                     minimum = length;
                     ancestor = i;
@@ -54,7 +71,15 @@ class Sap {
         }
         return minimum;
     }
-    public int ancestor(int one, int two) {
+    /**
+     * finding the ancestor of two vertices.
+     * complexity O(v) v is the nuber of vertices.
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     the ancestor.
+     */
+    public int ancestor(final int one, final int two) {
         length(one, two);
         return ancestor;
     }
