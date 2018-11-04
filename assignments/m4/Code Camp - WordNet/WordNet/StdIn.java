@@ -5,14 +5,13 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 /**
- * class STdIN
+ * class STdIN.
  */
 public final class StdIn {
 
   /*** begin: section (1 of 2) of code duplicated from In to StdIn. */
 
   // assume Unicode UTF-8 encoding
-  
   /**
    * locale variable.
    */
@@ -20,7 +19,6 @@ public final class StdIn {
 
   // assume language = English, country = US
   //for consistency with System.out.
-  
 /**
    * locale variable.
    */
@@ -29,7 +27,6 @@ public final class StdIn {
   // the default token separator; we maintain
   // the invariant that this value
   // is held by the scanner's delimiter between calls
-  
   /**
    * pattern variable.
    */
@@ -162,8 +159,9 @@ public final class StdIn {
     * @throws NoSuchElementException if standard input is empty
     */
   public static String readAll() {
-    if (!scanner.hasNextLine())
+    if (!scanner.hasNextLine()) {
       return "";
+    }
 
     String result = scanner.useDelimiter(EVERYTHING_PATTERN).next();
     // not that important to reset delimeter, since now scanner is empty
@@ -478,7 +476,7 @@ public final class StdIn {
    *
    * @param      scan  The scan
    */
-  private static void setScanner(Scanner scan) {
+  private static void setScanner(final Scanner scan) {
     StdIn.scanner = scan;
     StdIn.scanner.useLocale(LOCALE);
   }
