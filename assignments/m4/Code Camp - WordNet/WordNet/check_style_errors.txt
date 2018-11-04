@@ -506,17 +506,8 @@ Checkstyle ends with 129 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:11:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:12:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:13:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:66:53: Parameter nodes should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:66:57: 'nodes' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:123:21: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:139:20: '1000000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:94:63: 'nodes' hides a field. [HiddenField]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:151:11: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:151:20: '(' is preceded with whitespace. [MethodParamPad]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 5 errors.

@@ -3,13 +3,41 @@ import java.util.*;
  * Class for word net.
  */
 class WordNet {
+    /**
+     * thousand value.
+     */
+    private static final int NUMBER = 1000000;
+    /**
+     * int variable.
+     */
     private int nodes;
+    /**
+     * int variable.
+     */
     private int distance;
+    /**
+     * int variable.
+     */
     private int ancestor;
+    /**
+     * string variable.
+     */
     private String hypernyms;
+    /**
+     * arraylist string variable.
+     */
     private ArrayList<String> sarray;
+    /**
+     * diagraph class object.
+     */
     private Digraph graph;
+    /**
+     * linear probing class object.
+     */
     private LinearProbingHashST<String, ArrayList<Integer>> linear;
+    /**
+     * Sap class object.
+     */
     private Sap sap;
     /**
      * Constructs the object.
@@ -63,7 +91,7 @@ class WordNet {
      *
      * @return     diagraph object.
      */
-    public Digraph readhypernyms(final String file, int nodes) {
+    public Digraph readhypernyms(final String file, final int nodes) {
         Digraph digraph = new Digraph(nodes);
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
@@ -120,7 +148,7 @@ class WordNet {
      * @return     the distance.
      */
     public int distance(final String one, final String two) {
-        if (!isNoun (one) || !isNoun(two)) {
+        if(!isNoun (one) || !isNoun(two)) {
             throw new IllegalArgumentException("IllegalArgumentException");
         }
         sap(one, two);
@@ -136,7 +164,7 @@ class WordNet {
      * @return     String.
      */
     public String sap(final String one, final String two) {
-        distance = 1000000;
+        distance = NUMBER;
         ancestor = -1;
         for (int eachone : linear.get(one)) {
             for (int eachtwo : linear.get(two)) {
