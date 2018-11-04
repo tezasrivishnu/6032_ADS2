@@ -1,35 +1,22 @@
-/*public class WordNet {
-
-    // constructor takes the name of the two input files
-    public WordNet(String synsets, String hypernyms)
-
-    // returns all WordNet nouns
-    public Iterable<String> nouns()
-
-    // is the word a WordNet noun?
-    public boolean isNoun(String word)
-
-    // distance between nounA and nounB (defined below)
-    public int distance(String nounA, String nounB)
-
-    // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // in a shortest ancestral path (defined below)
-    public String sap(String nounA, String nounB)
-
-    // do unit testing of this class
-    public static void main(String[] args)
-}
-*/
 import java.util.*;
-public class WordNet {
+/**
+ * Class for word net.
+ */
+class WordNet {
     private int nodes;
-    int distance;
-    int ancestor;
+    private int distance;
+    private int ancestor;
     private String hypernyms;
-    ArrayList<String> sarray;
+    private ArrayList<String> sarray;
     private Digraph graph;
     private LinearProbingHashST<String, ArrayList<Integer>> linear;
-    Sap sap;
+    private Sap sap;
+    /**
+     * Constructs the object.
+     *
+     * @param      synset    The synset
+     * @param      hypernym  The hypernym
+     */
     WordNet(final String synset, final String hypernym) {
         linear = new LinearProbingHashST<String, ArrayList<Integer>>();
         sarray = new ArrayList<String>();
@@ -37,6 +24,14 @@ public class WordNet {
         graph = readhypernyms(hypernym, nodes);
         sap = new Sap(graph);
     }
+    /**
+     * Reads synsets files.
+     * complexity O(n) n is the number of files in
+     * synset file.
+     * @param      file  The file
+     *
+     * @return     int value.
+     */
     public int readSynsets(final String file) {
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
@@ -59,6 +54,15 @@ public class WordNet {
         }
         return nodes;
     }
+    /**
+     * reads the files and add the edges between the two nodes.
+     * complexity O(n) n is the number of files in
+     * file.
+     * @param      file   The file
+     * @param      nodes  The nodes
+     *
+     * @return     diagraph object.
+     */
     public Digraph readhypernyms(final String file, int nodes) {
         Digraph digraph = new Digraph(nodes);
         In in = new In("./Files/" + file);
@@ -84,30 +88,54 @@ public class WordNet {
         }
         return digraph;
     }
+    /**
+     * returns the diagraph object.
+     * complexity O(1)
+     * @return     object.
+     */
     public Digraph print() {
         return graph;
     }
-
-
-    public Iterable<String> nouns() {
-        return linear.keys();
-    }
-
+    /**
+     * Determines if noun.
+     * check if the word is present or not.
+     * complexity O(n) since the complexity of search
+     * in hash tble is n.
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
     public boolean isNoun(final String word) {
         if (word.equals(null)) {
             throw new IllegalArgumentException("IllegalArgumentException");
         }
         return linear.contains(word);
     }
-    public int distance(String one, String two) {
+    /**
+     * finding the distance between two nodes.
+     * complexity O(v) where v is the number of vertices.
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     the distance.
+     */
+    public int distance(final String one, final String two) {
         if (!isNoun (one) || !isNoun(two)) {
             throw new IllegalArgumentException("IllegalArgumentException");
         }
         sap(one, two);
         return distance;
     }
-
-    public String sap(String one, String two) {
+    /**
+     * finding the anscestor.
+     * complexity O(v) since the ancestor method in
+     * SAP class is v(no of thevertices)
+     * @param      one   One
+     * @param      two   Two
+     *
+     * @return     String.
+     */
+    public String sap(final String one, final String two) {
         distance = 1000000;
         ancestor = -1;
         for (int eachone : linear.get(one)) {
