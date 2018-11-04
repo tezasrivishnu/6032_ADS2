@@ -39,7 +39,7 @@ class PageRank {
 			}
 		}
 		values = new Double[digraph.V()];
-		for (int i = 1; i < THOUSAND; i++) {
+		for (int i = 0; i < THOUSAND; i++) {
 			for (int j = 0; j < digraph.V(); j++) {
 				rank(j);
 			}
