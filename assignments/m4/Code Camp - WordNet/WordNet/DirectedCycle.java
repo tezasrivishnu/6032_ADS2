@@ -52,8 +52,11 @@ public class DirectedCycle {
         marked  = new boolean[g.V()];
         onStack = new boolean[g.V()];
         edgeTo  = new int[g.V()];
-        for (int v = 0; v < g.V(); v++)
-            if (!marked[v] && cycle == null) dfs(g, v);
+        for (int v = 0; v < g.V(); v++){
+            if (!marked[v] && cycle == null) {
+                dfs(g, v);
+            }
+        }
     }
 
     // check that algorithm computes either the
@@ -71,7 +74,9 @@ public class DirectedCycle {
         for (int w : g.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
@@ -122,7 +127,6 @@ public class DirectedCycle {
      * @return     boolean value.
      */
     private boolean check() {
-
         if (hasCycle()) {
             // verify cycle
             int first = -1, last = -1;
