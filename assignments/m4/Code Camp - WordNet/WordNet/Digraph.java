@@ -130,9 +130,9 @@ public class Digraph {
                     "number of edges in a Digraph must be nonnegative");
             }
             for (int i = 0; i < ei; i++) {
-                int v = in.readInt();
+                int vt = in.readInt();
                 int w = in.readInt();
-                addEdge(v, w);
+                addEdge(vt, w);
             }
         } catch (NoSuchElementException ex) {
             throw new IllegalArgumentException(
@@ -149,17 +149,18 @@ public class Digraph {
     public Digraph(final Digraph g) {
         this(g.v());
         this.e = g.e();
-        for (int j = 0; j < v; j++)
+        for (int j = 0; j < v; j++) {
             this.indegree[j] = g.indegree(j);
-        for (int v = 0; v < g.v(); v++) {
+        }
+        for (int i = 0; i < g.v(); i++) {
             // reverse so that adjacency list
             //is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : g.adj[v]) {
+            for (int w : g.adj[i]) {
                 reverse.push(w);
             }
             for (int w : reverse) {
-                adj[v].add(w);
+                adj[i].add(w);
             }
         }
     }
@@ -186,14 +187,15 @@ public class Digraph {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      vi    { parameter_description }
      */
     private void validateVertex(final int vi) {
-        if (vi < 0 || vi >= v)
+        if (vi < 0 || vi >= v) {
             throw new IllegalArgumentException(
                 "vertex " + vi + " is not between 0 and " + (v - 1));
+        }
     }
 
     /**
@@ -270,7 +272,8 @@ public class Digraph {
     /**
      * Returns a string representation of the graph.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+     * @return the number of vertices <em>V</em>,
+     * followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {

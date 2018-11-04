@@ -43,10 +43,10 @@ public class BreadthFirstDirectedPaths {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(final Digraph g, final int s) {
-        marked = new boolean[g.V()];
-        distTo = new int[g.V()];
-        edgeTo = new int[g.V()];
-        for (int v = 0; v < g.V(); v++) {
+        marked = new boolean[g.v()];
+        distTo = new int[g.v()];
+        edgeTo = new int[g.v()];
+        for (int v = 0; v < g.v(); v++) {
             distTo[v] = INFINITY;
         }
         validateVertex(s);
@@ -64,10 +64,10 @@ public class BreadthFirstDirectedPaths {
      */
     public BreadthFirstDirectedPaths(final Digraph g,
         final Iterable<Integer> sources) {
-        marked = new boolean[g.V()];
-        distTo = new int[g.V()];
-        edgeTo = new int[g.V()];
-        for (int v = 0; v < g.V(); v++) {
+        marked = new boolean[g.v()];
+        distTo = new int[g.v()];
+        edgeTo = new int[g.v()];
+        for (int v = 0; v < g.v(); v++) {
             distTo[v] = INFINITY;
         }
         validateVertices(sources);

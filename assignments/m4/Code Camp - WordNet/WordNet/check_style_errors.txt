@@ -1,17 +1,13 @@
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:133:21: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:152: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:154:18: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:188: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:194: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:273: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
