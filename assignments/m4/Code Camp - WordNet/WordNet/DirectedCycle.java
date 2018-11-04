@@ -1,5 +1,5 @@
 /**
- *  The {@code DirectedCycle} class represents a data type for 
+ *  The {@code DirectedCycle} class represents a data type for
  *  determining whether a digraph has a directed cycle.
  *  The <em>hasCycle</em> operation determines whether the digraph has
  *  a directed cycle and, and of so, the <em>cycle</em> operation
@@ -40,8 +40,7 @@ public class DirectedCycle {
     /**
      * stack object.
      */
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
-
+    private Stack<Integer> cycle;
     /**
      * Determines whether the digraph {@code G} has
      * a directed cycle and, if so,
@@ -52,7 +51,7 @@ public class DirectedCycle {
         marked  = new boolean[g.V()];
         onStack = new boolean[g.V()];
         edgeTo  = new int[g.V()];
-        for (int v = 0; v < g.V(); v++){
+        for (int v = 0; v < g.V(); v++) {
             if (!marked[v] && cycle == null) {
                 dfs(g, v);
             }
@@ -61,7 +60,6 @@ public class DirectedCycle {
 
     // check that algorithm computes either the
     //topological order or finds a directed cycle
-    
     /**
      * dfs method.
      * comlexity O(e) e is the number of edges.
@@ -76,16 +74,10 @@ public class DirectedCycle {
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            }
-
-            // found new vertex, so recur
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(g, w);
-            }
-
-            // trace back directed cycle
-            else if (onStack[w]) {
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -131,7 +123,9 @@ public class DirectedCycle {
             // verify cycle
             int first = -1, last = -1;
             for (int v : cycle()) {
-                if (first == -1) first = v;
+                if (first == -1) {
+                    first = v;
+                }
                 last = v;
             }
             if (first != last) {
