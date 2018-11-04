@@ -1,8 +1,12 @@
-import java.util.*;
+import java.util.HashSet;
 /**
  * Class for sap.
  */
 class Sap {
+    /**
+     * thousand value.
+     */
+    private static final int NUMBER = 1000000;
     /**
      * initializing the diagraph object.
      */
@@ -32,9 +36,9 @@ class Sap {
      * @return     the distance.
      */
     public int length(final int one, final int two) {
-        Set<Integer> first = new HashSet<Integer>();
+        HashSet<Integer> first = new HashSet<Integer>();
         first.add(one);
-        Set<Integer> second = new HashSet<Integer>();
+        HashSet<Integer> second = new HashSet<Integer>();
         second.add(two);
         length(first, second);
         if (ancestor == -1) {
@@ -53,7 +57,7 @@ class Sap {
      */
     public int length(final Iterable<Integer> one,
         final Iterable<Integer> two) {
-        minimum = 1000000000;
+        minimum = NUMBER;
         ancestor = -1;
         BreadthFirstDirectedPaths first = new
         BreadthFirstDirectedPaths(graph, one);
