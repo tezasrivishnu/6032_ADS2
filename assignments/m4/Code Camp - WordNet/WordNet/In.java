@@ -201,7 +201,7 @@ public final class In {
    * Note that this does not create a defensive copy, so the
    * scanner will be mutated as you read on.
    *
-   * @param  scanner the scanner
+   * @param  scan the scanner
    * @throws IllegalArgumentException if
    * {@code scanner} is {@code null}
    */
@@ -397,7 +397,7 @@ public final class In {
   }
 
   /**
-    * Reads the next token from this input stream, 
+    * Reads the next token from this input stream,
     * parses it as a {@code float},
     * and returns the {@code float}.
     *

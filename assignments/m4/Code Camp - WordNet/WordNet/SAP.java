@@ -63,7 +63,7 @@ class Sap {
         BreadthFirstDirectedPaths(graph, one);
         BreadthFirstDirectedPaths second = new
         BreadthFirstDirectedPaths(graph, two);
-        for (int i = 0; i < graph.V(); i++) {
+        for (int i = 0; i < graph.v(); i++) {
             if (first.hasPathTo(i) && second.hasPathTo(i)) {
                 int length = first.distTo(i)
                 + second.distTo(i);
