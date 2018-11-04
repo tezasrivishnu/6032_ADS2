@@ -1,45 +1,18 @@
 /**
- *  The {@code LinearProbingHashST} class represents a symbol table
- *  of generic
- *  key-value pairs.
- *  It supports the usual <em>put</em>, <em>get</em>, <em>contains</em>,
- *  <em>delete</em>, <em>size</em>, and <em>is-empty</em> methods.
- *  It also provides a <em>keys</em> method for iterating over all
- *  of the keys.
- *  A symbol table implements the <em>associative array</em> abstraction:
- *  when associating a value with a key that is already in the symbol table,
- *  the convention is to replace the old value with the new value.
- *  Unlike {@link java.util.Map}, this class uses the convention that
- *  values cannot be {@code null}—setting the
- *  value associated with a key to {@code null} is equivalent to
- *  deleting the key
- *  from the symbol table.
- *  <p>
- *  This implementation uses a linear probing hash table. It requires that
- *  the key type overrides the {@code equals()} and
- *  {@code hashCode()} methods.
- *  The expected time per <em>put</em>, <em>contains</em>,
- *  or <em>remove</em>
- *  operation is constant, subject to the uniform hashing assumption.
- *  The <em>size</em>, and <em>is-empty</em> operations take constant time.
- *  Construction takes constant time.
- *  <p>
- *  For additional documentation, see <a
- *  href="http://algs4.cs.princeton.edu/34hash">Section 3.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *  For other implementations, see {@link ST},
- *  {@link BinarySearchST},
- *  {@link SequentialSearchST}, {@link BST}, {@link RedBlackBST}, and
- *  {@link SeparateChainingHashST},
+ * Class for linear probing hash st.
  *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * @param      <Key>    The key
+ * @param      <Value>  The value
  */
 public class LinearProbingHashST<Key, Value> {
     /**
      * int vlue 4.
      */
     private static final int INIT_CAPACITY = 4;
+    /**
+     * int vlue 4.
+     */
+    private static final int HEX = 0x7fffffff;
     /**
      * int value.
      */
@@ -106,7 +79,7 @@ public class LinearProbingHashST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(final Key key) {
-        if (key == null){
+        if (key == null) {
             throw new
             IllegalArgumentException("argument to contains() is null");
         }
@@ -122,12 +95,12 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @return     value.
      */
-    private int hash(Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+    private int hash(final Key key) {
+        return (key.hashCode() & HEX) % m;
     }
 
-    // resizes the hash table to the given capacity by re-hashing all of the keys
-    
+    // resizes the hash table to the given capacity
+    //by re-hashing all of the keys
     /**
      * resizing the array.
      *
@@ -135,7 +108,7 @@ public class LinearProbingHashST<Key, Value> {
      */
     private void resize(final int capacity) {
         LinearProbingHashST<Key, Value> temp
-        = new LinearProbingHashST<Key, Value>(capacity);
+            = new LinearProbingHashST<Key, Value>(capacity);
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 temp.put(keys[i], vals[i]);
@@ -160,7 +133,7 @@ public class LinearProbingHashST<Key, Value> {
      * @throws IllegalArgumentException if
      * {@code key} is {@code null}
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (key == null) {
             throw new
             IllegalArgumentException("first argument to put() is null");
@@ -250,7 +223,7 @@ public class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) {
+        if (n > 0 && n <= m / (2 + 2 + 2 + 2)) {
             resize(m / 2);
         }
 
@@ -266,7 +239,7 @@ public class LinearProbingHashST<Key, Value> {
      */
     public Queue<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
-        for (int i = 0; i < m; i++){
+        for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 queue.enqueue(keys[i]);
             }
@@ -276,8 +249,7 @@ public class LinearProbingHashST<Key, Value> {
 
     // integrity check - don't check after each put() because
     // integrity not maintained during a delete()
-    // 
-    
+    //
     /**
      * checking the table.
      *
@@ -295,56 +267,14 @@ public class LinearProbingHashST<Key, Value> {
 
         // check that each key in table can be found by get()
         for (int i = 0; i < m; i++) {
-            if (keys[i] == null) continue;
-            else if (get(keys[i]) != vals[i]) {
+            if (keys[i] == null) {
+                continue;
+            } else if (get(keys[i]) != vals[i]) {
                 System.err.println("get["
-                    + keys[i] + "] = " + get(keys[i])
-                    + "; vals[i] = " + vals[i]);
-                return false;
+                                   + keys[i] + "] = " + get(keys[i])
+                                   + "; vals[i] = " + vals[i]);
             }
         }
-        return true;
+        return false;
     }
-
-
-    /**
-     * Unit tests the {@code LinearProbingHashST} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     LinearProbingHashST<String, Integer> st = new LinearProbingHashST<String, Integer>();
-    //     for (int i = 0; !StdIn.isEmpty(); i++) {
-    //         String key = StdIn.readString();
-    //         st.put(key, i);
-    //     }
-
-    //     // print keys
-    //     for (String s : st.keys())
-    //         StdOut.println(s + " " + st.get(s));
-    // }
 }
-
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/
