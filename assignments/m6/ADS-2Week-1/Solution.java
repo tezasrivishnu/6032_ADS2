@@ -12,11 +12,18 @@ class PageRank {
 	 * digraph class object.
 	 */
 	private Digraph digraph;
+	/**
+	 * double array.
+	 */
 	private Double[] values;
+	/**
+	 * double array.
+	 */
 	private Double[] iter;
 	/**
 	 * Constructs the object.
-	 *
+	 * complexity O(n + n*n + 1000) 
+	 * bigO will be O(n)
 	 * @param      graph  The graph
 	 */
 	PageRank(final Digraph graph) {
@@ -46,7 +53,14 @@ class PageRank {
 			iter = Arrays.copyOf(values, values.length);
 		}
 	}
-	public double rank(int one) {
+	/**
+	 * finding the pr value.
+	 * complexity O(n) n is the number of edges.
+	 * @param      one   One
+	 *
+	 * @return     int value.
+	 */
+	public double rank(final int one) {
 		double rank = 0.0;
 		if (digraph.indegree(one) == 0) {
 			values[one] = 0.0;
