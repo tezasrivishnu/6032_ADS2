@@ -408,7 +408,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 95 errors.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:90:8: Unused @param tag for 'nodes'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:94:63: Expected @param tag for 'node'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.

@@ -87,7 +87,7 @@ class WordNet {
      * complexity O(n) n is the number of files in
      * file.
      * @param      file   The file
-     * @param      nodes  The nodes
+     * @param      node  The nodes
      *
      * @return     diagraph object.
      */
