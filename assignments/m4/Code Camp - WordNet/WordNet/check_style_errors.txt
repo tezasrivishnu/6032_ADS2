@@ -459,15 +459,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 25 errors.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:16:74: '+' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17:102: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
