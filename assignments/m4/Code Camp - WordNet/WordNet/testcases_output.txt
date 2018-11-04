@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 15 vertices, 14 edges 
 0: 
@@ -18,11 +18,22 @@ Expected Output:
 14: 13
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -32,10 +43,12 @@ distance = 10, ancestor = entity
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -49,10 +62,12 @@ distance = 1, ancestor = animal_oil
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -63,10 +78,12 @@ distance = 2, ancestor = wax
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -79,10 +96,12 @@ distance = 0, ancestor = f
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -100,10 +119,12 @@ distance = 1, ancestor = k
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -118,10 +139,12 @@ distance = 1, ancestor = h
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -139,13 +162,15 @@ distance = 4, ancestor = f
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -158,59 +183,47 @@ Expected Output:
 7:
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+8 vertices, 17 edges 
+0: 7 6 5 4 3 1 
+1: 7 
+2: 7 6 5 4 3 1 
+3: 7 
+4: 7 
+5: 7 
+6: 7 
+7:
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+Multiple roots
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+Multiple roots
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -235,21 +248,19 @@ distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
 Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:66)
+	at Sap.length(Sap.java:62)
+	at Sap.length(Sap.java:43)
+	at WordNet.sap(WordNet.java:171)
+	at WordNet.distance(WordNet.java:154)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
-	at DirectedCycle.<init>(DirectedCycle.java:52)
-	at WordNet.readhypernyms(WordNet.java:104)
-	at WordNet.<init>(WordNet.java:52)
-	at Solution.main(Solution.java:23)
+Cycle detected
 ----------------------------------------
 

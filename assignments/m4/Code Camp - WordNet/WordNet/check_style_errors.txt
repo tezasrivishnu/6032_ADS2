@@ -13,7 +13,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\In.java:204:6: Unused @param tag for 'scanner'. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m4\Code Camp - WordNet\WordNet\In.java:208:27: Expected @param tag for 'scan'. [JavadocMethod]
