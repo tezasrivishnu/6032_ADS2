@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 /**
  * Class for word net.
  */
@@ -91,8 +91,8 @@ class WordNet {
      *
      * @return     diagraph object.
      */
-    public Digraph readhypernyms(final String file, final int nodes) {
-        Digraph digraph = new Digraph(nodes);
+    public Digraph readhypernyms(final String file, final int node) {
+        Digraph digraph = new Digraph(node);
         In in = new In("./Files/" + file);
         while (!in.isEmpty()) {
             String[] tokens = in.readString().split(",");
@@ -103,7 +103,7 @@ class WordNet {
         }
         DirectedCycle cycle = new DirectedCycle(digraph);
         int size = 0;
-        for (int i = 0; i < nodes; i++) {
+        for (int i = 0; i < node; i++) {
             if (digraph.outdegree(i) == 0) {
                 size++;
             }
@@ -148,7 +148,7 @@ class WordNet {
      * @return     the distance.
      */
     public int distance(final String one, final String two) {
-        if(!isNoun (one) || !isNoun(two)) {
+        if (!isNoun(one) || !isNoun(two)) {
             throw new IllegalArgumentException("IllegalArgumentException");
         }
         sap(one, two);
