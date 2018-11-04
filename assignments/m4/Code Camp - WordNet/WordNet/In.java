@@ -151,7 +151,8 @@ public final class In {
   public In(final String name) {
     if (name == null) {
       throw new IllegalArgumentException("file argument is null");
-    }    try {
+    }
+    try {
       // first try to read file from local file system
       File file = new File(name);
       if (file.exists()) {
@@ -204,10 +205,11 @@ public final class In {
    * @throws IllegalArgumentException if
    * {@code scanner} is {@code null}
    */
-  public In(Scanner scanner) {
-    if (scanner == null) {
+  public In(final Scanner scan) {
+    if (scan == null) {
       throw new IllegalArgumentException("file argument is null");
-    }    this.scanner = scanner;
+    }
+    this.scanner = scan;
   }
 
   /**
@@ -426,7 +428,7 @@ public final class In {
     *
     * @return the next {@code long} in this input stream
     * @throws NoSuchElementException if the input stream is empty
-    * @throws InputMismatchException if the next 
+    * @throws InputMismatchException if the next
     *  cannot be parsed as a {@code long}
     */
   public long readLong() {
@@ -623,7 +625,7 @@ public final class In {
     return vals;
   }
 
-  ///// end: section (2 of 2) of code 
+  ///// end: section (2 of 2) of code
   //duplicated from In to StdIn */
 
   /**
