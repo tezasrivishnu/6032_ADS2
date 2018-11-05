@@ -6,68 +6,43 @@ Your Output:
 614708.00000
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 1.81000
 
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Edge cannot be cast to java.base/java.lang.Comparable
-	at MinPQ.greater(MinPQ.java:207)
-	at MinPQ.swim(MinPQ.java:186)
-	at MinPQ.insert(MinPQ.java:159)
-	at Kruskal.<init>(Solution.java:104)
-	at Solution.main(Solution.java:17)
+1.81000
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 10.46351
 
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Edge cannot be cast to java.base/java.lang.Comparable
-	at MinPQ.greater(MinPQ.java:207)
-	at MinPQ.swim(MinPQ.java:186)
-	at MinPQ.insert(MinPQ.java:159)
-	at Kruskal.<init>(Solution.java:104)
-	at Solution.main(Solution.java:17)
+10.46351
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 37.00000
 
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Edge cannot be cast to java.base/java.lang.Comparable
-	at MinPQ.greater(MinPQ.java:207)
-	at MinPQ.swim(MinPQ.java:186)
-	at MinPQ.insert(MinPQ.java:159)
-	at Kruskal.<init>(Solution.java:104)
-	at Solution.main(Solution.java:17)
+37.00000
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 19.00000
 
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Edge cannot be cast to java.base/java.lang.Comparable
-	at MinPQ.greater(MinPQ.java:207)
-	at MinPQ.swim(MinPQ.java:186)
-	at MinPQ.insert(MinPQ.java:159)
-	at Kruskal.<init>(Solution.java:104)
-	at Solution.main(Solution.java:17)
+19.00000
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 2.00000
 
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: Edge cannot be cast to java.base/java.lang.Comparable
-	at MinPQ.greater(MinPQ.java:207)
-	at MinPQ.swim(MinPQ.java:186)
-	at MinPQ.insert(MinPQ.java:159)
-	at Kruskal.<init>(Solution.java:104)
-	at Solution.main(Solution.java:17)
+2.00000
 ----------------------------------------
 

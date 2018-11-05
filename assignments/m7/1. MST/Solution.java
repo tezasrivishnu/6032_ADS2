@@ -19,7 +19,7 @@ final class Solution {
 
 	}
 }
-class Edge {
+class Edge implements Comparable<Edge> {
 	private int edge1;
 	private int edge2;
 	private double weight;
