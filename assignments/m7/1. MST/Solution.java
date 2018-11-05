@@ -9,17 +9,17 @@ final class Solution {
 		int input = Integer.parseInt(scan.nextLine());
 		EdgeWeighted edge = new EdgeWeighted(input);
 		while (scan.hasNext()) {
-		String[] tokens = scan.nextLine().split(" ");
+			String[] tokens = scan.nextLine().split(" ");
 			edge.addEdge(new Edge(Integer.parseInt(tokens[0]),
 			                      Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
 
 		}
 		Kruskal krus = new Kruskal(edge);
-		System.out.println(krus.totalWeight());
+		System.out.printf("%.5f", krus.totalWeight());
 
 	}
 }
-class Edge implements Comparable<Edge> {
+class Edge {
 	private int edge1;
 	private int edge2;
 	private double weight;
