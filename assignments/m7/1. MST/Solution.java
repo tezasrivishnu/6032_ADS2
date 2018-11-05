@@ -1,8 +1,19 @@
 import java.util.Scanner;
+/**
+ * class Solution.
+ */
 final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
+	/**
+	 * main method for the program.
+	 * complexity O(n) n is the number of input connections.
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int number = Integer.parseInt(scan.nextLine());
@@ -11,7 +22,8 @@ final class Solution {
 		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
 			edge.addEdge(new Edge(Integer.parseInt(tokens[0]),
-			                      Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
+			Integer.parseInt(tokens[1]),
+			Double.parseDouble(tokens[2])));
 
 		}
 		Kruskal krus = new Kruskal(edge);
@@ -19,28 +31,70 @@ final class Solution {
 
 	}
 }
+/**
+ * Class for edge.
+ */
 class Edge implements Comparable<Edge> {
+	/**
+	 * int variable.
+	 */
 	private int edge1;
+	/**
+	 * int variable.
+	 */
 	private int edge2;
+	/**
+	 * double variable.
+	 */
 	private double weight;
+	/**
+	 * Constructs the object.
+	 * @param      one   One
+	 * @param      two   Two
+	 * @param      wei   The wei
+	 */
 	Edge(final int one, final int two, final double wei) {
 		this.edge1 = one;
 		this.edge2 = two;
 		this.weight = wei;
 	}
+	/**
+	 * Gets the weight.
+	 * complexity O(1)
+	 * @return     The weight.
+	 */
 	public double getWeight() {
 		return this.weight;
 	}
+	/**
+	 * gets the other edge connected.
+	 * complexity O(1)
+	 * @param      one   One
+	 *
+	 * @return     int value.
+	 */
 	public int other(final int one) {
 		if (one == edge1) {
 			return this.edge2;
 		}
 		return this.edge1;
 	}
+	/**
+	 * retuns the edge.
+	 * complexity O(1)
+	 * @return     int value
+	 */
 	public int either() {
 		return this.edge1;
 	}
-	public int compareTo(Edge that) {
+	/**
+	 * compare two vertices weights.
+	 * complexity O(1)
+	 * @param      that  The that
+	 *
+	 * @return     int value.
+	 */
+	public int compareTo(final Edge that) {
 		if (this.weight < that.weight) {
 			return -1;
 		}
@@ -50,9 +104,21 @@ class Edge implements Comparable<Edge> {
 		return 0;
 	}
 }
+/**
+ * Class for edge weighted.
+ */
 class EdgeWeighted {
-	private final int vertices;
+	/**
+	 * int variable.
+	 */
+	private int vertices;
+	/**
+	 * int variable.
+	 */
 	private int edges;
+	/**
+	 * Bag class array.
+	 */
 	private Bag<Edge>[] adjacent;
 	EdgeWeighted(final int one) {
 		this.vertices = one;
@@ -62,6 +128,11 @@ class EdgeWeighted {
 			adjacent[i] = new Bag<Edge>();
 		}
 	}
+	/**
+	 * Adds an edge.
+	 * complexity O(1)
+	 * @param      ed    edge object.
+	 */
 	public void addEdge(final Edge ed) {
 		int one = ed.either();
 		int two = ed.other(one);
@@ -69,6 +140,11 @@ class EdgeWeighted {
 		adjacent[two].add(ed);
 		edges += 1;
 	}
+	/**
+	 * returns the edges.
+	 * complexity O(v) v are the number of vertices.
+	 * @return     iterable.
+	 */
 	public Iterable<Edge> edges() {
 		Bag<Edge> bag = new Bag<Edge>();
 		for (int i = 0; i < vertices; i++) {
@@ -86,16 +162,42 @@ class EdgeWeighted {
 		}
 		return bag;
 	}
+	/**
+	 * edges to a particualr vertex.
+	 * complexity O(1)
+	 * @param      one   One
+	 *
+	 * @return     iterable array.
+	 */
 	public Iterable<Edge> adjacentEdges(final int one) {
 		return adjacent[one];
 	}
+	/**
+	 * No of vertices in graph.
+	 * complexity O(1)
+	 * @return     int value.
+	 */
 	public int vertices() {
 		return vertices;
 	}
 }
+/**
+ * Class for kruskal.
+ */
 class Kruskal {
+	/**
+	 * double variable.
+	 */
 	private double totalweight;
+	/**
+	 * queue object.
+	 */
 	private Queue<Edge> queue;
+	/**
+	 * Constructs the object.
+	 * complexity O(ElogE) e is the number of edges.
+	 * @param      graph  The graph
+	 */
 	Kruskal(final EdgeWeighted graph) {
 		queue = new Queue<Edge>();
 		totalweight = 0.0;
@@ -116,6 +218,11 @@ class Kruskal {
 			}
 		}
 	}
+	/**
+	 * returns the total weight of the tree.
+	 * complexity O(1)
+	 * @return     double value.
+	 */
 	public double totalWeight() {
 		return totalweight;
 	}
