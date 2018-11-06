@@ -1,9 +1,20 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
+	/**
+     *main method for the program..
+     *complexity is O(E + V)
+     * @param      args  The arguments
+     */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String[] input = scan.nextLine().split(" ");
@@ -17,21 +28,25 @@ class Solution {
 		for (int i = 0; i < Integer.parseInt(input[1]); i++) {
 			String[] tokens = scan.nextLine().split(" ");
 			graph.addEdge(new Edge(list.indexOf(tokens[0]),
-				list.indexOf(tokens[1]), Double.parseDouble(tokens[2])));
+				list.indexOf(tokens[1]), Integer.parseInt(tokens[2])));
 		}
 		int cases = Integer.parseInt(scan.nextLine());
 		for (int k = 0; k < cases; k++) {
 			String[] item = scan.nextLine().split(" ");
 			Dijk dij = new Dijk(graph, list.indexOf(item[0]));
-			System.out.println(dij.distanceTo(list.indexOf(item[1])));
+			System.out.println(
+				dij.distanceTo(list.indexOf(item[1])));
 		}
 	}
 }
+/**
+ * Class for dijk.
+ */
 class Dijk {
 	/**
      *the distace array to store.
      */
-	private double[] distace;
+	private int[] distace;
 	/**
 	 * edge class array.
 	 */
@@ -39,21 +54,21 @@ class Dijk {
 	/**
 	 * Index min PQ object.
 	 */
-	private IndexMinPQ<Double> min;
+	private IndexMinPQ<Integer> min;
 	/**
      *the constructor to initialize the objects.
      *complexity is O(E + V).
-     * @param      grah  graph object.
+     * @param      graph  graph object.
      * @param      one  The source
      */
 	Dijk(final EdgeWeightedGraph graph, final int one) {
-		distace = new double[graph.V()];
+		distace = new int[graph.V()];
 		edge = new Edge[graph.V()];
-		min = new IndexMinPQ<Double>(graph.V());
+		min = new IndexMinPQ<Integer>(graph.V());
 		for (int i = 0; i < graph.V(); i++) {
-			distace[i] = 10000000.0;
+			distace[i] = 10000000;
 		}
-		distace[one] = 0.0;
+		distace[one] = 0;
 		min.insert(one, distace[one]);
         while (!min.isEmpty()) {
             int two = min.delMin();
@@ -69,8 +84,8 @@ class Dijk {
      */
 	public void relax(final Edge ed, final int one) {
 		int two = ed.other(one);
-        if (distace[two] > distace[one] + ed.weight()) {
-            distace[two] = distace[one] + ed.weight();
+        if (distace[two] > distace[one] + ed.getWeight()) {
+            distace[two] = distace[one] + ed.getWeight();
             edge[two] = ed;
             if (min.contains(two)) {
                 min.decreaseKey(two, distace[two]);
@@ -79,16 +94,37 @@ class Dijk {
             }
         }
 	}
-	public double distTo(final int one) {
+	/**
+     *the method returns the distance.
+     *complexity O(1)
+     * @param      one  vertex
+     *
+     * @return distance between two vertices.
+     */
+	public int distTo(final int one) {
         return distace[one];
     }
-    public double distanceTo(final int one) {
-        double total = 0;
+     /**
+     * returns the shortest distance.
+     * complexity O(E)
+     * @param      one  The vertex
+     *
+     * @return shortest distance between two vertices.
+     */
+    public int distanceTo(final int one) {
+        int total = 0;
         for (Edge each : pathTo(one)) {
-            total += each.weight();
+            total += each.getWeight();
         }
         return total;
     }
+     /**
+     *shortest path to given vertex.
+     *
+     * @param      one  vertex.
+     *complexity is O(ElogV)
+     * @return iterable
+     */
     public Iterable<Edge> pathTo(final int one) {
         if (!hasPath(one)) {
             return null;
@@ -101,6 +137,13 @@ class Dijk {
         }
         return sta;
     }
+    /**
+     * Determines if it has path.
+     * complexity O(1)
+     * @param      one   One
+     *
+     * @return     True if has path, False otherwise.
+     */
     public boolean hasPath(final int one) {
         return distace[one] < 10000000.0;
     }

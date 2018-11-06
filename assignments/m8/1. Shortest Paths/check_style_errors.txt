@@ -56,35 +56,8 @@ Audit done.
 Checkstyle ends with 51 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:11: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:18: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:24: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:26:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:27:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:28:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:37: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:41:17: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:41:21: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:41:24: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:41:28: 'w' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:41:31: Parameter weight should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:41:38: 'weight' hides a field. [HiddenField]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:42: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:42: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:43: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:43: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:44: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:44: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:69: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:76:22: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:77: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:79: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:85: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:88: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Edge.java:93:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
@@ -244,26 +217,15 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:3: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:7:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:20: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:26: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:30: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:46:8: Unused @param tag for 'grah'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:49:38: Expected @param tag for 'graph'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:54:38: '10000000.0' is a magic number. [MagicNumber]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:60: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:82:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:85:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:92:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:104:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:105:31: '10000000.0' is a magic number. [MagicNumber]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:6: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:18:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:31: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:69:38: '10000000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:75: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:148:31: '10000000.0' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
