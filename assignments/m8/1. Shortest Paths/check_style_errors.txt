@@ -105,10 +105,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:70:26: '10000000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:150:31: '10000000.0' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

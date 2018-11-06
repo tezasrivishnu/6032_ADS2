@@ -24,12 +24,12 @@ final class Solution {
             list.add(edges[j]);
         }
         EdgeWeighted graph = new EdgeWeighted(Integer.
-            parseInt(input[0]));
+                                              parseInt(input[0]));
         for (int i = 0; i < Integer.parseInt(input[1]); i++) {
             String[] tokens = scan.nextLine().split(" ");
             graph.addEdge(new Edge(list.indexOf(tokens[0]),
-                list.indexOf(tokens[1]),
-                Integer.parseInt(tokens[2])));
+                                   list.indexOf(tokens[1]),
+                                   Integer.parseInt(tokens[2])));
         }
         int cases = Integer.parseInt(scan.nextLine());
         for (int k = 0; k < cases; k++) {
@@ -44,6 +44,10 @@ final class Solution {
  * Class for dijk.
  */
 class Dijk {
+    /**
+     * int vriable.
+     */
+    private static final int NUMBER = 10000000;
     /**
      *the distace array to store.
      */
@@ -67,7 +71,7 @@ class Dijk {
         edge = new Edge[graph.vertices()];
         min = new IndexMinPQ<Integer>(graph.vertices());
         for (int i = 0; i < graph.vertices(); i++) {
-            distace[i] = 10000000;
+            distace[i] = NUMBER;
         }
         distace[one] = 0;
         min.insert(one, distace[one]);
@@ -106,13 +110,13 @@ class Dijk {
     public int distTo(final int one) {
         return distace[one];
     }
-     /**
-     * returns the shortest distance.
-     * complexity O(E)
-     * @param      one  The vertex
-     *
-     * @return shortest distance between two vertices.
-     */
+    /**
+    * returns the shortest distance.
+    * complexity O(E)
+    * @param      one  The vertex
+    *
+    * @return shortest distance between two vertices.
+    */
     public int distanceTo(final int one) {
         int total = 0;
         for (Edge each : pathTo(one)) {
@@ -120,13 +124,13 @@ class Dijk {
         }
         return total;
     }
-     /**
-     *shortest path to given vertex.
-     *
-     * @param      one  vertex.
-     *complexity is O(ElogV)
-     * @return iterable
-     */
+    /**
+    *shortest path to given vertex.
+    *
+    * @param      one  vertex.
+    *complexity is O(ElogV)
+    * @return iterable
+    */
     public Iterable<Edge> pathTo(final int one) {
         if (!hasPath(one)) {
             return null;
@@ -147,6 +151,6 @@ class Dijk {
      * @return     True if has path, False otherwise.
      */
     public boolean hasPath(final int one) {
-        return distace[one] < 10000000.0;
+        return distace[one] < NUMBER;
     }
 }
