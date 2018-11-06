@@ -1,0 +1,4 @@
+1. Sort the edges in decreasing order of their weights.
+2. Take a minimum edge and connnect them
+3. Repeat this process. If a cycle is formed while adding an edge, ignore it and continue the process.
+4. The MST will have V - 1 edges.
