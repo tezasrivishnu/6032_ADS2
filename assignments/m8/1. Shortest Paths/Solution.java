@@ -23,7 +23,7 @@ class Solution {
 		for (int j = 0; j < edges.length; j++) {
 			list.add(edges[j]);
 		}
-		EdgeWeightedGraph graph = new EdgeWeightedGraph(Integer.
+		EdgeWeighted graph = new EdgeWeighted(Integer.
 			parseInt(input[0]));
 		for (int i = 0; i < Integer.parseInt(input[1]); i++) {
 			String[] tokens = scan.nextLine().split(" ");
@@ -61,18 +61,18 @@ class Dijk {
      * @param      graph  graph object.
      * @param      one  The source
      */
-	Dijk(final EdgeWeightedGraph graph, final int one) {
-		distace = new int[graph.V()];
-		edge = new Edge[graph.V()];
-		min = new IndexMinPQ<Integer>(graph.V());
-		for (int i = 0; i < graph.V(); i++) {
+	Dijk(final EdgeWeighted graph, final int one) {
+		distace = new int[graph.vertices()];
+		edge = new Edge[graph.vertices()];
+		min = new IndexMinPQ<Integer>(graph.vertices());
+		for (int i = 0; i < graph.vertices(); i++) {
 			distace[i] = 10000000;
 		}
 		distace[one] = 0;
 		min.insert(one, distace[one]);
         while (!min.isEmpty()) {
             int two = min.delMin();
-            for (Edge each : graph.adj(two))
+            for (Edge each : graph.adjacentEdges(two))
                 relax(each, two);
         }
 	}
