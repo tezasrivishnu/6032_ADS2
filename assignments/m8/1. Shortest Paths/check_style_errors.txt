@@ -38,10 +38,6 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:138: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:148: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:148: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:152:27: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:152:28: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:155:13: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:155:14: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:167:22: Parameter i should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:168: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:169: 'if' construct must use '{}'s. [NeedBraces]
@@ -72,6 +68,7 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:246: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:247: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:247: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:259: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:260: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:260:29: Parameter i should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:260:33: Expected @param tag for 'i'. [JavadocMethod]
@@ -80,24 +77,14 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:264:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:264:23: Parameter i should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:264:30: Parameter j should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:275: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:276:23: Parameter k should be final. [FinalParameters]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:276:27: Expected @param tag for 'k'. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:277:34: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:277:35: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:278:22: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:278:23: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:279:18: '/' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:279:19: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:283:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:283:23: Parameter k should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:284:17: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:284:18: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:285:22: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:285:23: '*' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:286: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:286:38: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:286:39: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:287: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:296: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:305:41: '{' at column 41 should have line break after. [LeftCurly]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:307: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:309:9: Missing a Javadoc comment. [JavadocVariable]
@@ -112,22 +99,16 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:323: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\IndexMinPQ.java:336: Line is longer than 80 characters (found 105). [LineLength]
 Audit done.
-Checkstyle ends with 102 errors.
+Checkstyle ends with 89 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:18:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:31: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:69:38: '10000000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:75: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:148:31: '10000000.0' is a magic number. [MagicNumber]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:70:26: '10000000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Solution.java:150:31: '10000000.0' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
