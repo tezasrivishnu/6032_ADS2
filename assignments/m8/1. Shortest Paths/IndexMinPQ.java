@@ -84,7 +84,7 @@ implements Iterable<Integer> {
 
     /**
      * Associates key with index {@code i}.
-     * 
+     * complexity O(logn)
      * @param  i an index
      * @param  key the key to associate with index {@code i}
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
