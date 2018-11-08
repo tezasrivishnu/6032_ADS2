@@ -44,6 +44,8 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
         SeamCarver seamCarver = null;
+        if (cases.length() == 0) {
+            System.out.println("picture is null");        }
         try {
             switch (cases) {
             case "width":
@@ -65,10 +67,6 @@ public class Solution {
             case "energy":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
-                    if (file.length() == 0) {
-                        System.out.println("picture is null");
-                        break;
-                    }
                     printEnergies("/Files/" + file);
                 }
                 break;
