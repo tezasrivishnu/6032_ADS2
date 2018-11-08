@@ -1,26 +1,64 @@
-
+/**
+ * Class for seam carver.
+ */
 public class SeamCarver {
-	Picture pic;
+	/**
+	 * pricture class object.
+	 */
+	private Picture pic;
 	// create a seam carver object based on the given picture
-	public SeamCarver(Picture picture) {
+
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      picture  The picture
+	 */
+	public SeamCarver(final Picture picture) {
 		this.pic = picture;
 	}
 	// current picture
+
+	/**
+	 * returns the picture object.
+	 * comlexity O(1).
+	 * @return     the picture object.
+	 */
 	public Picture picture() {
 		return pic;
 	}
 	// width of current picture
+
+	/**
+	 * returns the width of the picture.
+	 * complexity O(1)
+	 * @return     the int value.
+	 */
 	public int width() {
 		return pic.width();
 	}
 
 	// height of current picture
+
+	/**
+	 * returns the height of the picture.
+	 * complexity O(1)
+	 * @return     the int value.
+	 */
 	public int height() {
 		return pic.height();
 	}
 
 	// energy of pixel at column x and row y
-	public double energy(int one, int two) {
+
+	/**
+	 * calculating the energy of a particular pixel.
+	 * complexity O(1).
+	 * @param      one   One
+	 * @param      two   Two
+	 *
+	 * @return     double value.
+	 */
+	public double energy(final int one, final int two) {
 		if (one == 0 || one == width() - 1
 		        || two == 0 || two == height() - 1) {
 			return 1000.0;
