@@ -42,8 +42,9 @@ public class SeamCarver {
 		double twoblue = Math.abs(pic.get(one, two - 1).getBlue()
 		                          - pic.get(one, two + 1).getBlue());
 
-		return ((onered * onered) + (oneblue * oneblue) + (onegreen * onegreen))
+		double total =  ((onered * onered) + (oneblue * oneblue) + (onegreen * onegreen))
 		       + ((twored * twored) + (twoblue * twoblue) + (twogreen * twogreen));
+		       return Math.sqrt(total);
 	}
 
 	// sequence of indices for horizontal seam
