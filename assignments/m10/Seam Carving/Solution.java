@@ -65,6 +65,10 @@ public class Solution {
             case "energy":
                 while (scan.hasNextLine()) {
                     String file = scan.nextLine();
+                    if (file == null) {
+                        System.out.println("picture is null");
+                        break;
+                    }
                     printEnergies("/Files/" + file);
                 }
                 break;
