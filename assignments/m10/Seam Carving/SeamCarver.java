@@ -167,35 +167,36 @@ public class SeamCarver {
 		this.pic = vert;
 	}
 	public int[] findHorizontalSeam() {
-		int[][] edgeTo = new int[height()][width()];
-		double[][] distTo = new double[height()][width()];
-		for (int i = 0; i < width(); i++) {
-			for (int j = 0; j < height(); j++) {
-				distTo[i][j] = 10000000.0;
-			}
-		}
-		for (int i = 0; i < height(); i++) {
-			distTo[i][0] = 1000.0;
-		}
-		for (int j = 0; j < width() - 1; j++) {
-			for (int i = 0; i < height(); i++) {
-				relaxHorizantal(i, j, edgeTo, distTo);
-			}
-		}
-		double dis = 10000000.0;
-		int min = 0;
-		for (int i = 0; i < height(); i++) {
-			if (dis > distTo[i][width() - 1]) {
-				dis = distTo[i][width() - 1];
-				min = i;
-			}
-		}
-		int[] arr = new int[width()];
-		for (int j = width() - 1, i = min; j >= 0; j--) {
-			arr[j] = i;
-			i -= edgeTo[i][j];
-		}
-		return arr;
+		// int[][] edgeTo = new int[height()][width()];
+		// double[][] distTo = new double[height()][width()];
+		// for (int i = 0; i < width(); i++) {
+		// 	for (int j = 0; j < height(); j++) {
+		// 		distTo[i][j] = 10000000.0;
+		// 	}
+		// }
+		// for (int i = 0; i < height(); i++) {
+		// 	distTo[i][0] = 1000.0;
+		// }
+		// for (int j = 0; j < width() - 1; j++) {
+		// 	for (int i = 0; i < height(); i++) {
+		// 		relaxHorizantal(i, j, edgeTo, distTo);
+		// 	}
+		// }
+		// double dis = 10000000.0;
+		// int min = 0;
+		// for (int i = 0; i < height(); i++) {
+		// 	if (dis > distTo[i][width() - 1]) {
+		// 		dis = distTo[i][width() - 1];
+		// 		min = i;
+		// 	}
+		// }
+		// int[] arr = new int[width()];
+		// for (int j = width() - 1, i = min; j >= 0; j--) {
+		// 	arr[j] = i;
+		// 	i -= edgeTo[i][j];
+		// }
+		// return arr;
+		return new int[0];
 	}
 	public void relaxHorizantal(int i, int j, int[][] edgeTo, double[][] distTo) {
 		int k = j + 1;
