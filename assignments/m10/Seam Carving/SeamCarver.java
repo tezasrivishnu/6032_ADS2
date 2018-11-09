@@ -90,7 +90,7 @@ public class SeamCarver {
 	// 	return new int[0];
 	// }
 	public void relaxVertical(int i, int j, int[][] edgeTo,
-	                  double[][] distTo) {
+	                          double[][] distTo) {
 		if (distTo[i][j + 1] >= distTo[i][j] + energy(i, j + 1)) {
 			distTo[i][j + 1] = distTo[i][j] + energy(i, j + 1);
 			edgeTo[i][j + 1] = i;
@@ -172,11 +172,10 @@ public class SeamCarver {
 		for (int i = 0; i < width(); i++) {
 			for (int j = 0; j < height(); j++) {
 				distTo[i][j] = 10000000.0;
-				if (j == 0) {
-					distTo[i][0] = 1000.0;
-					edgeTo[i][0] = i;
-				}
 			}
+		}
+		for (int i = 0; i < height(); i++) {
+			distTo[i][0] = 1000.0;
 		}
 		for (int j = 0; j < width() - 1; j++) {
 			for (int i = 0; i < height(); i++) {
