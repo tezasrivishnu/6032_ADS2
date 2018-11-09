@@ -85,10 +85,10 @@ public class SeamCarver {
 		return Math.sqrt(total);
 	}
 
-	// sequence of indices for horizontal seam
-	// public int[] findHorizontalSeam() {
-	// 	return int[];
-	// }
+	//sequence of indices for horizontal seam
+	public int[] findHorizontalSeam() {
+		return new int[0];
+	}
 	public void relax(int i, int j, int[][] edgeTo,
 	                  double[][] distTo) {
 		if (distTo[i][j + 1] >= distTo[i][j] + energy(i, j + 1)) {
@@ -99,7 +99,7 @@ public class SeamCarver {
 			distTo[i - 1][j + 1] = distTo[i][j] + energy(i - 1, j + 1);
 			edgeTo[i - 1][j + 1] = i;
 		}
-		if (i < width() - 1 && distTo[i + 1][j + 1] > distTo[i + 1][j + 1] + energy(i + 1, j + 1)) {
+		if (i < width() - 1 && distTo[i + 1][j + 1] > distTo[i + 1][j] + energy(i + 1, j + 1)) {
 			distTo[i + 1][j + 1] = distTo[i][j] + energy(i + 1, j + 1);
 			edgeTo[i + 1][j + 1] = i;
 		}
@@ -125,13 +125,13 @@ public class SeamCarver {
 				}
 			}
 		}
-		for (int j = 0; j < height(); j++) {
+		for (int j = 0; j < height() - 1; j++) {
 			for (int i = 0; i < width(); i++) {
 				relax(i, j, edgeTo, distTo);
 			}
 		}
 		int min = 0;
-		for (int i = 1; i < width(); i++) {
+		for (int i = 1; i < width() - 1; i++) {
 			if (distTo[min][height() - 1] > distTo[i][height() - 1]) {
 				min = i;
 			}
