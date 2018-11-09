@@ -167,6 +167,23 @@ public class SeamCarver {
 		this.pic = vert;
 	}
 	public int[] findHorizontalSeam() {
+		Picture first = pic;
+		Picture transpose = new Picture(first.height(), first.width());
+
+		for (int j = 0; j < transpose.width(); j++) {
+			for (int i = 0; i < transpose.height(); i++) {
+				transpose.set(j, i, first.get(i, j));
+			}
+		}
+		this.pic = transpose;
+
+		// call findVerticalSeam
+		int[] arr = findVerticalSeam();
+
+		// Transpose back.
+		this.pic = first;
+
+		return arr;
 		// int[][] edgeTo = new int[height()][width()];
 		// double[][] distTo = new double[height()][width()];
 		// for (int i = 0; i < width(); i++) {
@@ -196,7 +213,7 @@ public class SeamCarver {
 		// 	i -= edgeTo[i][j];
 		// }
 		// return arr;
-		return new int[0];
+		// return new int[0];
 	}
 	public void relaxHorizantal(int i, int j, int[][] edgeTo, double[][] distTo) {
 		int k = j + 1;
