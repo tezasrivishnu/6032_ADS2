@@ -86,10 +86,10 @@ public class SeamCarver {
 	}
 
 	//sequence of indices for horizontal seam
-	public int[] findHorizontalSeam() {
-		return new int[0];
-	}
-	public void relax(int i, int j, int[][] edgeTo,
+	// public int[] findHorizontalSeam() {
+	// 	return new int[0];
+	// }
+	public void relaxVertical(int i, int j, int[][] edgeTo,
 	                  double[][] distTo) {
 		if (distTo[i][j + 1] >= distTo[i][j] + energy(i, j + 1)) {
 			distTo[i][j + 1] = distTo[i][j] + energy(i, j + 1);
@@ -127,7 +127,7 @@ public class SeamCarver {
 		}
 		for (int j = 0; j < height() - 1; j++) {
 			for (int i = 0; i < width(); i++) {
-				relax(i, j, edgeTo, distTo);
+				relaxVertical(i, j, edgeTo, distTo);
 			}
 		}
 		int min = 0;
@@ -153,17 +153,68 @@ public class SeamCarver {
 	// remove vertical seam from current picture
 	public void removeVerticalSeam(int[] seam) {
 		Picture original = pic;
-        Picture vert = new Picture(original.width() - 1, original.height());
+		Picture vert = new Picture(original.width() - 1, original.height());
 
-        for (int i = 0; i < vert.height(); i++) {
-            for (int j = 0; j < seam[i]; j++) {
-                vert.set(j, i, original.get(j, i));
-            }
-            for (int j = seam[i]; j < vert.width(); j++) {
-                vert.set(j, i, original.get(j + 1, i));
-            }
-        }
+		for (int i = 0; i < vert.height(); i++) {
+			for (int j = 0; j < seam[i]; j++) {
+				vert.set(j, i, original.get(j, i));
+			}
+			for (int j = seam[i]; j < vert.width(); j++) {
+				vert.set(j, i, original.get(j + 1, i));
+			}
+		}
 
-        this.pic = vert;
+		this.pic = vert;
+	}
+	public int[] findHorizontalSeam() {
+		int[][] edgeTo = new int[height()][width()];
+		double[][] distTo = new double[height()][width()];
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
+				distTo[i][j] = 10000000.0;
+				if (j == 0) {
+					distTo[i][0] = 1000.0;
+					edgeTo[i][0] = i;
+				}
+			}
+		}
+		for (int j = 0; j < width() - 1; j++) {
+			for (int i = 0; i < height(); i++) {
+				relaxHorizantal(i, j, edgeTo, distTo);
+			}
+		}
+		double dis = 10000000.0;
+		int min = 0;
+		for (int i = 0; i < height(); i++) {
+			if (dis > distTo[i][width() - 1]) {
+				dis = distTo[i][width() - 1];
+				min = i;
+			}
+		}
+		int[] arr = new int[width()];
+		for (int j = width() - 1, i = min; j >= 0; j--) {
+			arr[j] = i;
+			i -= edgeTo[i][j];
+		}
+		return arr;
+	}
+	public void relaxHorizantal(int i, int j, int[][] edgeTo, double[][] distTo) {
+		int k = j + 1;
+		for (int w = -1; w <= 1; w++) {
+			int l = i + w;
+			if (l < 0 || l >= height()) {
+				continue;
+			}
+			if (w == 0) {
+				if (distTo[l][k] >= distTo[i][j]  + energy(k, l)) {
+					distTo[l][k] = distTo[i][j]  + energy(k, l);
+					edgeTo[l][k] = w;
+				}
+			}
+			if (distTo[l][k] > distTo[i][j]  + energy(k, l)) {
+				distTo[l][k] = distTo[i][j]  + energy(k, l);
+				edgeTo[l][k] = w;
+			}
+		}
 	}
 }
