@@ -152,6 +152,18 @@ public class SeamCarver {
 
 	// remove vertical seam from current picture
 	public void removeVerticalSeam(int[] seam) {
+		Picture original = pic;
+        Picture vert = new Picture(original.width() - 1, original.height());
 
+        for (int i = 0; i < vert.height(); i++) {
+            for (int j = 0; j < seam[i]; j++) {
+                vert.set(j, i, original.get(j, i));
+            }
+            for (int j = seam[i]; j < vert.width(); j++) {
+                vert.set(j, i, original.get(j + 1, i));
+            }
+        }
+
+        this.pic = vert;
 	}
 }
