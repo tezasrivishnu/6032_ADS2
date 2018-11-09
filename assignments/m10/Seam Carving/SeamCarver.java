@@ -81,18 +81,68 @@ public class SeamCarver {
 		                          - pic.get(one, two + 1).getBlue());
 
 		double total =  ((onered * onered) + (oneblue * oneblue) + (onegreen * onegreen))
-		       + ((twored * twored) + (twoblue * twoblue) + (twogreen * twogreen));
-		       return Math.sqrt(total);
+		                + ((twored * twored) + (twoblue * twoblue) + (twogreen * twogreen));
+		return Math.sqrt(total);
 	}
 
 	// sequence of indices for horizontal seam
-	public int[] findHorizontalSeam() {
-		return new int[0];
+	// public int[] findHorizontalSeam() {
+	// 	return int[];
+	// }
+	public void relax(int i, int j, int[][] edgeTo,
+	                  double[][] distTo) {
+		if (distTo[i][j + 1] >= distTo[i][j] + energy(i, j + 1)) {
+			distTo[i][j + 1] = distTo[i][j] + energy(i, j + 1);
+			edgeTo[i][j + 1] = i;
+		}
+		if (i > 0 && distTo[i - 1][j + 1] > distTo[i][j] + energy(i - 1, j + 1)) {
+			distTo[i - 1][j + 1] = distTo[i][j] + energy(i - 1, j + 1);
+			edgeTo[i - 1][j + 1] = i;
+		}
+		if (i < width() - 1 && distTo[i + 1][j + 1] > distTo[i + 1][j + 1] + energy(i + 1, j + 1)) {
+			distTo[i + 1][j + 1] = distTo[i][j] + energy(i + 1, j + 1);
+			edgeTo[i + 1][j + 1] = i;
+		}
 	}
+
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		return new int[0];
+		double[][] energy = new double[width()][height()];
+		int[] vertexTo = new int[height()];
+		double[][] distTo = new double[width()][height()];
+		int[][] edgeTo = new int[width()][height()];
+		if (width() - 1 == 0 || height() - 1 == 0) {
+			return vertexTo;
+		}
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
+				energy[i][j] = energy(i, j);
+				distTo[i][j] = 10000000.0;
+				if (j == 0) {
+					distTo[i][0] = 1000.0;
+					edgeTo[i][0] = i;
+				}
+			}
+		}
+		for (int j = 0; j < height(); j++) {
+			for (int i = 0; i < width(); i++) {
+				relax(i, j, edgeTo, distTo);
+			}
+		}
+		int min = 0;
+		for (int i = 1; i < width(); i++) {
+			if (distTo[min][height() - 1] > distTo[i][height() - 1]) {
+				min = i;
+			}
+		}
+		vertexTo[height() - 1] = min;
+		int count = height() - 2;
+		while (count >= 0) {
+			vertexTo[count] = edgeTo[vertexTo[count + 1]][count + 1];
+			count--;
+		}
+		return vertexTo;
 	}
 
 	// remove horizontal seam from current picture
