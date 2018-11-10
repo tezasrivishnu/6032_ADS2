@@ -89,7 +89,7 @@ class EdgeWeighted {
     public String toString() {
         String s = "";
         s += vertices + " vertices " + edges
-        + " edges " + NEWLINE;
+        + " edges" + NEWLINE;
         for (int i = 0; i < vertices; i++) {
             s += i + ": ";
             for (Edge e : adjacentEdges(i)) {
@@ -99,7 +99,6 @@ class EdgeWeighted {
             }
             s += NEWLINE;
         }
-        s+= NEWLINE;
         return s.toString();
     }
 }
