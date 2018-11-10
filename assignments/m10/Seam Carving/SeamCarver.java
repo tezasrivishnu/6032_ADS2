@@ -147,8 +147,20 @@ public class SeamCarver {
 
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
-
-	}
+        Picture original = pic;
+        Picture transpose
+        = new Picture(original.height(),
+        	original.width());
+        for (int j = 0; j < transpose.width(); j++) {
+            for (int i = 0; i < transpose.height(); i++) {
+                transpose.set(j, i, original.get(i, j));
+            }
+        }
+        this.pic = transpose;
+        transpose = null;
+        original = null;
+        removeVerticalSeam(seam);
+    }
 
 	// remove vertical seam from current picture
 	public void removeVerticalSeam(int[] seam) {
@@ -163,7 +175,6 @@ public class SeamCarver {
 				vert.set(j, i, original.get(j + 1, i));
 			}
 		}
-
 		this.pic = vert;
 	}
 	public int[] findHorizontalSeam() {
@@ -176,11 +187,7 @@ public class SeamCarver {
 			}
 		}
 		this.pic = transpose;
-
-		// call findVerticalSeam
 		int[] arr = findVerticalSeam();
-
-		// Transpose back.
 		this.pic = first;
 
 		return arr;
