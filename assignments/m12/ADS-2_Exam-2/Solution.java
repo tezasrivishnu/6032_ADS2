@@ -12,7 +12,7 @@ public final class Solution {
 	}
 	/**
 	 * main function for the program.
-	 * complexity O()
+	 * complexity O(V*E).
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
@@ -60,8 +60,8 @@ public final class Solution {
 				System.out.println(out2 + out3);
 				ArrayList<Integer> path
 				= new ArrayList<Integer>();
-				for (Edge e : dij1.pathTo
-					(Integer.parseInt(items1[1]))) {
+				for (Edge e : dij1.pathTo(
+					Integer.parseInt(items1[1]))) {
 					if (!path.contains(e.getEdge2())) {
 						path.add(e.getEdge2());
 					}
