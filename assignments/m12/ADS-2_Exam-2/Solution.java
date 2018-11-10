@@ -70,8 +70,14 @@ public class Solution {
 						path.add(e.getEdge1());
 					}
 				}
-				String text = path.toString();
-				System.out.println(text.replaceAll( "[^a-zA-Z0-9 ]" , "" ));
+				String s = "";
+				for (int i = 0; i < path.size() - 1; i++) {
+					s += path.get(i) + " ";
+				}
+				s+=path.get(path.size()-1);
+				System.out.println(s);
+				// String text = path.toString();
+				// System.out.println(text.replaceAll( "[^a-zA-Z0-9 ]" , "" ));
 			}
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
