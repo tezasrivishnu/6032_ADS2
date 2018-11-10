@@ -99,6 +99,7 @@ class EdgeWeighted {
             }
             s += NEWLINE;
         }
+        s+= NEWLINE;
         return s.toString();
     }
 }
