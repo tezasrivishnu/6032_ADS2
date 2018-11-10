@@ -2,7 +2,11 @@
  * Class for edge weighted.
  */
 class EdgeWeighted {
-    private static final String NEWLINE = System.getProperty("line.separator");
+    /**
+     * newline.
+     */
+    private static final String NEWLINE
+    = System.getProperty("line.separator");
 
     /**
      * int variable.

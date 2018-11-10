@@ -77,7 +77,7 @@ class Dijk {
     */
     public double distanceTo(final int one) {
         double total = 0.0;
-        if(pathTo(one) == null) {
+        if (pathTo(one) == null) {
             return 0.0;
         }
         for (Edge each : pathTo(one)) {

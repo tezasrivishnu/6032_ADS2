@@ -1,9 +1,21 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
+	}
+	/**
+	 * main function for the program.
+	 * complexity O()
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
 		int vertices = Integer.parseInt(scan.nextLine());
 		int edges = Integer.parseInt(scan.nextLine());
@@ -13,16 +25,11 @@ public class Solution {
 			weight.addEdge(new Edge(Integer.parseInt(tokens[0]),
 			                        Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
 		}
-		// Self loops are not allowed...
-		// Parallel Edges are allowed...
-		// Take the Graph input here...
-
 		String caseToGo = scan.nextLine();
 		switch (caseToGo) {
 		case "Graph":
 			System.out.println(weight.toString());
 			break;
-
 		case "DirectedPaths":
 			String[] items = scan.nextLine().split(" ");
 			Dijk dij = new Dijk(weight, Integer.parseInt(items[0]));
@@ -33,12 +40,7 @@ public class Solution {
 			} else {
 				System.out.println(out);
 			}
-			// Handle the case of DirectedPaths, where two integers are given.
-			// First is the source and second is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
 			break;
-
 		case "ViaPaths":
 			String[] items1 = scan.nextLine().split(" ");
 			Dijk dij1 = new Dijk(weight, Integer.parseInt(items1[0]));
@@ -79,16 +81,9 @@ public class Solution {
 				// String text = path.toString();
 				// System.out.println(text.replaceAll( "[^a-zA-Z0-9 ]" , "" ));
 			}
-			// Handle the case of ViaPaths, where three integers are given.
-			// First is the source and second is the via is the one where path should pass throuh.
-			// third is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
 			break;
-
 		default:
 			break;
 		}
-
 	}
 }
