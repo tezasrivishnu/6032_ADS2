@@ -10,21 +10,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:6: Class Solution should be declared as final. [FinalClass]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:18:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:26: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:46: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:54: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:58: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:59: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:67: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:79:34: '+=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:79:36: '+=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:79:56: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:79:57: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:82: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:64:41: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
