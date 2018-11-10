@@ -160,6 +160,18 @@ public class SeamCarver {
         transpose = null;
         original = null;
         removeVerticalSeam(seam);
+        original = pic;
+        transpose = new Picture(original.height(),
+        	original.width());
+        for (int j = 0; j < transpose.width(); j++) {
+            for (int i = 0; i < transpose.height(); i++) {
+                transpose.set(j, i, original.get(i, j));
+            }
+        }
+
+        this.pic = transpose;
+        transpose = null;
+        original = null;
     }
 
 	// remove vertical seam from current picture
