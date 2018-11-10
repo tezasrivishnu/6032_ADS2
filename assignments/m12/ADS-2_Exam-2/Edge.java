@@ -25,9 +25,19 @@ class Edge implements Comparable<Edge> {
         this.edge2 = two;
         this.weight = wei;
     }
+    /**
+     * Gets the edge 1.
+     * complexity O(1)
+     * @return     The edge 1.
+     */
     public int getEdge1() {
         return edge1;
     }
+    /**
+     * Gets the edge 2.
+     * complexity O(1)
+     * @return     The edge 2.
+     */
     public int getEdge2() {
         return edge2;
     }

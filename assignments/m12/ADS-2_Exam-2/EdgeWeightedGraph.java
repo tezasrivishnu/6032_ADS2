@@ -81,15 +81,21 @@ class EdgeWeighted {
     public int vertices() {
         return vertices;
     }
+    /**
+     * Returns a string representation of the object.
+     * complexity v*e.
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s = "";
-        s += vertices + " vertices " + edges + " edges " + NEWLINE;
+        s += vertices + " vertices " + edges
+        + " edges " + NEWLINE;
         for (int i = 0; i < vertices; i++) {
             s += i + ": ";
             for (Edge e : adjacentEdges(i)) {
                 s += e.getEdge1() + "-" + e.getEdge2() + " ";
                 // +e.getWeight() + "  ");
-                s += String.format("%.6f", e.getWeight()) + " ";
+                s += String.format("%.5f", e.getWeight()) + " ";
             }
             s += NEWLINE;
         }
