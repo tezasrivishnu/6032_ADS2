@@ -25,8 +25,13 @@ public class Solution {
 		case "DirectedPaths":
 			String[] items = scan.nextLine().split(" ");
 			Dijk dij = new Dijk(weight, Integer.parseInt(items[0]));
-			System.out.println(dij.distanceTo(Integer.parseInt(
-			                                      items[1])));
+			double out = dij.distanceTo(Integer.parseInt(
+			                                items[1]));
+			if (out == 0.0) {
+				System.out.println("No Path Found.");
+			} else {
+				System.out.println(out);
+			}
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.

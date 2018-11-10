@@ -76,7 +76,10 @@ class Dijk {
     * @return shortest distance between two vertices.
     */
     public double distanceTo(final int one) {
-        double total = 0;
+        double total = 0.0;
+        if(pathTo(one) == null) {
+            return 0.0;
+        }
         for (Edge each : pathTo(one)) {
             total += each.getWeight();
         }
