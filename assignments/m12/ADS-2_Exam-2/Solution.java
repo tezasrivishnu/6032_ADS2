@@ -42,7 +42,7 @@ public class Solution {
 			String[] items1 = scan.nextLine().split(" ");
 			Dijk dij1 = new Dijk(weight, Integer.parseInt(items1[0]));
 			double out1 = dij1.distanceTo(Integer.parseInt(
-			                                  items1[1]));
+			                                  items1[2]));
 			if (out1 == 0.0) {
 				System.out.println("No Path Found.");
 			} else {
