@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Solution {
 
 	public static void main(String[] args) {
@@ -46,7 +47,31 @@ public class Solution {
 			if (out1 == 0.0) {
 				System.out.println("No Path Found.");
 			} else {
-				System.out.println(out1);
+				double out2 = dij1.distanceTo(Integer.parseInt(
+				                                  items1[1]));
+				Dijk dij2 = new Dijk(weight, Integer.parseInt(items1[1]));
+				double out3 = dij2.distanceTo(Integer.parseInt(
+				                                  items1[2]));
+				System.out.println(out2 + out3);
+				ArrayList<Integer> path = new ArrayList<Integer>();
+				for (Edge e : dij1.pathTo(Integer.parseInt(items1[1]))) {
+					if (!path.contains(e.getEdge2())) {
+						path.add(e.getEdge2());
+					}
+					if (!path.contains(e.getEdge1())) {
+						path.add(e.getEdge1());
+					}
+				}
+				for (Edge e : dij2.pathTo(Integer.parseInt(items1[2]))) {
+					if (!path.contains(e.getEdge2())) {
+						path.add(e.getEdge2());
+					}
+					if (!path.contains(e.getEdge1())) {
+						path.add(e.getEdge1());
+					}
+				}
+				String text = path.toString();
+				System.out.println(text.replaceAll( "[^a-zA-Z0-9 ]" , "" ));
 			}
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.

@@ -15,17 +15,25 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:13: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:35: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:51: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:52: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:5:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:14: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:36: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:52: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:56: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:57: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:65: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:74: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:74:68: '(' is followed by whitespace. [ParenPad]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:74:84: ',' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:74:89: ')' is preceded with whitespace. [ParenPad]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:76: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:77: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 19 errors.
 Starting audit...
 Audit done.
