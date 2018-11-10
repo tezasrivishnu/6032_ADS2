@@ -1,11 +1,17 @@
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Dijk.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:5:5: Missing a Javadoc comment. [JavadocVariable]
 Audit done.
 Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
@@ -13,9 +19,11 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:13: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:26: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:13: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:30: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:37: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m12\ADS-2_Exam-2\Solution.java:38: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 10 errors.
+Starting audit...
+Audit done.

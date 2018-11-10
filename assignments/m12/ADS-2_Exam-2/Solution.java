@@ -10,7 +10,7 @@ public class Solution {
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = scan.nextLine().split(" ");
 			weight.addEdge(new Edge(Integer.parseInt(tokens[0]),
-				Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
+			                        Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
 		}
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
@@ -23,6 +23,10 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
+			String[] items = scan.nextLine().split(" ");
+			Dijk dij = new Dijk(weight, Integer.parseInt(items[0]));
+			System.out.println(dij.distanceTo(Integer.parseInt(
+			                                      items[1])));
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
