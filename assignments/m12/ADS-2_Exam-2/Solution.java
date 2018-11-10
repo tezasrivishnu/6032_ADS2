@@ -39,6 +39,15 @@ public class Solution {
 			break;
 
 		case "ViaPaths":
+			String[] items1 = scan.nextLine().split(" ");
+			Dijk dij1 = new Dijk(weight, Integer.parseInt(items1[0]));
+			double out1 = dij1.distanceTo(Integer.parseInt(
+			                                  items1[1]));
+			if (out1 == 0.0) {
+				System.out.println("No Path Found.");
+			} else {
+				System.out.println(out1);
+			}
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.
 			// third is the destination.
