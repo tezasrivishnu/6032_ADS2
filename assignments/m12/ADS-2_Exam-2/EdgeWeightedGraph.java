@@ -93,7 +93,7 @@ class EdgeWeighted {
         for (int i = 0; i < vertices; i++) {
             s += i + ": ";
             for (Edge e : adjacentEdges(i)) {
-                s += e.getEdge1() + "-" + e.getEdge2() + "  ";
+                s += e.getEdge1() + "-" + e.getEdge2() + " ";
                 // +e.getWeight() + "  ");
                 s += String.format("%.5f", e.getWeight()) + "  ";
             }
