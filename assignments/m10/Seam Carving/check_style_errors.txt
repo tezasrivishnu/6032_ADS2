@@ -223,24 +223,8 @@ Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:64:32: '1000.0' is a magic number. [MagicNumber]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:83: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:84: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:92: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:108: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:109: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:112: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:113: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:137:48: '10000000.0' is a magic number. [MagicNumber]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:139:56: '1000.0' is a magic number. [MagicNumber]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:151: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:158: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:275: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:283: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\SeamCarver.java:284: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
@@ -271,16 +255,8 @@ Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:28: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:40: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:48:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:48:61: '||' should be on a new line. [OperatorWrap]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:49:36: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:68:29: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\Solution.java:73:59: '}' at column 59 should have line break before. [RightCurly]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m10\Seam Carving\StdOut.java:16: Line is longer than 80 characters (found 84). [LineLength]

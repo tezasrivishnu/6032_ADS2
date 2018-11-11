@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -25,8 +25,9 @@ public class Solution {
         StdOut.printf("Printing energy calculated for each pixel.\n");
 
         for (int row = 0; row < sc.height(); row++) {
-            for (int col = 0; col < sc.width(); col++)
+            for (int col = 0; col < sc.width(); col++) {
                 StdOut.printf("%9.0f ", sc.energy(col, row));
+            }
             StdOut.println();
         }
     }
@@ -37,7 +38,7 @@ public class Solution {
      * @param      seam       The seam
      * @param      direction  The direction
      */
-    public static void printSeam(final SeamCarver carver, 
+    public static void printSeam(final SeamCarver carver,
         final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
 
@@ -45,8 +46,8 @@ public class Solution {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == true && row == seam[col]) ||
-                        (direction == false   && col == seam[row])) {
+                if ((direction && row == seam[col])
+                        || (!direction && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -65,12 +66,13 @@ public class Solution {
      * in seam craver class.
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
         SeamCarver seamCarver = null;
         if (cases.length() == 0) {
-            System.out.println("picture is null");        }
+            System.out.println("picture is null");
+        }
         try {
             switch (cases) {
             case "width":
