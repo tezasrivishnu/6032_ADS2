@@ -168,7 +168,6 @@ public class SeamCarver {
                 transpose.set(j, i, original.get(i, j));
             }
         }
-
         this.pic = transpose;
         transpose = null;
         original = null;
