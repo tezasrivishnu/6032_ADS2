@@ -1,9 +1,8 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -156,24 +155,25 @@ class TST<Value> {
      *
      * @return     Node object.
      */
-    public Node<Value> put(Node<Value> node,
+    public Node<Value> put(final Node<Value> node,
         final String one, final Value value,
         final int d) {
+        Node node1 = node;
         char ch = one.charAt(d);
-        if (node == null) {
-            node = new Node<Value>();
-            node.character = ch;
+        if (node1 == null) {
+            node1 = new Node<Value>();
+            node1.character = ch;
         }
-        if (ch < node.character) {
-            node.left  = put(node.left,  one, value, d);
-        } else if (ch > node.character) {
-            node.right = put(node.right, one, value, d);
+        if (ch < node1.character) {
+            node1.left  = put(node1.left,  one, value, d);
+        } else if (ch > node1.character) {
+            node1.right = put(node1.right, one, value, d);
         } else if (d < one.length() - 1) {
-            node.middle   = put(node.middle, one, value, d + 1);
+            node1.middle   = put(node1.middle, one, value, d + 1);
         } else {
-            node.value   = value;
+            node1.value   = value;
         }
-        return node;
+        return node1;
     }
     /**
      * used to find the string with the prefix.
@@ -208,7 +208,7 @@ class TST<Value> {
             return;
         }
         collect(node.left,  one, que);
-        if (node.value != null){
+        if (node.value != null) {
             que.enqueue(one.toString()
             + node.character);
         }
