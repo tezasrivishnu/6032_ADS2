@@ -6,20 +6,7 @@ Starting audit...
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:61:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:61:22: Variable 'character' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:62:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:62:29: Variable 'left' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:63:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:63:29: Variable 'middle' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:64:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:64:29: Variable 'right' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:65:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:65:23: Variable 'value' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:129: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:142:32: Parameter node should be final. [FinalParameters]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:190: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:192: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:159:28: Parameter node should be final. [FinalParameters]
+[ERROR] C:\Users\itsvi\Desktop\MSIT\IT\ADS 2\6032_ADS2\assignments\m14\Assignment-1\Solution.java:211:32: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 5 errors.
