@@ -11,7 +11,9 @@ public final class Solution {
     }
     /**
      * main method for the program.
-     * complexity O()
+     * complexity O(m*n)
+     * m ----> words in file
+     * n------> word length
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
