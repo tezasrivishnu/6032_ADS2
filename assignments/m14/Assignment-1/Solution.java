@@ -86,7 +86,9 @@ class TST<Value> {
     }
     /**
      * checks if the string is present or not.
-     * complexity O()
+     * complexity is O(L + logN)
+     * L length of string, N trie size.
+     * because we are calling the get method.
      * @param      one   One
      *
      * @return     boolean value.
@@ -96,7 +98,8 @@ class TST<Value> {
     }
     /**
      * helper method for the main get method.
-     * comlexity O()
+     * complexity is O(L + logN)
+     * L length of string, N trie size.
      * @param      one   One
      *
      * @return     the string.
@@ -110,7 +113,8 @@ class TST<Value> {
     }
     /**
      * it returns the value.
-     * complexity O()
+     * complexity is O(L + logN)
+     * L length of string, N trie size.
      * @param      node  The node
      * @param      one   One
      * @param      d     the character
@@ -135,7 +139,8 @@ class TST<Value> {
     }
     /**
      * helper method for the main put method.
-     * complexity O()
+     * complexity is O(L + logN)
+     * L length of string, N trie size.
      * @param      one    One
      * @param      value  The value
      */
@@ -147,7 +152,8 @@ class TST<Value> {
     }
     /**
      * used to put the string with the assigned value.
-     * complexity O()
+     * complexity is O(L + logN)
+     * L length of string, N trie size.
      * @param      node   The node
      * @param      one    One
      * @param      value  The value
@@ -177,7 +183,8 @@ class TST<Value> {
     }
     /**
      * used to find the string with the prefix.
-     * complexity O()
+     * complexity is O(L + logN)
+     * L length of string, N trie size.
      * @param      one   One
      *
      * @return    Iterable.
@@ -197,7 +204,8 @@ class TST<Value> {
     /**
      * checks for the strings with the preffix
      * in trie.
-     * complexity O()
+     * complexity is O(L + logN)
+     * L length of string, N trie size.
      * @param      node  The node
      * @param      one   One
      * @param      que   The que

@@ -6,15 +6,15 @@ import java.util.Iterator;
  */
 public class Queue<Item> implements Iterable<Item> {
     /**
-     * {beginning of queue}.
+     * beginning of queue.
      */
     private Node<Item> first;
     /**
-     * {end of queue}.
+     * end of queue.
      */
     private Node<Item> last;
     /**
-     * {number of elements on queue}.
+     * number of elements on queue
      */
     private int n;
 
@@ -26,11 +26,11 @@ public class Queue<Item> implements Iterable<Item> {
      */
     private static class Node<Item> {
         /**
-         * {Item}.
+         * Item.
          */
         private Item item;
         /**
-         * {next of type node}.
+         * next of type node.
          */
         private Node<Item> next;
     }
@@ -46,7 +46,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns true if this queue is empty.
-     *
+     * complexity O(1)
      * @return {@code true} if this queue is empty.
      * {@code false} otherwise
      */
@@ -56,7 +56,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the number of items in this queue.
-     *
+     * complexity O(1)
      * @return the number of items in this queue
      */
     public int size() {
@@ -65,7 +65,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the item least recently added to this queue.
-     *
+     * complexity O(1)
      * @return the item least recently added to this queue
      */
     public Item peek() {
@@ -74,7 +74,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Adds the item to this queue.
-     *
+     * complexity O(1)
      * @param  item the item to add
      */
     public void enqueue(final Item item) {
@@ -92,7 +92,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Removes and returns the item on this queue that was least recently added.
-     *
+     * complexity O(1)
      * @return the item on this queue that was least recently added
      */
     public Item dequeue() {
@@ -107,7 +107,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns a string representation of this queue.
-     *
+     * complexity O(1)
      * @return the sequence of items in FIFO order, separated by spaces
      */
     public String toString() {
@@ -135,7 +135,7 @@ public class Queue<Item> implements Iterable<Item> {
      */
     private class ListIterator<Item> implements Iterator<Item> {
         /**
-         * {Current Node}.
+         * Current Node.
          */
         private Node<Item> current;
         /**
@@ -149,23 +149,24 @@ public class Queue<Item> implements Iterable<Item> {
 
         /**
          * Determines if it has next.
-         *
+        * complexity O(1)
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
         /**
-         * {Method to remove}.
+         * Method to remove.
+        * complexity O(1)
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
 
         /**
-         * {Method for finding the next}.
-         *
-         * @return     {Item}
+         * Method for finding the next.
+         *complexity O(1)
+         * @return     Item
          */
         public Item next() {
             Item item = current.item;
