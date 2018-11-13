@@ -7,16 +7,12 @@ public class Solution {
 		String token = scan.nextLine();
 		TST tst = new TST();
 		for (String each : words) {
-			// String[] suf = new String[each.length()];
             for (int i = 0; i < each.length(); i++) {
-            	// suf[i] = each.substring(i,each.length());
             	tst.put(each.substring(i,each.length()), 0);
             }
         }
         System.out.println(tst.keysWithPrefix(token));
-		//Your code goes here...
 	}
-
 	public static String[] loadWords() {
 		In in = new In("/Files/dictionary-algs4.txt");
 		String[] words = in.readAllStrings();
