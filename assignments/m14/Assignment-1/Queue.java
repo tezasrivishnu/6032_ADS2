@@ -14,7 +14,7 @@ public class Queue<Item> implements Iterable<Item> {
      */
     private Node<Item> last;
     /**
-     * number of elements on queue
+     * number of elements on queue.
      */
     private int n;
 
