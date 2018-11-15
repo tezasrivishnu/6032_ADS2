@@ -12,7 +12,8 @@ public final class Solution {
 
     /**
      * Main method.
-     *
+     * complexity O(V + E) v is the
+     * no of nodes and E is the number of adacent vertices.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

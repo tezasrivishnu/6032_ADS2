@@ -20,7 +20,8 @@ public class BoggleSolver {
     }
     /**
      * Gets all valid words.
-     * complexity O()
+     * complexity O(V + E) v is the
+     * no of nodes and E is the number of adacent vertices.
      * @param      board  The board
      *
      * @return     All valid words.
@@ -37,7 +38,8 @@ public class BoggleSolver {
     }
     /**
      * depth first search method.
-     * complexity O()
+     * complexity O(V + E) v is the
+     * no of nodes and E is the number of adacent vertices.
      * @param      board   The board
      * @param      one     One
      * @param      two     Two
