@@ -17,6 +17,10 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         String caseType = StdIn.readLine();
+        if(caseType.length() == 0) {
+            System.out.println("board is null");
+            return;
+        }
         switch (caseType) {
         case "Score":
             String dictionaryName = StdIn.readLine();
