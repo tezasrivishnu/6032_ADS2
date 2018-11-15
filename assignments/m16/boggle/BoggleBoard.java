@@ -67,13 +67,13 @@ public class BoggleBoard {
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                String letters = BOGGLE_1992[n*i+j];
+                String letters = BOGGLE_1992[n * i + j];
                 int r = StdRandom.uniform(letters.length());
                 board[i][j] = letters.charAt(r);
             }
         }
     }
-    
+
     /**
      * Initializes a board from the given filename.
      * @param filename the name of the file containing the Boggle board
@@ -94,7 +94,7 @@ public class BoggleBoard {
                     throw new IllegalArgumentException("invalid character: " + letter);
                 else if (!ALPHABET.contains(letter))
                     throw new IllegalArgumentException("invalid character: " + letter);
-                else 
+                else
                     board[i][j] = letter.charAt(0);
             }
         }
@@ -223,5 +223,5 @@ public class BoggleBoard {
         StdOut.println(board4);
         StdOut.println();
     }
-    
+
 }
