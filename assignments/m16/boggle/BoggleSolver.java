@@ -100,18 +100,18 @@ public class BoggleSolver {
      */
     public int scoreOf(final String one) {
         if (tst.contains(one)) {
-            if (one.length() < 3) {
+            if (one.length() <  (2 + 1)) {
                 return 0;
-            } else if (one.length() < 5) {
+            } else if (one.length() < (2 * 2) + 1) {
                 return 1;
-            } else if (one.length() < 6) {
+            } else if (one.length() < (2 * 2) + 2) {
                 return 2;
-            } else if (one.length() < 7) {
-                return 3;
-            } else if (one.length() < 8) {
-                return 5;
+            } else if (one.length() < (2 * 2 * 2) - 1) {
+                return 2 + 1;
+            } else if (one.length() < (2 * 2 * 2)) {
+                return 2 + 2 + 1;
             } else {
-                return 11;
+                return (2 * 2 * 2) + (2 + 1);
             }
         }
         return 0;
