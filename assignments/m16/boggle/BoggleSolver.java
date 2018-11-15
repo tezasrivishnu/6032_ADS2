@@ -61,9 +61,6 @@ public class BoggleSolver {
         if (prefix.length() > 2 && tst.contains(prefix)) {
             words.add(prefix);
         }
-        if (!tst.contains(prefix)) {
-            return;
-        }
         visit[one][two] = true;
         if (one > 0) {
             dfs(board, one - 1, two, words, visit, prefix);
