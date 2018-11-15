@@ -17,7 +17,7 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         String caseType = StdIn.readLine();
-        if(caseType.length() == 0) {
+        if(!caseType.equals("Score")) {
             System.out.println("board is null");
             return;
         }
