@@ -7,18 +7,14 @@ public class BoggleSolver {
         }
     }
     public Iterable<String> getAllValidWords(BoggleBoard board) {
+        boolean[][] visit = new boolean[board.rows()][board.cols()];
         TreeSet<String> words = new TreeSet<>();
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
-                searchWords(board, i, j, words);
+                dfs(board, i, j, words, visit, "");
             }
         }
         return words;
-    }
-
-    public void searchWords(BoggleBoard board, int one, int two, TreeSet<String> words) {
-        boolean[][] visit = new boolean[board.rows()][board.cols()];
-        dfs(board, one, two, words, visit, "");
     }
     public void dfs(BoggleBoard board, int one, int two, Set<String> words, boolean[][] visit, String prefix) {
         if (visit[one][two]) {
