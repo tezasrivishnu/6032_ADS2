@@ -60,7 +60,6 @@ public class BoggleBoard {
 
 
     // letters and frequencies of letters in the English alphabet4
-    
     /**
      * string variable.
      */
@@ -92,8 +91,8 @@ public class BoggleBoard {
      * Initializes a random 4-by-4 board, by rolling the Hasbro dice.
      */
     public BoggleBoard() {
-        m = 4;
-        n = 4;
+        m = 2 + 2;
+        n = 2 + 2;
         StdRandom.shuffle(BOGGLE_1992);
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
@@ -127,17 +126,14 @@ public class BoggleBoard {
                 String letter = in.readString().toUpperCase();
                 if (letter.equals("QU")) {
                     board[i][j] = 'Q';
-                }
-                else if (letter.length() != 1) {
+                } else if (letter.length() != 1) {
                     throw new IllegalArgumentException(
                         "invalid character: " + letter);
-                }
-                else if (!ALPHABET.contains(letter)) {
+                } else if (!ALPHABET.contains(letter)) {
                     throw new IllegalArgumentException(
 
                         "invalid character: " + letter);
-                }
-                else {
+                } else {
                     board[i][j] = letter.charAt(0);
                 }
             }
@@ -153,7 +149,7 @@ public class BoggleBoard {
     public BoggleBoard(final int m1, final int n1) {
         this.m = m1;
         this.n = n1;
-        if (m <= 0){ 
+        if (m <= 0) {
             throw new IllegalArgumentException(
                 "number of rows must be a positive integer");
         }
