@@ -1,16 +1,12 @@
 import java.util.*;
 public class BoggleSolver {
-	TST<Integer> dict = new TST<>();
-	// Initializes the data structure using the given array of strings as the dictionary.
-	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-	public BoggleSolver(String[] dictionary) {
-		for (String each : dictionary) {
-            dict.put(each, 1);
+    TST<Integer> tst = new TST<>();
+    public BoggleSolver(String[] dictionary) {
+        for (String each : dictionary) {
+            tst.put(each, 1);
         }
-	}
-
-	// Returns the set of all valid words in the given Boggle board, as an Iterable.
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
+    }
+    public Iterable<String> getAllValidWords(BoggleBoard board) {
         TreeSet<String> words = new TreeSet<>();
         for (int i = 0; i < board.rows(); i++) {
             for (int j = 0; j < board.cols(); j++) {
@@ -20,67 +16,66 @@ public class BoggleSolver {
         return words;
     }
 
-    private void searchWords(BoggleBoard board, int i, int j, TreeSet<String> words) {
-        boolean[][] visited = new boolean[board.rows()][board.cols()];
-        dfs(board, i, j, words, visited, "");
+    public void searchWords(BoggleBoard board, int one, int two, TreeSet<String> words) {
+        boolean[][] visit = new boolean[board.rows()][board.cols()];
+        dfs(board, one, two, words, visit, "");
     }
-     private void dfs(BoggleBoard board, int i, int j, Set<String> words, boolean[][] visited, String prefix) {
-        if (visited[i][j]) {
+    public void dfs(BoggleBoard board, int one, int two, Set<String> words, boolean[][] visit, String prefix) {
+        if (visit[one][two]) {
             return;
         }
-
-        char letter = board.getLetter(i, j);
-        prefix = prefix + (letter == 'Q' ? "QU" : letter);
-
-        if (prefix.length() > 2 && dict.contains(prefix)) {
+        char letter = board.getLetter(one, two);
+        if (letter == 'Q') {
+            prefix += "QU";
+        } else {
+            prefix += letter;
+        }
+        if (prefix.length() > 2 && tst.contains(prefix)) {
             words.add(prefix);
         }
-        visited[i][j] = true;
-        if (i > 0) {
-            dfs(board, i - 1, j, words, visited, prefix);
-            if (j > 0) {
-                dfs(board, i - 1, j - 1, words, visited, prefix);
+        visit[one][two] = true;
+        if (one > 0) {
+            dfs(board, one - 1, two, words, visit, prefix);
+            if (two > 0) {
+                dfs(board, one - 1, two - 1, words, visit, prefix);
             }
-            if (j < board.cols() - 1) {
-                dfs(board, i - 1, j + 1, words, visited, prefix);
+            if (two < board.cols() - 1) {
+                dfs(board, one - 1, two + 1, words, visit, prefix);
             }
         }
-        if (j > 0) {
-            dfs(board, i, j - 1, words, visited, prefix);
+        if (two > 0) {
+            dfs(board, one, two - 1, words, visit, prefix);
         }
-        if (j < board.cols() - 1) {
-            dfs(board, i, j + 1, words, visited, prefix);
+        if (two < board.cols() - 1) {
+            dfs(board, one, two + 1, words, visit, prefix);
         }
-        if (i < board.rows() - 1) {
-            if (j > 0) {
-                dfs(board, i + 1, j - 1, words, visited, prefix);
+        if (one < board.rows() - 1) {
+            if (two > 0) {
+                dfs(board, one + 1, two - 1, words, visit, prefix);
             }
-            if (j < board.cols() - 1) {
-                dfs(board, i + 1, j + 1, words, visited, prefix);
+            if (two < board.cols() - 1) {
+                dfs(board, one + 1, two + 1, words, visit, prefix);
             }
-            dfs(board, i + 1, j, words, visited, prefix);
+            dfs(board, one + 1, two, words, visit, prefix);
         }
-        visited[i][j] = false;
+        visit[one][two] = false;
     }
-
-	// Returns the score of the given word if it is in the dictionary, zero otherwise.
-	// (You can assume the word contains only the uppercase letters A through Z.)
-	public int scoreOf(String word) {
-		if (dict.contains(word)) {
-			if (word.length() < 3) {
-				return 0;
-			} else if (word.length() < 5) {
-				return 1;
-			} else if (word.length() < 6) {
-				return 2;
-			} else if (word.length() < 7) {
-				return 3;
-			} else if (word.length() < 8) {
-				return 5;
-			} else {
-				return 11;
-			}
-		}
-		return 0;
-	}
+    public int scoreOf(String one) {
+        if (tst.contains(one)) {
+            if (one.length() < 3) {
+                return 0;
+            } else if (one.length() < 5) {
+                return 1;
+            } else if (one.length() < 6) {
+                return 2;
+            } else if (one.length() < 7) {
+                return 3;
+            } else if (one.length() < 8) {
+                return 5;
+            } else {
+                return 11;
+            }
+        }
+        return 0;
+    }
 }

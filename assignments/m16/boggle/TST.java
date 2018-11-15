@@ -154,6 +154,9 @@ public class TST<Value> {
         else                            x.val   = val;
         return x;
     }
+    public boolean isPrefix(String prefix) {
+            return get(root, prefix, 0) != null;
+        }
 
     /**
      * Returns the string in the symbol table that is the longest prefix of {@code query},
