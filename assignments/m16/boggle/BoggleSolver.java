@@ -47,44 +47,47 @@ public class BoggleSolver {
      */
     public void dfs(final BoggleBoard board,
         final int one, final int two, final Set<String> words,
-        final boolean[][] visit, final String prefix1) {
-        String prefix = prefix1;
+        final boolean[][] visit, final String prefix) {
+        String word = prefix;
         if (visit[one][two]) {
             return;
         }
         char letter = board.getLetter(one, two);
         if (letter == 'Q') {
-            prefix += "QU";
+            word += "QU";
         } else {
-            prefix += letter;
+            word += letter;
         }
-        if (prefix.length() > 2 && tst.contains(prefix)) {
-            words.add(prefix);
+        if (word.length() > 2 && tst.contains(word)) {
+            words.add(word);
+        }
+        if (!tst.isPrefix(word)) {
+            return;
         }
         visit[one][two] = true;
         if (one > 0) {
-            dfs(board, one - 1, two, words, visit, prefix);
+            dfs(board, one - 1, two, words, visit, word);
             if (two > 0) {
-                dfs(board, one - 1, two - 1, words, visit, prefix);
+                dfs(board, one - 1, two - 1, words, visit, word);
             }
             if (two < board.cols() - 1) {
-                dfs(board, one - 1, two + 1, words, visit, prefix);
+                dfs(board, one - 1, two + 1, words, visit, word);
             }
         }
         if (two > 0) {
-            dfs(board, one, two - 1, words, visit, prefix);
+            dfs(board, one, two - 1, words, visit, word);
         }
         if (two < board.cols() - 1) {
-            dfs(board, one, two + 1, words, visit, prefix);
+            dfs(board, one, two + 1, words, visit, word);
         }
         if (one < board.rows() - 1) {
             if (two > 0) {
-                dfs(board, one + 1, two - 1, words, visit, prefix);
+                dfs(board, one + 1, two - 1, words, visit, word);
             }
             if (two < board.cols() - 1) {
-                dfs(board, one + 1, two + 1, words, visit, prefix);
+                dfs(board, one + 1, two + 1, words, visit, word);
             }
-            dfs(board, one + 1, two, words, visit, prefix);
+            dfs(board, one + 1, two, words, visit, word);
         }
         visit[one][two] = false;
     }
