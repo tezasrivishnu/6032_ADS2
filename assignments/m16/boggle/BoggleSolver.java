@@ -60,6 +60,7 @@ public class BoggleSolver {
         }
         if (word.length() > 2 && tst.contains(word)) {
             words.add(word);
+            return;
         }
         if (!tst.isPrefix(word)) {
             return;
