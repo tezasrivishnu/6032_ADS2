@@ -9,6 +9,10 @@
 
 public class BoggleBoard {
     // the 16 Boggle dice (1992 version)
+
+    /**
+     * String array.
+     */
     private static final String[] BOGGLE_1992 = {
         "LRYTTE", "VTHRWE", "EGHWNE", "SEOTIS",
         "ANAEEG", "IDSYTT", "OATTOW", "MTOICU",
@@ -17,6 +21,10 @@ public class BoggleBoard {
     };
 
     // the 16 Boggle dice (1983 version)
+
+    /**
+     * string array.
+     */
     private static final String[] BOGGLE_1983 = {
         "AACIOT", "ABILTY", "ABJMOQ", "ACDEMP",
         "ACELRS", "ADENVZ", "AHMORS", "BIFORX",
@@ -25,6 +33,10 @@ public class BoggleBoard {
     };
 
     // the 25 Boggle Master / Boggle Deluxe dice
+
+    /**
+     * String array.
+     */
     private static final String[] BOGGLE_MASTER = {
         "AAAFRS", "AAEEEE", "AAFIRS", "ADENNN", "AEEEEM",
         "AEEGMU", "AEGMNN", "AFIRSY", "BJKQXZ", "CCNSTW",
@@ -34,6 +46,10 @@ public class BoggleBoard {
     };
 
     // the 25 Big Boggle dice
+
+    /**
+     * string array.
+     */
     private static final String[] BOGGLE_BIG = {
         "AAAFRS", "AAEEEE", "AAFIRS", "ADENNN", "AEEEEM",
         "AEEGMU", "AEGMNN", "AFIRSY", "BJKQXZ", "CCENST",
@@ -43,8 +59,15 @@ public class BoggleBoard {
     };
 
 
-    // letters and frequencies of letters in the English alphabet
+    // letters and frequencies of letters in the English alphabet4
+    
+    /**
+     * string variable.
+     */
     private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /**
+     * freqquency array.
+     */
     private static final double[] FREQUENCIES = {
         0.08167, 0.01492, 0.02782, 0.04253, 0.12703, 0.02228,
         0.02015, 0.06094, 0.06966, 0.00153, 0.00772, 0.04025,
@@ -52,9 +75,17 @@ public class BoggleBoard {
         0.06327, 0.09056, 0.02758, 0.00978, 0.02360, 0.00150,
         0.01974, 0.00074
     };
-
+    /**
+     * int variable.
+     */
     private final int m;        // number of rows
+    /**
+     * int variable.
+     */
     private final int n;        // number of columns
+    /**
+     * character array.
+     */
     private char[][] board;     // the m-by-n array of characters
 
     /**
@@ -78,18 +109,25 @@ public class BoggleBoard {
      * Initializes a board from the given filename.
      * @param filename the name of the file containing the Boggle board
      */
-    public BoggleBoard(String filename) {
+    public BoggleBoard(final String filename) {
         In in = new In(filename);
         m = in.readInt();
         n = in.readInt();
-        if (m <= 0) throw new IllegalArgumentException("number of rows must be a positive integer");
-        if (n <= 0) throw new IllegalArgumentException("number of columns must be a positive integer");
+        if (m <= 0) {
+            throw new IllegalArgumentException(
+                "number of rows must be a positive integer");
+        }
+        if (n <= 0) {
+            throw new IllegalArgumentException(
+                "number of columns must be a positive integer");
+        }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 String letter = in.readString().toUpperCase();
-                if (letter.equals("QU"))
+                if (letter.equals("QU")) {
                     board[i][j] = 'Q';
+                }
                 else if (letter.length() != 1) {
                     throw new IllegalArgumentException(
                         "invalid character: " + letter);
