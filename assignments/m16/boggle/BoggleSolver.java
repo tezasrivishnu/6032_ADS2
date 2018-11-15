@@ -1,12 +1,31 @@
-import java.util.*;
+import java.util.TreeSet;
+import java.util.Set;
+/**
+ * Class for boggle solver.
+ */
 public class BoggleSolver {
-    TST<Integer> tst = new TST<>();
-    public BoggleSolver(String[] dictionary) {
+    /**
+     * TST object.
+     */
+    private TST<Integer> tst = new TST<>();
+    /**
+     * Constructs the object.
+     * complexity O(n) n is the length of array.
+     * @param      dictionary  The dictionary
+     */
+    public BoggleSolver(final String[] dictionary) {
         for (String each : dictionary) {
             tst.put(each, 1);
         }
     }
-    public Iterable<String> getAllValidWords(BoggleBoard board) {
+    /**
+     * Gets all valid words.
+     * complexity O()
+     * @param      board  The board
+     *
+     * @return     All valid words.
+     */
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
         boolean[][] visit = new boolean[board.rows()][board.cols()];
         TreeSet<String> words = new TreeSet<>();
         for (int i = 0; i < board.rows(); i++) {
@@ -16,7 +35,20 @@ public class BoggleSolver {
         }
         return words;
     }
-    public void dfs(BoggleBoard board, int one, int two, Set<String> words, boolean[][] visit, String prefix) {
+    /**
+     * depth first search method.
+     * complexity O()
+     * @param      board   The board
+     * @param      one     One
+     * @param      two     Two
+     * @param      words   The words
+     * @param      visit   The visit
+     * @param      prefix  The prefix
+     */
+    public void dfs(final BoggleBoard board,
+        final int one, final int two, final Set<String> words,
+        final boolean[][] visit, final String prefix1) {
+        String prefix = prefix1;
         if (visit[one][two]) {
             return;
         }
@@ -28,6 +60,9 @@ public class BoggleSolver {
         }
         if (prefix.length() > 2 && tst.contains(prefix)) {
             words.add(prefix);
+        }
+        if (!tst.contains(prefix)) {
+            return;
         }
         visit[one][two] = true;
         if (one > 0) {
@@ -56,7 +91,14 @@ public class BoggleSolver {
         }
         visit[one][two] = false;
     }
-    public int scoreOf(String one) {
+    /**
+     * fnds the score of the word.
+     * complexity O(1)
+     * @param      one   One
+     *
+     * @return     int value.
+     */
+    public int scoreOf(final String one) {
         if (tst.contains(one)) {
             if (one.length() < 3) {
                 return 0;

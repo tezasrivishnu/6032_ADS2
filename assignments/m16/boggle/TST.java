@@ -83,7 +83,7 @@ class TST<Value> {
      * @return     node object.
      */
     public Node<Value> get(final Node<Value> node,
-        final String one, final int d) {
+                           final String one, final int d) {
         if (node == null) {
             return null;
         }
@@ -123,8 +123,8 @@ class TST<Value> {
      * @return     Node object.
      */
     public Node<Value> put(final Node<Value> node,
-        final String one, final Value value,
-        final int d) {
+                           final String one, final Value value,
+                           final int d) {
         Node node1 = node;
         char ch = one.charAt(d);
         if (node1 == null) {
@@ -172,18 +172,28 @@ class TST<Value> {
      * @param      que   The que
      */
     public void collect(final Node<Value> node,
-        final StringBuilder one, final Queue<String> que) {
+                        final StringBuilder one, final Queue<String> que) {
         if (node == null) {
             return;
         }
         collect(node.left,  one, que);
         if (node.value != null) {
             que.enqueue(one.toString()
-            + node.character);
+                        + node.character);
         }
         collect(node.middle, one.append(
-            node.character), que);
+                    node.character), que);
         one.deleteCharAt(one.length() - 1);
         collect(node.right, one, que);
+    }
+    /**
+     * Determines if prefix is present or not.
+     *
+     * @param      prefix  The prefix
+     *
+     * @return     True if prefix, False otherwise.
+     */
+    public boolean isPrefix(final String prefix) {
+        return get(root, prefix, 0) != null;
     }
 }
