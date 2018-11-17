@@ -195,28 +195,44 @@ class T9 {
         for (String word : tst.keys()) {
             String[] tokens = word.split("");
             String str = "";
+            String str1 = "";
             for (String each : tokens) {
                 if (each.equals("a") || each.equals("b") || each.equals("c")) {
                     str += "2";
+                    str1 += each;
                 } else if (each.equals("d") || each.equals("e") || each.equals("f")) {
                     str += "3";
+                    str1 += each;
+
                 } else if (each.equals("g") || each.equals("h") || each.equals("i")) {
                     str += "4";
+                    str1 += each;
+
                 } else if (each.equals("j") || each.equals("k") || each.equals("l")) {
                     str += "5";
+                    str1 += each;
+
                 } else if (each.equals("m") || each.equals("n") || each.equals("o")) {
                     str += "6";
+                    str1 += each;
+
                 } else if (each.equals("p") || each.equals("q")  || each.equals("r") || each.equals("s")) {
                     str += "7";
+                    str1 += each;
+
                 } else if (each.equals("t") || each.equals("u") || each.equals("v")) {
                     str += "8";
+                    str1 += each;
+
                 } else if (each.equals("w") || each.equals("x")  || each.equals("y") || each.equals("z")) {
                     str += "9";
+                    str1 += each;
+
                 } else {
                     continue;
                 }
             }
-            if (str.equals(t9Signature)) {
+            if (str.equals(t9Signature) && tst.contains(str1)) {
                 potential.add(word);
             }
         }
