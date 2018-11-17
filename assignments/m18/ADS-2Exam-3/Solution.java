@@ -1,18 +1,32 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
+/**
+ * class Solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-
-public class Solution {
-
+	}
 	// Don't modify this method.
-	public static void main(String[] args) {
+
+	/**
+	 * main method for the program.
+	 * complexity O()
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
 		switch (cases) {
 		case "loadDictionary":
 			// input000.txt and output000.txt
-			BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+			BinarySearchST<String, Integer> hash
+			= loadDictionary("/Files/t9.csv");
 			while (scan.hasNextLine()) {
 				String key = scan.nextLine();
 				System.out.println(hash.get(key));
@@ -81,13 +95,28 @@ public class Solution {
 	}
 
 	// Don't modify this method.
-	public static String[] toReadFile(String file) {
+
+	/**
+	 * reading the files in string.
+	 * @param      file  The file
+	 *
+	 * @return     returns the words in array.
+	 */
+	public static String[] toReadFile(final String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
-	public static BinarySearchST<String, Integer> loadDictionary(String file) {
-		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+	/**
+	 * Loads a dictionary.
+	 * complexity O(n) n is the length of the array.
+	 * @param      file  The file
+	 *
+	 * @return     BinarysearchST.
+	 */
+	public static BinarySearchST<String, Integer>
+	loadDictionary(final String file) {
+		BinarySearchST<String, Integer>  st
+		= new BinarySearchST<String, Integer>();
 		int counter = 1;
 		String[] tokens = toReadFile(file);
 		// for (int i = 0; i < tokens.length; i++) {
@@ -103,7 +132,7 @@ public class Solution {
 		// 	}
 		// }
 
-		for(String each : tokens) {
+		for (String each : tokens) {
 			Integer count = st.get(each.toLowerCase());
 			count = ( count == null) ? 1 : ++count;
 			st.put(each.toLowerCase(), count);
@@ -113,9 +142,19 @@ public class Solution {
 	}
 
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
-	TST<Integer> tst;
+	/**
+	 * TST object.
+	 */
+	private TST<Integer> tst;
+	/**
+	 * Constructs the object.
+	 * complexity O(n) n is size of the binaryST
+	 * @param      st    binarysearchST.
+	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		tst = new TST<Integer>();
@@ -126,25 +165,73 @@ class T9 {
 	}
 
 	// get all the prefixes that match with given prefix.
-	public Iterable<String> getAllWords(String prefix) {
+
+	/**
+	 * Gets all words.
+	 * complexity O(L + logN) as we are calling tst method.
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
+	public Iterable<String> getAllWords(final String prefix) {
 		return tst.keysWithPrefix(prefix);
 		// return null;
 	}
-
-	public Iterable<String> potentialWords(String t9Signature) {
+	/**
+	 * gives the words as per the input sequence.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 *
+	 * @return     iterable string.
+	 */
+	public Iterable<String> potentialWords(final String t9Signature) {
 		// your code goes here
 		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		// your code goes here
-		return null;
+
+	/**
+	 * Gets the suggestions.
+	 * complexity O(m*n) m the size of words, n is the
+	 * prefixes of each word in words bag.
+	 * @param      words  The words
+	 * @param      k      the frequency
+	 *
+	 * @return     The suggestions.
+	 */
+	public Iterable<String> getSuggestions(final Iterable<String> words,
+		final int k) {
+		BinarySearchST<String, Integer> tem
+		= new BinarySearchST<String, Integer>();
+		MaxPQ<Integer> max = new MaxPQ<Integer>();
+		for (String each : words) {
+			int count = 0;
+			for(String wo : getAllWords(each)) {
+				count++;
+			}
+			tem.put(each, count);
+			max.insert(count);
+		}
+		ArrayList<String> list = new ArrayList<String>();
+		for (int i = 0; i < k; i++) {
+			list.add(tem.select(i));
+		}
+		return list;
 	}
 
 	// final output
 	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
+	
+	/**
+	 * gives the correct words in the dictionary.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            int value.
+	 *
+	 * @return     iterable string.
+	 */
+	public Iterable<String> t9(final String t9Signature, final int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
