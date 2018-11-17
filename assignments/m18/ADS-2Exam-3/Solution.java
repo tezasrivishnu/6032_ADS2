@@ -26,7 +26,7 @@ public final class Solution {
         case "loadDictionary":
             // input000.txt and output000.txt
             BinarySearchST<String, Integer> hash
-            = loadDictionary("/Files/t9.csv");
+                = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -51,7 +51,7 @@ public final class Solution {
             while (scan.hasNextLine()) {
                 String t9Signature = scan.nextLine();
                 for (String each : t9.potentialWords(
-                    t9Signature)) {
+                            t9Signature)) {
                     count++;
                     System.out.println(each);
                 }
@@ -117,7 +117,7 @@ public final class Solution {
     public static BinarySearchST<String, Integer>
     loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st
-        = new BinarySearchST<String, Integer>();
+            = new BinarySearchST<String, Integer>();
         int counter = 1;
         String[] tokens = toReadFile(file);
         // for (int i = 0; i < tokens.length; i++) {
@@ -191,7 +191,36 @@ class T9 {
      * @return     iterable string.
      */
     public Iterable<String> potentialWords(final String t9Signature) {
-        return null;
+        TreeSet<String> potential = new TreeSet<String>();
+        for (String word : tst.keys()) {
+            String[] tokens = word.split("");
+            String str = "";
+            for (String each : tokens) {
+                if (each.equals("a") || each.equals("b") || each.equals("c")) {
+                    str += "2";
+                } else if (each.equals("d") || each.equals("e") || each.equals("f")) {
+                    str += "3";
+                } else if (each.equals("g") || each.equals("h") || each.equals("i")) {
+                    str += "4";
+                } else if (each.equals("j") || each.equals("k") || each.equals("l")) {
+                    str += "5";
+                } else if (each.equals("m") || each.equals("n") || each.equals("o")) {
+                    str += "6";
+                } else if (each.equals("p") || each.equals("q")  || each.equals("r") || each.equals("s")) {
+                    str += "7";
+                } else if (each.equals("t") || each.equals("u") || each.equals("v")) {
+                    str += "8";
+                } else if (each.equals("w") || each.equals("x")  || each.equals("y") || each.equals("z")) {
+                    str += "9";
+                } else {
+                    continue;
+                }
+            }
+            if (str.equals(t9Signature)) {
+                potential.add(word);
+            }
+        }
+        return potential;
     }
 
     // return all possibilities(words), find top k with highest frequency.
@@ -206,7 +235,7 @@ class T9 {
      * @return     The suggestions.
      */
     public Iterable<String> getSuggestions(final Iterable<String> words,
-        final int k) {
+                                           final int k) {
         MaxPQ<Integer> max = new MaxPQ<Integer>();
         for (String each : words) {
             max.insert((Integer) tst.get(each));
