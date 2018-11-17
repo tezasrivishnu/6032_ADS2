@@ -158,10 +158,10 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 hello
 is
@@ -172,7 +172,7 @@ Your Output:
 hello
 is
 right
-rights
+words
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -225,8 +225,8 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:213)
-	at T9.t9(Solution.java:239)
-	at Solution.main(Solution.java:85)
+	at T9.getSuggestions(Solution.java:211)
+	at T9.t9(Solution.java:237)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 

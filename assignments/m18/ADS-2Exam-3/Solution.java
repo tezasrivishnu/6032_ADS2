@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.TreeSet;
 /**
  * class Solution.
  */
@@ -190,7 +191,6 @@ class T9 {
      * @return     iterable string.
      */
     public Iterable<String> potentialWords(final String t9Signature) {
-        // your code goes here
         return null;
     }
 
@@ -207,20 +207,18 @@ class T9 {
      */
     public Iterable<String> getSuggestions(final Iterable<String> words,
         final int k) {
-        BinarySearchST<String, Integer> tem
-        = new BinarySearchST<String, Integer>();
         MaxPQ<Integer> max = new MaxPQ<Integer>();
         for (String each : words) {
-            int count = 0;
-            for (String wo : getAllWords(each)) {
-                count++;
-            }
-            tem.put(each, count);
-            max.insert(count);
+            max.insert((Integer) tst.get(each));
         }
-        ArrayList<String> list = new ArrayList<String>();
+        TreeSet<String> list = new TreeSet<String>();
         for (int i = 0; i < k; i++) {
-            list.add(tem.select(i));
+            int output = max.delMax();
+            for (String word : words) {
+                if (output == (Integer) tst.get(word)) {
+                    list.add(word);
+                }
+            }
         }
         return list;
     }
