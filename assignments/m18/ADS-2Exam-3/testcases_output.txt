@@ -220,7 +220,7 @@ fine
 seeking
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 hello
 is
@@ -228,6 +228,7 @@ right
 words
 
 Your Output: 
+6
 hello
 is
 right
@@ -283,10 +284,96 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at MaxPQ.delMax(MaxPQ.java:174)
-	at T9.getSuggestions(Solution.java:245)
-	at T9.t9(Solution.java:266)
-	at Solution.main(Solution.java:86)
+1
+update
+1
+record
+1
+immediately
+1
+bristol
+2
+ball
+call
+1
+spoil
+2
+kiss
+lips
+1
+pints
+2
+alone
+blood
+1
+shop
+5
+any
+boy
+coz
+4
+pay
+saw
+say
+2
+goods
+inner
+2
+cards
+cares
+2
+rate
+save
+5
+card
+care
+case
+1
+happy
+0
+1
+sales
+0
+2
+bone
+come
+0
+0
+0
+2
+poker
+roles
+1
+real
+1
+maps
+1
+itor
+1
+paces
+3
+adds
+beer
+bffs
+3
+jane
+kane
+lane
+0
+0
+0
+0
+0
+1
+chef
+3
+ages
+aids
+bids
+2
+paper
+pases
+1
+keep
 ----------------------------------------
 

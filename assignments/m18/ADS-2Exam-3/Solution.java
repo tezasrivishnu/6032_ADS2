@@ -240,12 +240,15 @@ class T9 {
         for (String each : words) {
             max.insert((Integer) tst.get(each));
         }
+        System.out.println(max.size());
         TreeSet<String> list = new TreeSet<String>();
         for (int i = 0; i < k; i++) {
-            int output = max.delMax();
-            for (String word : words) {
-                if (output == (Integer) tst.get(word)) {
-                    list.add(word);
+            if (max.size() != 0) {
+                int output = max.delMax();
+                for (String word : words) {
+                    if (output == (Integer) tst.get(word)) {
+                        list.add(word);
+                    }
                 }
             }
         }
