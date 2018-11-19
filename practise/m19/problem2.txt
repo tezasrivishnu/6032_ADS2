@@ -1,0 +1,4 @@
+i) A sequence of character can be repeated any number of times.
+ii)The word must start with A and must end with A.
+iii)The word must have a pattern ABBAABBA.
+iv)The word must have 4 A's.
