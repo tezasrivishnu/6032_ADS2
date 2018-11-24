@@ -11,7 +11,7 @@ final class Solution {
     }
     /**
      * main method for the program.
-     * complexity O(n) n is the number of input connections.
+     * complexity O(ElogE) E is the number of nodes.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
